@@ -1,0 +1,16 @@
+{
+    "name": "be-services-box-section",
+    "title": "Be Services Box Section",
+    "category": "goza-theme",
+    "icon": "screenoptions",
+    "keywords": ["services", "box"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    },
+    "align": "full"
+}

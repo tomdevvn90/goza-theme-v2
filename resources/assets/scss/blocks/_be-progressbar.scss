@@ -1,0 +1,49 @@
+.be-progressbar-block{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+
+    &--heading{
+        font-size: 18px;
+        line-height: 115%;
+        font-weight: 400;
+        color: var(--heading-color);
+        margin: 16px 0 0 0;
+        text-align: center;
+    }
+
+    .be-progressbar-block-warp{
+        &.__editor{
+            display: none;
+            .block-editor-block-list__block &{
+                display: block;
+            }
+        }
+    }
+
+    svg{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 30px;
+        path{
+            width: 100%;
+        }
+    }
+
+    &.circle{
+        text-align: center;
+        .be-progressbar-block-warp{
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            svg{
+                height: 100%;
+            }
+        }
+    }
+}

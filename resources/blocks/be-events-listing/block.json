@@ -1,0 +1,23 @@
+{
+    "name": "goza/be-events-listing",
+    "title": "Be Events Listing",
+    "category": "goza-theme",
+    "icon": "editor-ul",
+    "keywords": ["event", "listing", "goza"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "ev-list", "label": "Events List" },
+        { "name": "ev-grid", "label": "Events Grid" },
+        { "name": "ev-fill", "label": "Events Fill" },
+        { "name": "ev-outline", "label": "Events Outline" },
+        { "name": "ev-special", "label": "Events Special" }
+    ],
+    "align": "full"
+  }

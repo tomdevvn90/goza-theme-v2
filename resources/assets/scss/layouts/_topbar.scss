@@ -1,0 +1,107 @@
+.goza-topbar {
+    &.goza-topbar-default {
+        background: var(--topbar-bg-color, #000);
+        color: var(--topbar-text-color, #FFF);
+
+        .goza-topbar-item {
+            border-right: rgba(170, 170, 170, 0.21) solid 1px;
+
+            &.goza-topbar-social {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .goza-topbar-social-label {
+                    letter-spacing: 0px;
+                    color: var(--topbar-text-color, #FFF);
+                    font-style: normal;
+                    margin-right: 20px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-family: var(--heading-family, Poppins, sans-serif);
+                }
+
+                .goza-topbar-social-list {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    li {
+                        a {
+                            transition: 0.3s;
+                            line-height: 30px;
+                            font-size: 12px;
+                            background: #2c2b2b;
+                            border-radius: 100%;
+                            width: 30px;
+                            height: 30px;
+                            margin: 0 2px;
+                            color: var(--topbar-text-color, #FFF);
+                            text-align: center;
+                            display: inline-block;
+
+                            &:hover {
+                                background-color: var(--link-color-hover, #d41b65);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.goza-topbar-ep {
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 50px;
+                    display: block;
+                    letter-spacing: 0px;
+                    color: var(--topbar-text-color, #FFF);
+                    font-style: normal;
+                    transition: 0.3s;
+                    font-weight: 400;
+                    font-family: var(--heading-family, Poppins, sans-serif);
+
+                    &:hover {
+                        color: var(--link-color-hover, #d41b65);
+                    }
+
+                    i {
+                        color: var(--topbar-icon-color, #d41b65);
+                        margin-right: 7px;
+                    }
+                }
+            }
+            &.goza-topbar-link{
+                a{
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .goza-topbar-mobile {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 9px 0;
+            gap: 5px;
+
+            .goza-topbar-item {
+                border-right: none;
+
+                a {
+                    font-family: var(--heading-family, Poppins, sans-serif);
+                    font-size: 13px;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                    color: var(--topbar-text-color, #FFF);
+                    font-style: normal;
+                    font-weight: 400;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+$container-gutter-width: 15px;
+$header-z-index: 1000;
+
+
+$font-weights: (
+  'light': $font-weight-light,
+  'normal': $font-weight-normal,
+  'medium': $font-weight-medium,
+  'bold': $font-weight-bold
+);
+
+$headings: (
+  'h1': ('font-size': $h1-font-size, 'letter-spacing': $headings-letter-spacing, 'line-height': $h1-line-height, 'font-style': $headings-font-style),
+  'h2': ('font-size': $h2-font-size, 'letter-spacing': $headings-letter-spacing, 'line-height': $h2-line-height, 'font-style': $headings-font-style),
+  'h3': ('font-size': $h3-font-size, 'letter-spacing': $headings-letter-spacing, 'line-height': $h3-line-height, 'font-style': $headings-font-style),
+  'h4': ('font-size': $h4-font-size, 'letter-spacing': $headings-letter-spacing, 'line-height': $h4-line-height, 'font-style': $headings-font-style),
+  'h5': ('font-size': $h5-font-size, 'letter-spacing': $headings-letter-spacing, 'line-height': $h5-line-height, 'font-style': $headings-font-style),
+  'h6': ('font-size': $h6-font-size, 'letter-spacing': $headings-letter-spacing, 'line-height': $h6-line-height, 'font-style': $headings-font-style)
+);
+
+$font-sizes: (
+  'lg': ('font-size': $font-size-lg),
+  'md': ('font-size': $font-size-md),
+  'base': ('font-size': $font-size-base),
+  'sm': ('font-size': $font-size-sm),
+);
+
+$icon-sizes: (
+  'xl': 94px,
+  'lg': 77px,
+  'md': 68px,
+  'base': 36px,
+  'sm': 30px,
+  'xs': 24px,
+  'ts': 21px
+);
+
+$icon-names: (
+  'arrow-down-warning',
+  'arrow-down-info',
+  'accountability',
+  'facebook',
+  'fiscal',
+  'instagram',
+  'integrity',
+  'linkedin',
+  'peoplefamily',
+  'quality',
+  'relationships',
+  'resilience',
+  'safety',
+  'transparency',
+  'twitter',
+  'youtube'
+);

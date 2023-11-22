@@ -1,0 +1,95 @@
+.is-root-container{
+    .be-numberal-donation-box{
+        &-progressbar{
+            .be-progressbar-editor{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                .__meta{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    width: 100%;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    color: #fff;
+                }
+                span{
+                    font-size: 48px;
+                    line-height: 50px;
+                    color: #fff !important;
+                    text-align: center;
+                    sup {
+                        font-size: 25px;
+                        color: #000 !important;
+                    }
+                }
+                svg{
+                    height:200px;
+                    transform: rotate(-90deg);
+                    width: 200px;
+                    circle{
+                        
+                        &:first-child{
+                            fill: none;
+                            stroke: var(--trailcolor);
+                            stroke-width: 2.5;
+                        }
+
+                        &:last-child{
+                            fill: none;
+                            stroke: var(--trailcolor);
+                            stroke: var(--strokecolor);
+                            stroke-dasharray: 100 100;
+                            stroke-dashoffset: 100;
+                            stroke-linecap: inherit;
+                            transition: stroke-dashoffset 1s ease-in-out;
+                            stroke-dashoffset: calc(100px - var(--progressbar));
+                            stroke-width: 2.5;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--list-item{
+            .item-numberal-donation{
+                &--number{
+                    span{
+                        font-size: 36px;
+                        color: #ffffff;
+                        line-height: 35px;
+                        font-family: var(--heading-family);
+                    }
+                }
+
+                &--heading{
+                    font-size: 16px;
+                    color: #ffffff;
+                    line-height: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &--buttons{
+            .be-button{
+                > a{
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: var(--heading-family);
+                    text-transform: uppercase
+                }
+            }
+        }
+    }
+}

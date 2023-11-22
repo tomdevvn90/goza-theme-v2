@@ -1,0 +1,15 @@
+{
+    "name": "be-numberal-donation-box",
+    "title": "Be Numberal Donation Box",
+    "category": "goza-theme",
+    "icon": "text-page",
+    "keywords": ["numberal", "donation", "box"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

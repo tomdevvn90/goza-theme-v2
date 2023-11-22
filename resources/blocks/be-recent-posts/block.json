@@ -1,0 +1,20 @@
+{
+    "name": "be-recent-posts",
+    "title": "Be Recent Posts",
+    "category": "goza-theme",
+    "icon": "screenoptions",
+    "keywords": ["hero", "breadcrumb", "image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "water-charity", "label": "Water Charity" },
+        { "name": "goza-charity-2", "label": "Goza Charity 2" }
+    ],
+    "align": "full"
+}

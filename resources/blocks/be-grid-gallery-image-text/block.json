@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-grid-gallery-image-text",
+    "title": "Be Grid Gallery Image Text",
+    "category": "goza-theme",
+    "icon": "format-gallery",
+    "keywords": ["gallery", "image", "text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

@@ -1,0 +1,23 @@
+{
+    "name": "goza/be-give-slider",
+    "title": "Be Give Slider",
+    "description": "Display testimonials & gain instant credibility.",
+    "category": "goza-theme",
+    "icon": "slides",
+    "keywords": ["carousel", "gives"],
+    "acf": {
+        "mode": "preview", 
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "2", "label": "Style 2" },
+        { "name": "3", "label": "Style 3" },
+        { "name": "4", "label": "Style 4" },
+        { "name": "5", "label": "Style 5" }
+    ],
+    "align": "full"
+  }

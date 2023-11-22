@@ -1,0 +1,287 @@
+.site-header {
+    &.site-header-water-charity {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        background: transparent !important;
+
+        .logged-in & {
+            top: 32px;
+
+            @media screen and (max-width: 782px) {
+                top: 46px;
+            }
+        }
+
+        .goza-header-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+
+            @include media-breakpoint-down(md) {
+                padding: 31px 0;
+            }
+            &--logo {
+                a {
+                    display: block;
+
+                    img {
+                        max-width: 170px;
+                    }
+                }
+            }
+
+            &--menus {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &--menu {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                    gap: 35px;
+
+                    >li {
+                        >a {
+                            position: relative;
+                            display: block;
+                            text-decoration: none;
+                            color: var(--header-text-color, #FFF);
+                            font-size: 15px;
+                            letter-spacing: 0px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 80px;
+                            font-family: var(--heading-family, Poppins, sans-serif);
+                            -webkit-transition: 0.3s;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: var(--link-color-hover, #18b7d0);
+                            }
+
+                            &.dropdown-toggle {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--cta {
+                margin-left: 35px;
+                display: flex;
+                align-items: center;
+                gap: 35px;
+
+                .goza-header-search{
+                    i{
+                        color: var(--header-text-color, #FFF);
+                        font-size: 120%;
+                    }
+                }
+
+                .goza-header-button-donate button.give-btn.give-btn-modal {
+                    background: var(--link-color, #18b7d0);
+                    color: #fff;
+                    border: medium none;
+                    border-radius: 3px;
+                    transition: 0.3s;
+                    font-size: 16px;
+                    letter-spacing: 0px;
+                    padding: 13px 20px;
+                    line-height: 1.2;
+                    display: block;
+
+                    &:hover {
+                        background: var(--link-color-hover, #ed7a13);
+                        text-decoration: none;
+                    }
+                }
+
+                #goza-hamberger {
+                    display: block;
+                    cursor: pointer;
+
+                    i {
+                        color: var(--header-text-color, #FFF);
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+
+        #mega-menu-wrap-main-menu #mega-menu-main-menu{
+            > li.mega-menu-megamenu{
+                > ul.mega-sub-menu{
+                    max-width: 660px;
+                }
+
+                > ul.mega-sub-menu li.mega-menu-column{
+                    > ul.mega-sub-menu{
+                        > li.mega-menu-item{
+                            h4.mega-block-title{
+                                font-size: 18px;
+                                line-height: 115%;
+                                color: #333;
+                                margin: 0 0 24px 0;
+                                font-weight: 500;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .goza-header-main--menus{
+            ul.max-mega-menu{
+                .mega-sub-menu{
+                    ul{
+                        flex-wrap: wrap;
+                        gap: 0px;
+                        li{
+                            width: 100%;
+                            a{
+                                line-height: 110%;
+                            }
+
+                            ul.product_list_widget{
+                                gap: 0;
+                                > li{
+                                    position: relative;
+                                    padding-left: 75px;
+                                    margin: 0;
+                                    min-height: 60px;
+                                    a{
+                                        color: #333;
+                                        position: initial;
+                                        margin: 0;
+                                        img{
+                                            min-width: 60px;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            margin: 0;
+                                            height: 100%;
+                                            -o-object-fit: cover;
+                                            object-fit: cover;
+                                            -o-object-position: center;
+                                            object-position: center;
+                                        }
+
+                                        &:hover{
+                                            color: var(--link-color, inherit);
+                                        }
+                                    }
+                                    
+                                    .woocommerce-Price-amount, .product-title{
+                                        margin-top: 5px;
+                                        display: inline-block;
+                                    }
+
+                                    &:not(:last-child){
+                                        margin-bottom: 16px;
+                                    }
+                                }
+                            }
+
+                            &.widget_nav_menu {
+                                .menu-template-container{
+                                    ul{
+                                        li {
+                                            margin: 0;
+                                            a{
+                                                font-size: 15px;
+                                                color: #333;
+                                                font-weight: 500;
+                                                &:hover{
+                                                    color: var(--link-color, inherit);
+                                                }
+                                            }
+
+                                            &:not(:last-child){
+                                                margin-bottom: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.site-header-water-charity #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item > a.mega-menu-link{
+    display: flex;
+    align-items: center;
+}
+
+
+.site-header-water-charity{
+    #mega-menu-wrap-main-menu {
+        #mega-menu-main-menu {
+            >li.mega-menu-item {
+                &.mega-current-menu-ancestor {
+                    >a.mega-menu-link {
+                        color: var(--link-color, #71b61b);
+                    }
+                }
+
+                >a.mega-menu-link {
+                    color: var(--header-text-color, #FFF);
+                    font-weight: 500;
+                    font-family: var(--heading-family, "Poppins", sans-serif);
+                    text-transform: none;
+                    font-size: 16px;
+                    line-height: 80px;
+                }
+            }
+
+            >li.mega-menu-flyout {
+                ul.mega-sub-menu {
+                    padding: 10px 0px 10px 0px;
+                    li.mega-menu-item {
+                        a.mega-menu-link {
+                            font-family: var(--heading-family, "Poppins", sans-serif);
+                            letter-spacing: 0px;
+                            font-style: normal;
+                            font-weight: 500;
+                            padding: 5px 20px;
+                            font-size: 16px;
+                            line-height: 30px;
+                            color: #333;
+
+                            &:hover {
+                                text-decoration: none;
+                                color: var(--link-color, #71b61b);
+                            }
+                        }
+
+                        &:not(:last-child){
+                            border-bottom: 1px solid rgba(51, 51, 51, 0.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

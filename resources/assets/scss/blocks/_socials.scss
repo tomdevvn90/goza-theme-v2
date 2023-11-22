@@ -1,0 +1,224 @@
+.be-socials-block{
+    &.is-style-2{
+        .be-socials-block{
+            &--items{
+                li{
+                    a{
+                        border-radius: 3px;
+                        background-color: #f1f1f1;
+                        box-shadow: none;
+
+                        .fa-facebook{
+                            color: #3b5999;
+                        }
+                        .fa-twitter{
+                            color: #55acee;
+                        }
+                        .fa-google-plus{
+                            color: #dd4b39;
+                        }
+                        .fa-instagram{
+                            color: #fbad50;
+                        }
+                        .fa-linkedin{
+                            color: #0077b5;
+                        }
+                        .fa-pinterest{
+                            color: #bd081c;
+                        }
+                        .fa-tumblr{
+                            color: #34465d;
+                        }
+                        .fa-youtube{
+                            color: #cd201f;
+                        }
+                        .fa-dribbble{
+                            color: #ea4c89;
+                        }
+                        .fa-flickr{
+                            color: #ff0084;
+                        }
+                        &:hover{
+                            background-color: var(--link-color, #333);
+                            i{
+                                color: #fff;                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.is-style-3{
+        .be-socials-block{
+            &--items{
+                li{
+                    .facebook{
+                        border-color: #3b5999;
+                        background-color: #3b5999;
+                        &:hover{
+                            i{
+                                color: #3b5999;
+                            }
+                        }
+                    }
+                    .twitter{
+                        border-color: #55acee;
+                        background-color: #55acee;
+                        &:hover{
+                            i{
+                                color: #55acee;
+                            }
+                        }
+                    }
+                    .google-plus{
+                        border-color: #dd4b39;
+                        background-color: #dd4b39;
+                        &:hover{
+                            i{
+                                color: #dd4b39;
+                            }
+                        }
+                    }
+                    .instagram{
+                        border-color: #fbad50;
+                        background-color: #fbad50;
+                        &:hover{
+                            i{
+                                color: #fbad50;
+                            }
+                        }
+                    }
+                    .linkedin{
+                        border-color: #0077b5;
+                        background-color: #0077b5;
+                        &:hover{
+                            i{
+                                color: #0077b5;
+                            }
+                        }
+                    }
+                    .pinterest-p{
+                        border-color: #bd081c;
+                        background-color: #bd081c;
+                        &:hover{
+                            i{
+                                color: #bd081c;
+                            }
+                        }
+                    }
+                    .tumblr{
+                        border-color: #34465d;
+                        background-color: #34465d;
+                        &:hover{
+                            i{
+                                color: #34465d;
+                            }
+                        }
+                    }
+                    .youtube{
+                        border-color: #cd201f;
+                        background-color: #cd201f;
+                        &:hover{
+                            i{
+                                color: #cd201f;
+                            }
+                        }
+                    }
+                    .dribbble{
+                        border-color: #ea4c89;
+                        background-color: #ea4c89;
+                        &:hover{
+                            i{
+                                color: #ea4c89;
+                            }
+                        }
+                    }
+                    .flickr{
+                        border-color: #ff0084;
+                        background-color: #ff0084;
+                        &:hover{
+                            i{
+                                color: #ff0084;
+                            }
+                        }
+                    }
+
+                    a{
+                        border-width: 2px ;
+                        border-style: solid;
+                        border-radius: 3px;
+                        box-shadow: none;
+                        i{
+                            color: #fff;
+                        }
+                        &:hover{
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-inner{
+        display: flex;
+        align-items: center;
+    }
+
+    &--heading{
+        font-size: 14px;
+        line-height: 44px;
+        text-align: left;
+        color: var(--heading-color);
+        margin: 0 12px 0 0;
+        padding: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    &--items{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: -4px;
+        margin-right: -4px;
+        margin-bottom: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            margin: 0 4px 8px 4px;
+            a{
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .1);
+                border-radius: 50%;
+                transition: 0.3s ease;
+                text-decoration: none;
+                i{
+                    color: #000;
+                    transition: 0.3s ease;
+                }
+                &:hover{
+                    background-color: var(--link-color, #333);
+                    transform: translateY(-3px);
+                    i{
+                        color: #fff;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                height: auto;
+                max-width: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "goza/be-column-text-image-video",
+    "title": "Be Column Text Image Video",
+    "category": "goza-theme",
+    "icon": "align-pull-left",
+    "keywords": ["column", "text", "image", "video"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+  }

@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-grid-services-box",
+    "title": "Be Grid Services Box",
+    "category": "goza-theme",
+    "icon": "screenoptions",
+    "keywords": ["grid", "services", "box", "goza"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+  }

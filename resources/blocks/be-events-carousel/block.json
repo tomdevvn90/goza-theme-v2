@@ -1,0 +1,19 @@
+{
+    "name": "goza/be-events-carousel",
+    "title": "Be Events Carousel",
+    "category": "goza-theme",
+    "icon": "embed-post",
+    "keywords": ["event", "carousel", "goza"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "ngo-dark", "label": "Ngo Dark", "isDefault": true },
+        { "name": "water-charity", "label": "Water Charity" }
+    ],
+    "align": "full"
+}

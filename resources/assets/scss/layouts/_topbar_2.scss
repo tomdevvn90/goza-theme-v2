@@ -1,0 +1,105 @@
+.goza-topbar {
+    &.goza-topbar-layout2 {
+        background: var(--topbar-bg-color, #0c3060);
+        color: var(--topbar-text-color, #FFF);
+
+        .goza-topbar-inner {
+            &-info {
+                gap: 20px;
+
+                .goza-topbar-ep {
+                    a {
+                        text-decoration: none;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        line-height: 50px;
+                        letter-spacing: 0px;
+                        color: var(--topbar-text-color, #FFF);
+                        font-style: normal;
+                        font-weight: 400;
+
+                        i {
+                            color: var(--topbar-icon-color, #2c9cf2);
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+
+            .goza-topbar-social {
+                &-list {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 2px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-size: 14px;
+                            color: #fff;
+                            border-radius: 2px;
+                            width: 30px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all 0.3s ease;
+
+                            &:hover {
+                                background-color: var(--link-color, #2c9cf2) !important;
+                            }
+
+                            &.google-plus {
+                                background-color: #dd4b39;
+                            }
+
+                            &.twitter {
+                                background-color: #55acee;
+                            }
+
+                            &.linkedin {
+                                background-color: #0077b5;
+                            }
+
+                            &.pinterest-p {
+                                background-color: #bd081c;
+                            }
+
+                            &.facebook {
+                                background-color: #3b5999;
+                            }
+
+                            &.youtube {
+                                background-color: #FF0000;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.goza-topbar-mobile {
+                gap: 5px;
+                padding: 7px 0;
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 13px;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                    color: var(--topbar-text-color, #FFF);
+                    font-style: normal;
+                    font-weight: 400;
+                    i{
+                        margin-right: 7px;
+                        color: var(--link-color, #2c9cf2);
+                    }
+                }
+            }
+        }
+    }
+}

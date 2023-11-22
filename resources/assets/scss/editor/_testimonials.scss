@@ -1,0 +1,112 @@
+.block-editor-block-list__block .be-testimonials-block-carousel{
+    display: flex;
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.block-editor-block-list__block .be-testimonials-block-carousel .item-testimonial{
+    min-width: 510px;
+    margin-right: 30px;
+}
+
+.block-editor-block-list__block .be-testimonials-block .be-testimonials-block-carousel .item-testimonial-content{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px #00000033;
+}
+
+.block-editor-block-list__block .be-testimonials-block .be-testimonials-block-carousel .item-testimonial-desc::before{
+    line-height: 1;
+}
+
+.block-editor-block-list__block .be-testimonials-block-carousel .item-testimonial-name, .block-editor-block-list__block .be-testimonials-block-carousel .item-testimonial-position{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* css for style 2 */
+.block-editor-block-list__block .is-style-2 .be-testimonials-block-carousel .item-testimonial{
+    padding: 10px;
+}
+
+.block-editor-block-list__block .is-style-2 .be-testimonials-block-carousel .item-testimonial-inner{
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #00000033;
+    height: 100%;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-2 .be-testimonials-block-carousel .item-testimonial-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    box-shadow: none;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-2 .be-testimonials-block-carousel .item-testimonial-desc::before{
+    top:-22px
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-2 .be-testimonials-block-carousel .item-testimonial-info{
+    width: 100%;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-2 .be-testimonials-block-carousel .item-testimonial-desc{
+    display: inline-block;
+    max-width: 100%;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-2 .be-testimonials-block-carousel .item-testimonial-thumbnail{
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-2 .be-testimonials-block-carousel .item-testimonial-position{
+    margin-bottom: 20px;
+}
+
+
+/* css for style 3 */
+.block-editor-block-list__block .is-style-3 .be-testimonials-block-carousel .item-testimonial{
+    padding: 10px;
+}
+
+.block-editor-block-list__block .is-style-3 .be-testimonials-block-carousel .item-testimonial-inner{
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #00000033;
+    height: 100%;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-3 .be-testimonials-block-carousel{
+    padding-left: 10px;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-3 .be-testimonials-block-carousel .item-testimonial-content{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    padding: 30px 20px;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-3 .be-testimonials-block-carousel .item-testimonial-content > div, .block-editor-block-list__block .be-testimonials-block.is-style-3 .be-testimonials-block-carousel .item-testimonial-content > p{
+    width: 100%;
+}
+
+/* css for style 4 */
+
+.block-editor-block-list__block .be-testimonials-block.is-style-4 .be-testimonials-block-carousel .item-testimonial-content{
+    box-shadow: none;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-4 .item-testimonial{
+    padding: 10px;
+}
+
+.block-editor-block-list__block .be-testimonials-block.is-style-4 .item-testimonial .item-testimonial-inner{
+    box-shadow: 0px 0px 10px 0px #00000033;
+    height: 100%;
+    padding: 30px 0;
+}

@@ -1,0 +1,15 @@
+{
+    "name": "be-count-down",
+    "title": "Be Count Down",
+    "category": "goza-theme",
+    "icon": "tide",
+    "keywords": ["count down", "count", "be"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["left", "center", "right"]
+    },
+    "align": "left"
+}

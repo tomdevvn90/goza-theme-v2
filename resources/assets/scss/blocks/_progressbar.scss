@@ -1,0 +1,22 @@
+[data-progressbar]{
+    position: relative;
+    .progressbar-text{
+        font-size: 48px;
+        line-height: 50px;
+        color: #fff !important;
+        text-align: center;
+        sup{
+            font-size: 25px;
+            color: #000 !important;
+        }
+
+        p{
+            width: 100%;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+    }
+}

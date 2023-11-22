@@ -1,0 +1,217 @@
+.main-footer {
+    &.footer-charity-new {
+        padding-top: 110px;
+        padding-bottom: 105px;
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .main-footer-widget {
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                margin-bottom: 32px;
+            }
+
+            &:not(:last-child) {
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 32px;
+                }
+            }
+
+            .main-footer-content{
+                p{
+                    margin: 0;
+                }
+            }
+
+            form {
+                overflow: hidden;
+                position: relative; 
+
+                input.tnp-email {
+                    height: 60px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 10px;
+                    display: inline-block;
+                    border: 1px solid #ddd;
+                    background-color: #f4f4f4;
+                    color: #444;
+                    font-size: 14px;
+                    max-width: 100%;
+                    outline: none;
+                    border-radius: 30px;
+                }
+
+                input.tnp-submit {
+                    height: 60px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    -webkit-appearance: button;
+                    cursor: pointer;
+                    border-radius: 30px;
+                    border: 2px solid var(--link-color, #71b61b);
+                    background-color: var(--link-color, #71b61b);
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        .main-footer-heading {
+            font-size: 18px;
+            color: #e1e1e1;
+            line-height: 21px;
+            text-align: left;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            @include media-breakpoint-down(lg) {
+                font-size: 17px;
+            }
+
+            @include media-breakpoint-down(md) { 
+                margin-bottom: 24px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 16px;
+            }
+        }
+
+        .heading-general {
+            font-size: 26px;
+            line-height: 36px;
+        }
+
+        .quicklinks-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding-bottom: 8px;
+
+                a {
+                    font-weight: 400;
+                    color: #c3c3c3;
+                    font-size: 17px;
+                    line-height: 26px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: var(--link-color-hover, #71b61b);
+
+                        &::before {
+                            color: var(--link-color-hover, #71b61b);
+                        }
+                    }
+
+                    &::before {
+                        content: "\f061";
+                        font: normal normal normal 14px/1 FontAwesome;
+                        color: #c3c3c3;
+                        margin-right: 10px;
+                        font-size: 12px;
+                        bottom: 2px;
+                        display: inline-block;
+                        position: relative;
+                    }
+                }
+
+            }
+        }
+
+        .main-footer-social {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding-bottom: 8px;
+
+                a {
+                    font-weight: 400;
+                    color: #c3c3c3;
+                    font-size: 17px;
+                    line-height: 26px;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: var(--link-color-hover, #71b61b);
+                    }
+                }
+
+            }
+        }
+
+        .main-footer-socket {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                margin-top: 20px;
+            }
+            @include media-breakpoint-down(sm) {
+                align-items: flex-start;
+                flex-direction: column-reverse;
+                margin-top: 32px;
+            }
+
+            &-copyright {
+                font-size: 17px;
+                color: #c3c3c3;
+                line-height: 28px;
+                text-align: left;
+
+                @include media-breakpoint-down(sm) {
+                    margin-top: 20px;
+                }
+
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &-menu {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 20px;
+                        }
+
+                        a {
+                            font-weight: 400 !important;
+                            color: #c3c3c3;
+                            font-size: 17px;
+
+                            &:hover {
+                                color: var(--link-color-hover, #71b61b);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

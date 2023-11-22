@@ -1,0 +1,89 @@
+/**
+ * Container styles
+ * Loads on front end and back end
+ */
+
+.goza-block-container {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	padding-top: var(--paddingTop);
+	padding-bottom: var(--paddingBottom);
+	padding-left: var(--paddingLeft);
+	padding-right: var(--paddingRight);
+	z-index: 1;
+	@include media-breakpoint-down("lg") {
+		padding-top: var(--paddingTopTablet);
+		padding-bottom: var(--paddingBottomTablet);
+		padding-left: var(--paddingLeftTablet);
+		padding-right: var(--paddingRightTablet);
+	}
+
+	@include media-breakpoint-down("md") {
+		padding-top: var(--paddingTopMobile);
+		padding-bottom: var(--paddingBottomMobile);
+		padding-left: var(--paddingLeftMobile);
+		padding-right: var(--paddingRightMobile);
+	}
+
+	.wp-block-columns{
+		margin-bottom: 0;
+	}
+	.goza-container-bg {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		&-overlay {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background: linear-gradient(0deg, rgba(0, 85, 249, 0.2), rgba(0, 85, 249, 0.2)), linear-gradient(0deg, rgba(9, 7, 24, 0.85), rgba(9, 7, 24, 0.85));
+			background-blend-mode: color, normal, luminosity;
+		}
+
+		&.goza-bg-video {
+			video {
+				position: absolute;
+				z-index: 0;
+				-o-object-fit: cover;
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+
+	.goza-container-image-wrap {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 100%;
+		z-index: 0;
+	}
+
+	.goza-container-image {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		transition: 0.3s ease;
+	}
+}

@@ -1,0 +1,179 @@
+.footer-charity-organization {
+    &.main-footer {
+        padding-top: 60px;
+
+        .row {
+            @include media-breakpoint-up(xl){
+                margin-left: -30px;
+                margin-right: -30px;
+            }
+        }
+
+        .main-footer-widget {
+            @include media-breakpoint-up(xl) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            &:not(:last-child) {
+                border-right: 1px dashed #4c4c4c;
+
+                @include media-breakpoint-down(xl) {
+                    margin-bottom: 30px;
+                    border: none;
+                }
+            }
+        }
+
+        .main-footer-logo {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .main-footer-title {
+            color: var(--footer-heading-color, #FFF);
+            font-size: 36px;
+            line-height: 46px;
+            letter-spacing: 0;
+            margin-bottom: 56px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0.16px;
+            position: relative;
+            text-transform: uppercase;
+            
+            @include media-breakpoint-down(md) {
+                margin-bottom: 35px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                font-size: 24px;
+                line-height: 34px;
+            }
+
+            &::before {
+                content: " ";
+                display: inline-block;
+                width: 55px;
+                height: 3px;
+                background: #3a3a3a;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+
+        }
+
+        .main-footer-desc {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .main-footer-menu {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-row-gap: 16px;
+
+                @include media-breakpoint-down(xs) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 8px;
+                    }
+
+                    a {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        color: var(--footer-text-color, #a8a8a8);
+                        font-style: normal;
+                        font-size: 18px;
+                        line-height: 28px;
+                        letter-spacing: 0.16px;
+
+                        @include media-breakpoint-down(lg){ 
+                            font-size: 17px;
+                        }
+
+                        &:hover {
+                            color: var(--link-color-hover, #FFF);
+                        }
+
+                        &::before {
+                            content: "\f0a4";
+                            font: normal normal normal 14px/1 FontAwesome;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-footer-social {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin-right: 5px;
+                margin-top: 5px;
+
+                a {
+                    width: 75px;
+                    height: 75px;
+                    line-height: 75px;
+                    background-color: #212121;
+                    color: #fff;
+                    text-align: center;
+                    display: inline-block;
+                    transition: all 0.4s ease;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        background-color: var(--link-color-hover, rgb(50, 203, 254));
+                    }
+
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .main-footer-socket {
+            background-color: var(--socket-bg-color, #fff);
+            padding-top: 20px;
+            padding-bottom: 15px;
+            margin-top: 85px;
+
+            p {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 25px;
+                letter-spacing: 0px;
+                color: var(--socket-text-color, #333);
+                text-align: center;
+                margin-bottom: 0;
+
+                a {
+                    color: #8a8a8a;
+
+                    &:hover {
+                        color: var(--socket-text-color, #333);
+                    }
+                }
+            }
+        }
+    }
+}

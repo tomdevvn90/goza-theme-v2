@@ -1,0 +1,195 @@
+.be-ss-ab-vd{
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    box-sizing: border-box;
+
+    &--row{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        @include media-breakpoint-up(lg){
+            flex-wrap: nowrap;
+        }
+    }
+
+    &--top{
+        z-index: 9;
+        position: relative;
+        &-left, &-right{
+            width: 100%;
+        }
+
+        &-right{
+            @include media-breakpoint-down(md) {
+                margin-top: 24px;
+            }
+        }
+
+        @include media-breakpoint-up(lg){
+            &-left{
+                width: 55%;
+            }
+    
+            &-right{
+                width: 45%;
+            }
+        }
+    }
+
+    &--bottom{
+        &-left, &-right{
+            width: 100%;
+            @include media-breakpoint-down(md) {
+                margin-top: 32px;
+            }
+
+            @include media-breakpoint-down(sm){
+                margin-top: 24px;
+            }
+        }
+
+        @include media-breakpoint-up(lg){
+            margin-top: -80px;
+            &-left{
+                width: 65%;
+            }
+    
+            &-right{
+                width: 35%;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-end;
+                padding-left: 32px;
+                padding-bottom: 32px;
+            }
+        }
+    }
+
+    &--sub-heading{
+        font-size: 20px;
+        color: var(--body-color);
+        line-height: 28px;
+        text-align: left;
+        font-family: var(--heading-family);
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &--heading{
+        font-size: 60px;
+        line-height: 112%;
+        font-family: var(--heading-family);
+        color: var(--heading-color);
+        margin: 5px 0 0 0;
+        font-weight: 700;
+        @include media-breakpoint-up(lg){
+            padding-right: 15px;
+        }
+
+        @include media-breakpoint-down(lg){
+            font-size: 48px;
+        }
+
+        @include media-breakpoint-down(sm){
+            font-size: 30px;
+        }
+        > a{
+            color: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+
+    &--video{
+        position: relative;
+        width: 100%;
+        &-bg{
+            img{
+                -o-object-fit: cover;
+                object-fit: cover;
+                height: auto;
+                width: 100%;
+                transition: 0.3s ease;
+                -o-object-position: center;
+                object-position: center;
+                min-height: 325px;
+            }
+        }
+
+        &-cta{
+            position: absolute;
+            left: 30px;
+            bottom: 50px;
+            .be-popup-video{
+                a{
+                    width: 4em;
+                    height: 4em;
+                    background-color: var(--link-color);
+                    color: var(--link-color);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    cursor: pointer;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        z-index: 0;
+                        left: 50%;
+                        top: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                        display: block;
+                        width: 3.5em;
+                        height: 3.5em;
+                        background: currentColor repeat scroll 0 0;
+                        border-radius: 50%;
+                        animation: pulse-border 1500ms ease-out infinite;
+                    }
+                    .__icon-play{
+                        line-height: 1;
+                        z-index: 2;
+                    }
+                }
+                svg{
+                    width: 100%;
+                    max-width: 20px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &--image{
+        img{
+            width: 100%;
+            height: auto;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+            min-height: 450px;
+        }
+    }
+
+    &--desc{
+        margin: 0;
+        @include media-breakpoint-up(lg){
+            padding-right: 15px;
+        }
+    }
+
+    &--cta {
+        margin-top: 32px;
+
+        @include media-breakpoint-down(sm){
+            margin-top: 24px;
+        }
+    }
+}

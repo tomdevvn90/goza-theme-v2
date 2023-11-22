@@ -1,0 +1,15 @@
+{
+    "name": "be-section-about-counter",
+    "title": "Be Section About Counter",
+    "category": "goza-theme",
+    "icon": "index-card",
+    "keywords": ["about", "counter"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

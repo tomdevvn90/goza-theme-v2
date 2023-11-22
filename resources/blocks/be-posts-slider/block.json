@@ -1,0 +1,24 @@
+{
+    "name": "goza/be-posts-slider",
+    "title": "Be Posts Slider",
+    "description": "Display posts slider block ",
+    "category": "goza-theme",
+    "icon": "slides",
+    "keywords": ["carousel", "posts"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "goza-dream", "label": "Goza Dream" },
+        { "name": "goza-charity", "label": "Goza Charity" },
+        { "name": "goza-fill", "label": "Goza Fill" },
+        { "name": "goza-outline", "label": "Goza Outline" },
+        { "name": "goza-earthquake", "label": "Goza Earthquake" }
+    ],
+    "align": "full"
+  }

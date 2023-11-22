@@ -1,0 +1,14 @@
+{
+    "name": "goza/be-image-content",
+    "title": "Image & Content",
+    "category": "goza-theme",
+    "icon": "align-pull-left",
+    "keywords": ["image", "text", "content", "goza"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  }

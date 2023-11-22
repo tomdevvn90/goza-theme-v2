@@ -1,0 +1,19 @@
+{
+    "name": "be-counter-box",
+    "title": "Be Counter Box",
+    "category": "goza-theme",
+    "icon": "testimonial",
+    "keywords": ["be text counter", "counter", "be"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "ngo-dark", "label": "Ngo Dark" }
+    ],
+    "supports": {
+        "align": ["left", "center", "right"]
+    },
+    "align": "left"
+}

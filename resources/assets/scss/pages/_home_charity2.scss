@@ -1,0 +1,95 @@
+.be-section-charity2-together{
+	margin-top:-70px;
+	position:relative;
+	z-index:1;
+	    overflow: hidden;
+    border-radius: 5px;
+}
+.be-section-charity2-together-col2 .be-counter-up-box {
+    padding: 0 !important;
+    flex-direction: column-reverse;
+    display: flex;
+}
+.be-section-together-col2 button.give-btn.give-btn-modal {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0px 30px !important;
+    background: transparent !important;
+    color: #71b61b !important;
+    border-radius: 30px !important;
+    font-size: 14px !important;
+    height: 50px !important;
+    line-height: 46px !important;
+    border: 2px solid #71b61b !important;
+	margin-top:15px;
+}
+.be-charity2-video{
+	justify-content: flex-start;
+	max-width: 100% !important;
+    height: 130px !important;
+}
+.be-charity2-video .block-inner{
+	display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.be-charity2-video div#block-video-action {
+    margin-right: 30px;
+}
+.be-charity2-video h5.block-inner__heading {
+	margin-bottom: 0 !important;
+}
+.be-section-raised .be-progressbar-block.line{
+	overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+}
+.be-section-testimonial p.item-testimonial-desc {
+	font-size: 20px !important;
+} 
+.be-col-donate-charity2 p{
+	margin-bottom:0;
+}
+.be-charity2-font-satisfy{
+	  font-family: Satisfy;
+}
+.be-section-charity2-upcoming-event .be-single-event-inner--heading{
+	font-family: Satisfy;
+}
+.be-section-charity2-upcoming-event .btn.btn-organization{
+	font-size:13px;
+}
+@media only screen and (max-width: 767.98px) {
+	.be-section-charity2-together {
+    margin-top: -50px;
+}
+	.be-section-charity2-together>.goza-layout-column-wrap{
+		display:block;
+	}
+	.be-charity2-video {
+    margin-left: 0;
+}
+	.be-section-charity2-icon-box>.goza-layout-column-wrap{
+		display:block;
+	}
+	.be-section-charity2-stories>.goza-layout-column-wrap{
+		display:block;
+	}
+	.be-section-charity2-team{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.be-charity2-video div#block-video-action {
+    margin-right: 20px;
+}
+	.be-section-charity2-together,.be-section-charity2-stories,.be-section-charity2-team,.be-section-charity2-team .has-text-align-right {
+		text-align:center;
+	}
+	.be-section-charity2-stories .wp-block-goza-blocks-goza-button,.be-section-charity2-team .wp-block-goza-blocks-goza-button {
+    justify-content: center;
+}
+.be-section-together-col2	.be-charity2-video {
+  height: 130px !important;
+	justify-content: center;
+}
+}

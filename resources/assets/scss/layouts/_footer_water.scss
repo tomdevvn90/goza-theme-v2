@@ -1,0 +1,299 @@
+.main-footer {
+    &.footer-water {
+        padding-top: 90px;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 60px;
+        }
+
+        .main-footer-widget {
+            &:not(:last-child) {
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &:nth-child(2){
+                @include media-breakpoint-up(xl){
+                    padding-left: 5%;
+                }
+            }
+        }
+
+        .main-footer-logo {
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .main-footer-title {
+            font-size: 24px;
+            line-height: 34px;
+            text-align: left;
+            font-weight: 700;
+            font-style: normal;
+            margin-bottom: 45px;
+            letter-spacing: 0.32px;
+
+            @include media-breakpoint-down(md){
+                margin-bottom: 24px;
+            }
+
+            @include media-breakpoint-down(sm){
+                margin-bottom: 16px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .main-footer--info{
+            &-item{
+                margin: 0;
+                color: #ffff;
+                span{
+                    color: var(--footer-text-color, #FFF);
+                }
+
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                &.__address{
+                    margin-bottom: 32px;
+                }
+
+                &.__email{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        .main-footer--form-newsletter{
+            margin-top: 32px;
+            .tnp-subscription-minimal{
+                form{
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        display: inline-block;
+                        font: normal normal normal 14px/1 FontAwesome;
+                        content: "\f003";
+                        color: #8799a3;
+                        font-size: 18px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 22px;
+                    }
+
+                    .tnp-email, .tnp-email::placeholder{
+                        color:#8799a3;
+                        font-size: 14px;
+                        line-height: 26px;
+                        letter-spacing: 0;
+                        font-weight: 700 !important;
+                        font-family: 'Roboto' !important;
+                    }
+
+                    .tnp-email{
+                        background-color: #252525;
+                        border-radius: 0px;
+                        padding: 17px 45px 17px 25px;
+                        position: relative;
+                        color: #fff;
+                        border: none;
+                        width: 100%;
+                        @include media-breakpoint-down(md){
+                            max-width: 100%;
+                        }
+                        &:focus{
+                            border: none !important;
+                        }
+
+                        &:focus-visible{
+                            outline:none;
+                        }
+                    }
+
+                    .tnp-submit{
+                        font-size: 0px;
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 22px;
+                        opacity: 0;
+                        z-index: 9;                    
+                    }
+                }
+            }
+        }
+
+        .main-footer--instagram{
+            #sb_instagram{
+                #sbi_images{
+                    margin-left: -10px;
+                    margin-right: -10px;
+                }
+
+                .sbi_photo {
+                    border-radius: 4px;
+                }
+
+                #sbi_load{
+                    box-sizing: border-box;
+                    text-align: left;
+                    margin-top: 8px;
+                    .sbi_follow_btn{
+                        margin-left: 0;
+                        > a{
+                            background: transparent !important;
+                            font-size: 16px;
+                            color: #9c26b0;
+                            line-height: 28px;
+                            font-weight: 700;
+                            box-shadow: none;
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            margin: 0;
+                            svg{
+                                width: 30px !important;
+                                font-size: 35px !important;
+                                vertical-align: middle;                            
+                            }
+                            &:hover{
+                                background: transparent !important;
+                                color: #9c26b0;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .main-footer-desc {
+            font-size: 18px;
+            line-height: 28px;
+            p{
+                margin: 0;
+            }
+        }
+
+        .main-footer-menu {
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+
+                    a {
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: var(--footer-text-color, #FFF);
+                        &:hover {
+                            color: var(--link-color-hover, #a472da);
+                        }
+
+                        &::before {
+                            content: "\f061";
+                            font: normal normal normal 14px/1 FontAwesome;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-footer-social {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 32px;
+
+            li {
+                a {
+                    color: var(--footer-text-color, #FFF);
+                    i{
+                        font-size: 23px;
+                        color: var(--footer-text-color, #FFF);
+                    }
+                    &:hover {
+                        color: var(--link-color-hover, inherit);
+                        i{
+                            color: var(--link-color-hover, #a472da);
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-footer-socket {
+            padding-top: 15px;
+            margin-top: 65px;
+            padding-bottom: 15px;
+            border-top: 1px solid #282828;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 30px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                > p{
+                    max-width: 75%;
+                }
+            }
+
+            p {
+                margin: 0;
+                font-size: 15px;
+                line-height: 26px;
+                text-align: left;
+                font-weight: 600;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            #back-to-top {
+                display: inline-block;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0;
+                cursor: pointer;
+                transition: 0.4s;
+                @include media-breakpoint-down(sm) {
+                    span{
+                        display: none;
+                    }
+                }
+                i {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

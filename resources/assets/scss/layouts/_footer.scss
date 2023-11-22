@@ -1,0 +1,10 @@
+.main-footer {
+    background-color: var(--footer-bg-color, #000);
+    color: var(--footer-text-color, #FFF);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    &-title{
+        color: var(--footer-heading-color, #FFF);
+    }
+}

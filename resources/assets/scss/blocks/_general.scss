@@ -1,0 +1,281 @@
+#be-block--not-found{
+    background-color: #eee;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    h3{
+        font-size: 28spx !important;
+        line-height: 110% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center;
+        color: var(--link-color);
+    }
+}
+
+.wp-block-goza-blocks-goza-container{
+    &.be-last-post-water{
+        > .goza-container-bg{
+            &::before{
+                position: absolute;
+                content: " ";
+                width: 100%;
+                height: 100%;
+                left: 0px;
+                top: 0px;
+                background-color: rgba(255, 255, 255, 0.75);
+            }
+        }
+    }
+}
+
+
+// start css for home orgazination
+.wp-block-columns{
+    &.be-gz-orgazination-row-our{
+        gap: 0;
+        > .wp-block-column{
+            > p{
+                margin: 0;
+            }
+        }
+    }
+
+    &.be-gz-orgazination-item-progressbar{
+        > .wp-block-column{
+            &:first-child{
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &.be-gz-orgazination-row-counter{
+        gap: 10px;
+        > .wp-block-column{
+            .be-counter-up{
+                .be-counter-up-box__number{
+                    font-size: 40px;
+                    line-height: 110%;
+                }
+            }
+
+            &:nth-child(2){
+                border-left: 1px dashed #b0b0b0;
+                border-right: 1px dashed #b0b0b0;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    &.be-gz-orgazination-row-button{
+        > .wp-block-column {
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+    }
+}
+
+
+.grid-services-box-block{
+    &.be-gz-orgazination-services-box{
+        @include media-breakpoint-down(lg){
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        .gsb-heading{
+            width: 100%;
+            max-width: 555px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 45px;
+            line-height: 112%;
+            text-transform: uppercase;
+            @include media-breakpoint-down(lg){
+                font-size: 36px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 30px;
+            }
+        }
+
+        .gsb-services-list .gsb-services-item__wrap-title {
+            @include media-breakpoint-down(sm) {
+                font-size: 20px;
+                line-height: 115%;
+            }
+        }
+    }
+}
+
+.be-events-listing-block.is-style-ev-fill {
+    &.be-gz-orgazination-events-listing{
+        .item-event--date{
+            background: rgba(44, 73, 151, 0.7);
+        }
+
+        .item-event--count-down .be-count-down--result > div{
+            background: rgba(44, 73, 151, 0.7);
+        }
+
+        .item-event--venue {
+            color: rgba(44, 73, 151, 1);
+            svg path {
+                stroke: rgba(44, 73, 151, 1);
+            }
+        }
+    }
+}
+// end css for home orgazination
+
+// start css for home earthquake
+.wp-block-columns{
+    &.be-section-icon-box{
+        > .block-editor-block-list__block {
+            height: 100%;
+            flex-basis: auto;
+            >.block-editor-block-list__block {
+                margin-top: 0;
+                margin-bottom: 0;
+                height: 100%;
+            }
+        }
+
+        .be-icon-box-block{
+            @include media-breakpoint-up(md) {
+                height: 100%;
+                &-inner{
+                    height: 100%;
+                    &--content{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wp-block-goza-blocks-goza-columns{
+    &.be-row-numbers-earthquake{
+        .be-counter-up{
+            &-box{
+                padding: 15px;
+                @include media-breakpoint-up(md) {
+                    padding: 15px 0 15px 15px;
+                }
+
+                &__number{
+                    font-size: 40px;
+                    @include media-breakpoint-down(lg){
+                        font-size: 30px;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 24px;
+                    }
+                }
+
+                &__heading {
+                    @include media-breakpoint-down(md) {
+                        font-size: 14px;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        > .goza-layout-column-wrap{
+            gap: 0;
+            @include media-breakpoint-up(md) {
+                gap: 0 15px;
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) { 
+                -ms-grid-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas: "col1 col2 col3 col4";
+            }
+
+            @include media-breakpoint-down(sm) {
+                grid-template-rows: auto;
+                -ms-grid-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "col1 col2"
+                    "col3 col4";
+            }
+    
+            > .wp-block-goza-blocks-goza-column {
+
+                &:not(:first-child){
+                    @include media-breakpoint-up(md) { 
+                        border-left: 1px solid #D2D2D2 ;
+                    }
+                }
+
+                &:nth-child(2), &:nth-child(4){
+                    @include media-breakpoint-down(sm) {
+                        border-left: 1px solid #D2D2D2 ;
+                    }
+                }
+
+                &:nth-child(3), &:nth-child(4){
+                    @include media-breakpoint-down(sm) {
+                        margin-top: 16px;
+                    }
+                }
+
+                &:last-child{
+                    .be-counter-up-box{
+                        @include media-breakpoint-up(md) { 
+                            padding-left: 0;
+                            padding-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// end css for home earthquake
+
+// start css for home water charity
+.wp-block-columns{
+    &.be-gzwc-row-cta-recent-post {
+        .wp-block-goza-blocks-goza-button.is-style-wt-charity{
+            width: 100%;
+            .wp-block-goza-blocks-goza-button--inner{
+                width: 100%;
+                .wp-block-goza-button_link{
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &.be-row-icb-gzwc{
+        .wp-block-column{
+            &:nth-child(2){
+                @include media-breakpoint-up(md){
+                    border-left: 1px dashed rgba(255,255,255,0.3);
+                    border-right: 1px dashed rgba(255,255,255,0.3);
+                }
+            }
+        }
+    }
+}
+// end css for home water charity

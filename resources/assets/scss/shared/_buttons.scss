@@ -1,0 +1,301 @@
+.btn {
+    background-color: var(--link-color, rgb(212, 27, 101));
+    color: #FFF;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: var(--link-color-hover, rgb(212, 27, 101));
+        color: #FFF;
+    }
+
+
+    &.btn-general {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        background: var(--link-color, rgb(212, 27, 101));
+        padding: 18px 30px;
+        border-radius: 2px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        font-weight: bold;
+        border: none;
+        position: relative;
+
+        &:hover {
+            opacity: 0.85;
+
+            &::after {
+                left: 120%;
+                transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+            }
+        }
+
+        &::after {
+            background: #fff;
+            content: "";
+            height: 155px;
+            left: -75px;
+            opacity: 0.2;
+            position: absolute;
+            top: -50px;
+            transform: rotate(35deg);
+            transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+            width: 30px;
+            z-index: 1;
+        }
+    }
+
+    &.btn-water {
+        background-color: var(--link-color, #833dcc);
+        border: 1px solid var(--link-color, #833dcc);
+        border-radius: 0px;
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff;
+        line-height: 28px;
+        letter-spacing: -0.32px;
+        text-transform: uppercase;
+        padding: 14px 45px;
+        position: relative;
+        z-index: 8;
+        display: inline-block;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: var(--link-color-hover, #833dcc);
+            border: 1px solid var(--link-color-hover, #833dcc);
+
+            svg {
+                animation-play-state: running;
+                stroke: #fff;
+            }
+        }
+
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            animation: dashed_border_running 20s linear infinite both;
+            animation-play-state: paused;
+            stroke-width: 2;
+            stroke-dasharray: 9, 5;
+            stroke-dashoffset: 0;
+            stroke-linecap: round;
+            fill: none;
+            transition: 0.4s;
+
+            rect {
+                height: calc(100% - 6px);
+                width: calc(100% - 6px);
+                x: 3px;
+                y: 3px;
+            }
+        }
+    }
+
+    &.btn-organization {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 16px 40px;
+        background-color: var(--link-color, #ec5e87);
+        color: #fff;
+        font-size: 16px;
+        border-radius: 30px;
+        -webkit-box-shadow: 0 0 14.5px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 0 14.5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 14.5px 0 rgba(0, 0, 0, 0.2);
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+        display: inline-block;
+        line-height: normal;
+
+        &:hover {
+            background-color: var(--link-color-hover, #FFF);
+        }
+    }
+
+    &.btn-outline {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0 30px;
+        background-color: transparent;
+        color: #71b61b;
+        border-radius: 30px;
+        font-size: 13px;
+        line-height: 46px;
+        border: 2px solid #71b61b;
+
+        &:hover {
+            background-color: #71b61b;
+            color: #fff;
+        }
+    }
+
+    &.btn-ngo-dark {
+        color: #fff;
+        background-color: var(--link-color, #d94532);
+        font-weight: 700;
+        font-size: 13px;
+        display: inline-block;
+        line-height: 23px;
+        padding: 16px 48px;
+        border-radius: 30px;
+        position: relative;
+        z-index: 0;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 0.5s;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0, rgba(0, 0, 0, .02) 100%);
+        background-repeat: repeat-x;
+
+        &:hover {
+            &:before {
+                border-width: 165px 0 0 165px;
+            }
+
+            &::after {
+                border-width: 0 165px 165px 0;
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 0;
+            height: 0;
+            -webkit-transform: rotate(360deg);
+            border-style: solid;
+            border-width: 0 0 0 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transition: 0.5s;
+            border-color: transparent transparent transparent var(--link-color-hover, #3d3e51);
+        }
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            -webkit-transform: rotate(360deg);
+            border-style: solid;
+            border-width: 0 0 0 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: 0.5s;
+            z-index: -1;
+            border-color: transparent var(--link-color-hover, #3d3e51) transparent transparent;
+        }
+    }
+
+    &.btn-water-charity {
+        font-size: 16px;
+        height: 58px;
+        padding: 0 25px;
+        line-height: 58px;
+        letter-spacing: 0.16px;
+        font-weight: 700;
+        background-image: none;
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        background-color: var(--link-color, #18b7d0);
+        color: #ffffff;
+        border-radius: 0;
+        border: none;
+
+        &:hover {
+            opacity: 0.85;
+
+            &::after {
+                height: 100%;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            display: inline-block;
+            background: var(--link-color-hover, #000);
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            transition: 0.4s ease;
+        }
+    }
+
+    &.btn-charity-organization {
+        font-size: 16px;
+        line-height: 58px;
+        height: 58px;
+        letter-spacing: 0.16px;
+        font-weight: 700;
+        padding: 0 34px;
+        width: 250px;
+        text-align: center;
+        display: inline-block;
+        border: 2px solid var(--body-color, #333);
+        box-sizing: border-box;
+        background-color: transparent;
+        background-image: none;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0;
+        transition: 0.3s ease;
+        color: var(--body-color, #333);
+        position: relative;
+
+        &:hover {
+            opacity: 0.85;
+            color: #fff !important;
+
+            &::before,
+            &::after {
+                transform: translate(0, 0);
+                z-index: -1;
+            }
+
+            &::after {
+                transition-delay: 0.4s;
+            }
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            -webkit-transform: translate(-25%, -267%) rotate(-50deg);
+            transform: translate(-25%, -267%) rotate(-50deg);
+            -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+            transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+            transition: all 0.4s;
+        }
+
+        &:before {
+            background-color: rgba(51, 51, 51, 0.5);
+        }
+
+        &::after {
+            background-color: rgba(51, 51, 51, 1);
+        }
+    }
+}
+

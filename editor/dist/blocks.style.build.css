@@ -1,0 +1,930 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.has-general-color {
+  color: #d41b65; }
+
+.has-general-background-color {
+  background-color: #d41b65; }
+
+.has-ngo-color {
+  color: #ed9913; }
+
+.has-ngo-background-color {
+  background-color: #ed9913; }
+
+.has-white-color {
+  color: #FFF; }
+
+.has-white-background-color {
+  background-color: #FFF; }
+
+.has-black-color {
+  color: #000; }
+
+.has-black-background-color {
+  background-color: #000; }
+
+.has-dream-color {
+  color: #2c9cf2; }
+
+.has-dream-background-color {
+  background-color: #2c9cf2; }
+
+.has-water-color {
+  color: #833dcc; }
+
+.has-water-background-color {
+  background-color: #833dcc; }
+
+.has-charity-color {
+  color: #4ca5ab; }
+
+.has-charity-background-color {
+  background-color: #4ca5ab; }
+
+.has-organization-color {
+  color: #ec5e87; }
+
+.has-organization-background-color {
+  background-color: #ec5e87; }
+
+.has-charity-green-color {
+  color: #71b61b; }
+
+.has-charity-green-background-color {
+  background-color: #71b61b; }
+
+.has-ngo-dark-color {
+  color: #d94532; }
+
+.has-ngo-dark-background-color {
+  background-color: #d94532; }
+
+.has-water-charity-color {
+  color: #18b7d0; }
+
+.has-water-charity-background-color {
+  background-color: #18b7d0; }
+
+.goza-has-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%; }
+
+.goza-has-background-dim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: inherit;
+  opacity: 0;
+  z-index: 1; }
+
+.goza-has-background-dim.has-theme-primary-background-color::before,
+.goza-has-background-dim.goza-has-custom-background-color::before {
+  background-color: inherit; }
+
+.goza-has-background-dim-0::before {
+  opacity: 1; }
+
+.goza-has-background-dim-10::before {
+  opacity: 0.9; }
+
+.goza-has-background-dim-20::before {
+  opacity: 0.8; }
+
+.goza-has-background-dim-30::before {
+  opacity: 0.7; }
+
+.goza-has-background-dim-40::before {
+  opacity: 0.6; }
+
+.goza-has-background-dim-50::before {
+  opacity: 0.5; }
+
+.goza-has-background-dim-60::before {
+  opacity: 0.4; }
+
+.goza-has-background-dim-70::before {
+  opacity: 0.3; }
+
+.goza-has-background-dim-80::before {
+  opacity: 0.2; }
+
+.goza-has-background-dim-90::before {
+  opacity: 0.1; }
+
+.goza-has-background-dim-100::before {
+  opacity: 0; }
+
+div.goza-background-auto {
+  background-size: auto;
+  background-position: center center; }
+
+div.goza-background-cover {
+  background-size: cover; }
+
+div.goza-background-contain {
+  background-size: contain;
+  background-position: center center; }
+
+div.goza-background-no-repeat {
+  background-repeat: no-repeat; }
+
+div.goza-background-repeat {
+  background-repeat: repeat; }
+
+div.goza-background-repeat-x {
+  background-repeat: repeat-x; }
+
+div.goza-background-repeat-y {
+  background-repeat: repeat-y;
+  background-position: center center; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * Container styles
+ * Loads on front end and back end
+ */
+.goza-block-container {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--paddingTop);
+  padding-bottom: var(--paddingBottom);
+  padding-left: var(--paddingLeft);
+  padding-right: var(--paddingRight);
+  z-index: 1; }
+  @media (max-width: 991.98px) {
+    .goza-block-container {
+      padding-top: var(--paddingTopTablet);
+      padding-bottom: var(--paddingBottomTablet);
+      padding-left: var(--paddingLeftTablet);
+      padding-right: var(--paddingRightTablet); } }
+  @media (max-width: 767.98px) {
+    .goza-block-container {
+      padding-top: var(--paddingTopMobile);
+      padding-bottom: var(--paddingBottomMobile);
+      padding-left: var(--paddingLeftMobile);
+      padding-right: var(--paddingRightMobile); } }
+  .goza-block-container .wp-block-columns {
+    margin-bottom: 0; }
+  .goza-block-container .goza-container-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+    .goza-block-container .goza-container-bg-overlay {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 85, 249, 0.2)), to(rgba(0, 85, 249, 0.2))), -webkit-gradient(linear, left bottom, left top, from(rgba(9, 7, 24, 0.85)), to(rgba(9, 7, 24, 0.85)));
+      background: -webkit-linear-gradient(bottom, rgba(0, 85, 249, 0.2), rgba(0, 85, 249, 0.2)), -webkit-linear-gradient(bottom, rgba(9, 7, 24, 0.85), rgba(9, 7, 24, 0.85));
+      background: -o-linear-gradient(bottom, rgba(0, 85, 249, 0.2), rgba(0, 85, 249, 0.2)), -o-linear-gradient(bottom, rgba(9, 7, 24, 0.85), rgba(9, 7, 24, 0.85));
+      background: linear-gradient(0deg, rgba(0, 85, 249, 0.2), rgba(0, 85, 249, 0.2)), linear-gradient(0deg, rgba(9, 7, 24, 0.85), rgba(9, 7, 24, 0.85));
+      background-blend-mode: color, normal, luminosity; }
+    .goza-block-container .goza-container-bg.goza-bg-video video {
+      position: absolute;
+      z-index: 0;
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .goza-block-container .container {
+    position: relative;
+    z-index: 2; }
+  .goza-block-container .goza-container-image-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0; }
+  .goza-block-container .goza-container-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.goza-blocks.goza-block-spacer {
+  height: var(--size-default); }
+  @media (max-width: 991px) {
+    .goza-blocks.goza-block-spacer {
+      height: var(--size-tablet); } }
+  @media (max-width: 767px) {
+    .goza-blocks.goza-block-spacer {
+      height: var(--size-mobile); } }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.goza-logo-carousel-block.alignfull .slick-arrows {
+  left: 15px; }
+  .goza-logo-carousel-block.alignfull .slick-arrows.s-next {
+    left: unset;
+    right: 15px;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+        -ms-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg); }
+
+.goza-logo-carousel-block .goza-logo__item {
+  padding-left: calc(var(--gap, 20px) / 2);
+  padding-right: calc(var(--gap, 20px) / 2);
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%; }
+  @media (max-width: 767px) {
+    .goza-logo-carousel-block .goza-logo__item {
+      padding-left: 10px;
+      padding-right: 10px; } }
+
+.goza-logo-carousel-block .slick-track {
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.goza-logo-carousel-block .slick-slide {
+  height: inherit !important; }
+  .goza-logo-carousel-block .slick-slide > div {
+    height: 100%; }
+
+.goza-logo-carousel-block .slick-arrows {
+  height: 40px;
+  width: 40px;
+  background: unset;
+  background-image: url("data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSItNC41IDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgZmlsbD0iIzAwMDAwMCI+Cg08ZyBpZD0iU1ZHUmVwb19iZ0NhcnJpZXIiIHN0cm9rZS13aWR0aD0iMCIvPgoNPGcgaWQ9IlNWR1JlcG9fdHJhY2VyQ2FycmllciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cg08ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI+IDx0aXRsZT5hcnJvd19sZWZ0IFsjMzM1XTwvdGl0bGU+IDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiA8ZGVmcz4gPC9kZWZzPiA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gPGcgaWQ9IkRyaWJiYmxlLUxpZ2h0LVByZXZpZXciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNDUuMDAwMDAwLCAtNjY3OS4wMDAwMDApIiBmaWxsPSIjMDAwMDAwIj4gPGcgaWQ9Imljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ni4wMDAwMDAsIDE2MC4wMDAwMDApIj4gPHBhdGggZD0iTTI5OS42MzM3NzcsNjUxOS4yOTIzMSBMMjk5LjYzMzc3Nyw2NTE5LjI5MjMxIEMyOTkuMjI4ODc4LDY1MTguOTAyNTYgMjk4LjU3MzM3Nyw2NTE4LjkwMjU2IDI5OC4xNjk1MTMsNjUxOS4yOTIzMSBMMjg5LjYwNjU3Miw2NTI3LjU1NTg3IEMyODguNzk3ODA5LDY1MjguMzM2MzYgMjg4Ljc5NzgwOSw2NTI5LjYwMjUzIDI4OS42MDY1NzIsNjUzMC4zODMwMSBMMjk4LjIzMTY0Niw2NTM4LjcwNzU0IEMyOTguNjMyNDAzLDY1MzkuMDkzMjkgMjk5LjI3OTYyLDY1MzkuMDk4MjggMjk5LjY4NTU1NCw2NTM4LjcxNzUzIEwyOTkuNjg1NTU0LDY1MzguNzE3NTMgQzMwMC4xMDA4MDksNjUzOC4zMjg3OSAzMDAuMTA0OTUxLDY1MzcuNjg4MjEgMjk5LjY5Njk0NSw2NTM3LjI5MzQ3IEwyOTEuODAyOTY4LDY1MjkuNjc2NDggQzI5MS4zOTgwNjksNjUyOS4yODU3NCAyOTEuMzk4MDY5LDY1MjguNjUzMTUgMjkxLjgwMjk2OCw2NTI4LjI2MjQxIEwyOTkuNjMzNzc3LDY1MjAuNzA1MzggQzMwMC4wMzg2NzYsNjUyMC4zMTU2MyAzMDAuMDM4Njc2LDY1MTkuNjgzMDUgMjk5LjYzMzc3Nyw2NTE5LjI5MjMxIiBpZD0iYXJyb3dfbGVmdC1bIzMzNV0iPiA8L3BhdGg+IDwvZz4gPC9nPiA8L2c+IDwvZz4KDTwvc3ZnPg==");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -40px;
+  top: calc(50% - 20px);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  outline: none;
+  z-index: 1; }
+  .goza-logo-carousel-block .slick-arrows::before {
+    content: none; }
+  .goza-logo-carousel-block .slick-arrows.s-next {
+    left: unset;
+    right: -40px;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+        -ms-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg); }
+
+.goza-logo-carousel-block .slick-dots {
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  list-style-type: none;
+  margin-top: 32px;
+  position: relative;
+  bottom: 0; }
+  .goza-logo-carousel-block .slick-dots li {
+    margin: 0 8px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(171, 171, 171, 0.5);
+    border: none;
+    overflow: hidden;
+    text-indent: -1000px;
+    padding: 0; }
+    .goza-logo-carousel-block .slick-dots li.slick-active {
+      background-color: var(--link-color, #d41b65); }
+    .goza-logo-carousel-block .slick-dots li button {
+      display: none; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.wp-block-goza-blocks-goza-button {
+  display: -ms-flexbox;
+  display: flex; }
+  .wp-block-goza-blocks-goza-button--inner {
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--link-color, #d41b65);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    position: relative;
+    overflow: hidden; }
+  .wp-block-goza-blocks-goza-button.aligncenter, .wp-block-goza-blocks-goza-button.alignleft, .wp-block-goza-blocks-goza-button.alignright {
+    width: 100%; }
+  .wp-block-goza-blocks-goza-button.aligncenter {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .wp-block-goza-blocks-goza-button.alignleft {
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .wp-block-goza-blocks-goza-button.alignright {
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+  .wp-block-goza-blocks-goza-button.alignfull {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    width: 100%; }
+    .wp-block-goza-blocks-goza-button.alignfull .wp-block-goza-blocks-goza-button--inner {
+      width: 100%; }
+      .wp-block-goza-blocks-goza-button.alignfull .wp-block-goza-blocks-goza-button--inner > .wp-block-goza-button_link {
+        width: 100%;
+        text-align: center; }
+  .wp-block-goza-blocks-goza-button .wp-block-goza-button_link {
+    display: inline-block;
+    padding: 15px 30px;
+    color: inherit;
+    font-size: 16px;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: 2;
+    position: relative; }
+  .wp-block-goza-blocks-goza-button.is-style-outlined .wp-block-goza-blocks-goza-button--inner {
+    background-color: transparent !important;
+    border-style: solid;
+    border-color: var(--link-color, #d41b65); }
+    .wp-block-goza-blocks-goza-button.is-style-outlined .wp-block-goza-blocks-goza-button--inner .wp-block-goza-button_link {
+      color: var(--link-color, #d41b65); }
+  .wp-block-goza-blocks-goza-button.is-style-general .wp-block-goza-blocks-goza-button--inner:hover::after {
+    left: 120%;
+    -webkit-transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1); }
+  .wp-block-goza-blocks-goza-button.is-style-general .wp-block-goza-blocks-goza-button--inner::after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+            transform: rotate(35deg);
+    -webkit-transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 30px;
+    z-index: 1; }
+  .wp-block-goza-blocks-goza-button.is-style-water .wp-block-goza-blocks-goza-button--inner {
+    border-radius: 0 !important; }
+    .wp-block-goza-blocks-goza-button.is-style-water .wp-block-goza-blocks-goza-button--inner:hover svg {
+      -webkit-animation-play-state: running;
+              animation-play-state: running;
+      stroke: #fff; }
+  .wp-block-goza-blocks-goza-button.is-style-water svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-animation: dashed_border_running 20s linear infinite both;
+            animation: dashed_border_running 20s linear infinite both;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    stroke-width: 2;
+    stroke-dasharray: 9, 5;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    fill: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
+    .wp-block-goza-blocks-goza-button.is-style-water svg rect {
+      height: calc(100% - 6px);
+      width: calc(100% - 6px);
+      x: 3px;
+      y: 3px; }
+  .wp-block-goza-blocks-goza-button.is-style-ngo-dark .wp-block-goza-blocks-goza-button--inner {
+    color: #fff;
+    background-color: #2d2e40;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    border-radius: 30px !important; }
+    .wp-block-goza-blocks-goza-button.is-style-ngo-dark .wp-block-goza-blocks-goza-button--inner .wp-block-goza-button_link {
+      font-weight: 700;
+      font-size: 13px;
+      display: inline-block;
+      line-height: 23px;
+      padding: 16px 48px;
+      position: relative;
+      z-index: 0;
+      text-transform: uppercase;
+      overflow: hidden;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      z-index: 2; }
+    .wp-block-goza-blocks-goza-button.is-style-ngo-dark .wp-block-goza-blocks-goza-button--inner::before {
+      content: '';
+      width: 0;
+      height: 0;
+      -webkit-transform: rotate(360deg);
+      border-style: solid;
+      border-width: 0 0 0 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      border-color: transparent transparent transparent #d94532; }
+    .wp-block-goza-blocks-goza-button.is-style-ngo-dark .wp-block-goza-blocks-goza-button--inner::after {
+      border-color: transparent #d94532 transparent transparent;
+      content: '';
+      width: 0;
+      height: 0;
+      -webkit-transform: rotate(360deg);
+      border-style: solid;
+      border-width: 0 0 0 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      z-index: 1; }
+    .wp-block-goza-blocks-goza-button.is-style-ngo-dark .wp-block-goza-blocks-goza-button--inner:hover {
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important; }
+      .wp-block-goza-blocks-goza-button.is-style-ngo-dark .wp-block-goza-blocks-goza-button--inner:hover::before {
+        border-width: 165px 0 0 165px; }
+      .wp-block-goza-blocks-goza-button.is-style-ngo-dark .wp-block-goza-blocks-goza-button--inner:hover::after {
+        border-width: 0 165px 165px 0; }
+  .wp-block-goza-blocks-goza-button.is-style-wt-charity .wp-block-goza-blocks-goza-button--inner::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    background-color: #000;
+    height: 0;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+    left: 50%;
+    top: 50%;
+    width: 0; }
+  .wp-block-goza-blocks-goza-button.is-style-wt-charity .wp-block-goza-blocks-goza-button--inner:hover::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%; }
+  .wp-block-goza-blocks-goza-button.is-style-charity-organization .wp-block-goza-blocks-goza-button--inner::before, .wp-block-goza-blocks-goza-button.is-style-charity-organization .wp-block-goza-blocks-goza-button--inner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transform: translate(-25%, -267%) rotate(-50deg);
+    -ms-transform: translate(-25%, -267%) rotate(-50deg);
+        transform: translate(-25%, -267%) rotate(-50deg);
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    -o-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+       transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
+  .wp-block-goza-blocks-goza-button.is-style-charity-organization .wp-block-goza-blocks-goza-button--inner::before {
+    background-color: #333333;
+    opacity: 0.5; }
+  .wp-block-goza-blocks-goza-button.is-style-charity-organization .wp-block-goza-blocks-goza-button--inner::after {
+    background-color: #333333; }
+  .wp-block-goza-blocks-goza-button.is-style-charity-organization .wp-block-goza-blocks-goza-button--inner:hover {
+    background-color: inherit; }
+    .wp-block-goza-blocks-goza-button.is-style-charity-organization .wp-block-goza-blocks-goza-button--inner:hover::before, .wp-block-goza-blocks-goza-button.is-style-charity-organization .wp-block-goza-blocks-goza-button--inner:hover::after {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0); }
+    .wp-block-goza-blocks-goza-button.is-style-charity-organization .wp-block-goza-blocks-goza-button--inner:hover::after {
+      -webkit-transition-delay: 0.4s;
+      -o-transition-delay: 0.4s;
+         transition-delay: 0.4s; }
+  .wp-block-goza-blocks-goza-button.is-style-orgazination {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: inherit; }
+    .wp-block-goza-blocks-goza-button.is-style-orgazination .wp-block-goza-blocks-goza-button--inner {
+      background: var(--link-color, #d41b65);
+      border-radius: 30px !important;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 14.5px 0px;
+              box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 14.5px 0px;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      .wp-block-goza-blocks-goza-button.is-style-orgazination .wp-block-goza-blocks-goza-button--inner .wp-block-goza-button_link {
+        font-weight: 700;
+        padding: 0px 40px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 16px;
+        border-radius: 30px;
+        height: 57px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        cursor: pointer; }
+      .wp-block-goza-blocks-goza-button.is-style-orgazination .wp-block-goza-blocks-goza-button--inner:hover {
+        background: #fff;
+        border-color: #fff; }
+        .wp-block-goza-blocks-goza-button.is-style-orgazination .wp-block-goza-blocks-goza-button--inner:hover .wp-block-goza-button_link {
+          color: var(--heading-color, #333); }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * Layout column styles
+ * Loads on front end and back end
+ */
+.wp-block-genesis-blocks-goza-layout {
+  margin-bottom: 1.5em; }
+
+.wp-block-genesis-blocks-goza-columns {
+  position: relative; }
+
+.goza-layout-column-wrap {
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 0 2em;
+  position: relative;
+  z-index: 1; }
+
+[data-type="goza-blocks/goza-column"],
+.goza-block-layout-column {
+  display: block;
+  vertical-align: top;
+  min-width: 0; }
+
+.goza-block-layout-column.goza-is-vertically-aligned-top {
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+.goza-block-layout-column.goza-is-vertically-aligned-center {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.goza-block-layout-column.goza-is-vertically-aligned-bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+.goza-block-layout-column-inner {
+  height: 100%; }
+
+.goza-block-layout-column-inner,
+.goza-layout-column-wrap > .goza-block-layout-column-inner,
+.goza-has-background-dim > * {
+  position: relative;
+  z-index: 1; }
+
+.wp-block-genesis-blocks-goza-layout.alignfull {
+  padding: 0 2em; }
+  @media only screen and (max-width: 600px) {
+    .wp-block-genesis-blocks-goza-layout.alignfull {
+      padding: 0 15px; } }
+
+.goza-block-layout-column {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.goza-columns-center .goza-layout-column-wrap {
+  margin: 0 auto; }
+
+/* Grid gap classes */
+.goza-block-layout-column-gap-0 {
+  grid-gap: 0 0; }
+
+.goza-block-layout-column-gap-1 {
+  grid-gap: 0 1em; }
+
+.goza-block-layout-column-gap-2 {
+  grid-gap: 0 2em; }
+
+.goza-block-layout-column-gap-3 {
+  grid-gap: 0 3em; }
+
+.goza-block-layout-column-gap-4 {
+  grid-gap: 0 4em; }
+
+.goza-block-layout-column-gap-5 {
+  grid-gap: 0 5em; }
+
+.goza-block-layout-column-gap-6 {
+  grid-gap: 0 6em; }
+
+.goza-block-layout-column-gap-7 {
+  grid-gap: 0 7em; }
+
+.goza-block-layout-column-gap-8 {
+  grid-gap: 0 8em; }
+
+.goza-block-layout-column-gap-9 {
+  grid-gap: 0 9em; }
+
+.goza-block-layout-column-gap-10 {
+  grid-gap: 0 10em; }
+
+/* Grid column classes. */
+/* IE 11 support - Rows and column location must be explicitly defined. */
+.goza-block-layout-column:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: col1; }
+
+.goza-block-layout-column:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: col1; }
+
+.goza-block-layout-column:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: col2; }
+
+.goza-block-layout-column:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: col3; }
+
+.goza-block-layout-column:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: col4; }
+
+.goza-block-layout-column:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: col5; }
+
+.goza-block-layout-column:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: col6; }
+
+/* One column grid. */
+.goza-layout-columns-1 > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "col1"; }
+
+/* Two column grid. */
+.goza-layout-columns-2 > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "col1 col2"; }
+  @media only screen and (max-width: 767px) {
+    .goza-layout-columns-2 > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "col1"
+ "col2"; } }
+
+.goza-2-col-wideleft > .goza-layout-column-wrap {
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr; }
+
+.goza-2-col-wideright > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr; }
+
+/* Three column grid. */
+.goza-layout-columns-3 > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3"; }
+  @media only screen and (max-width: 600px) {
+    .goza-layout-columns-3 > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "col1"
+ "col2"
+ "col3"; } }
+
+.goza-3-col-widecenter > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr; }
+  @media only screen and (max-width: 600px) {
+    .goza-3-col-widecenter > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+
+.goza-3-col-wideleft > .goza-layout-column-wrap {
+  -ms-grid-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr; }
+  @media only screen and (max-width: 600px) {
+    .goza-3-col-wideleft > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+
+.goza-3-col-wideright > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 2fr; }
+  @media only screen and (max-width: 600px) {
+    .goza-3-col-wideright > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+
+/* Four column grid. */
+.goza-layout-columns-4 > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3 col4"; }
+  @media only screen and (max-width: 800px) {
+    .goza-layout-columns-4 > .goza-layout-column-wrap.goza-is-responsive-column {
+      grid-template-rows: auto;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "col1 col2"
+ "col3 col4"; } }
+  @media only screen and (max-width: 600px) {
+    .goza-layout-columns-4 > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "col1"
+ "col2"
+ "col3"
+ "col4"; } }
+
+.goza-4-col-wideleft > .goza-layout-column-wrap {
+  -ms-grid-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr; }
+
+.goza-4-col-wideright > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr; }
+
+/* Five column grid. */
+.goza-layout-columns-5 > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3 col4 col5"; }
+  @media only screen and (max-width: 800px) {
+    .goza-layout-columns-5 > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "col1"
+ "col2"
+ "col3"
+ "col4"
+ "col5"; } }
+
+.goza-layout-columns-6 > .goza-layout-column-wrap {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3 col4 col5 col6"; }
+  @media only screen and (max-width: 800px) {
+    .goza-layout-columns-6 > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "col1 col2"
+ "col3 col4"
+ "col5 col6"; } }
+  @media only screen and (max-width: 600px) {
+    .goza-layout-columns-6 > .goza-layout-column-wrap.goza-is-responsive-column {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "col1"
+ "col2"
+ "col3"
+ "col4"
+ "col5"
+ "col6"; } }
+
+.goza-layout-columns-4,
+.goza-layout-columns-5,
+.goza-layout-columns-6 {
+  overflow-x: auto; }
+
+/* Column selector CSS */
+.goza-column-selector-group {
+  margin-top: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media only screen and (max-width: 1175px) {
+    .goza-column-selector-group {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.goza-column-selector {
+  margin: 0 5px; }
+  @media only screen and (max-width: 1175px) {
+    .goza-column-selector {
+      margin-top: 10px; } }
+  .goza-column-selector button.goza-column-selector-button {
+    padding: 15px;
+    height: auto;
+    border-radius: 5px !important;
+    background: #fff;
+    margin: 0; }
+    .goza-column-selector button.goza-column-selector-button:hover {
+      background: #fff;
+      margin: 0; }
+  .goza-column-selector button.components-button.is-button:last-child {
+    border-radius: 5px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.goza-separator-blocks {
+  display: -ms-flexbox;
+  display: flex; }
+  .goza-separator-blocks.separator-fullwidth {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    max-width: 100vw; }
+    .goza-separator-blocks.separator-fullwidth .separators {
+      width: 100% !important; }
+  .goza-separator-blocks.separator-center {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .goza-separator-blocks.separator-left {
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .goza-separator-blocks.separator-right {
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+  .goza-separator-blocks .separators {
+    height: 2px;
+    width: 64px;
+    background: var(--link-color, #d41b65); }

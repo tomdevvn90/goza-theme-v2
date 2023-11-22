@@ -1,0 +1,62 @@
+// Functions
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+
+// Variables
+@import "variables-bootstrap";
+@import "variables";
+
+.wp-block-columns{
+
+    @media (min-width: 782px) and (max-width: 991.98px) { 
+        flex-wrap: wrap !important;
+    }
+
+    &:not(.is-not-stacked-on-mobile)>.wp-block-column{
+        @include media-breakpoint-down(md) {
+            flex-basis: 100%!important;
+        }
+    }
+}
+
+
+// Bootstrap
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/dropdown";
+
+// import styles
+@import '~lightgallery/scss/lightgallery.scss';
+@import '~lightgallery/scss/lg-zoom.scss';
+@import '~lightgallery/scss/lg-thumbnail.scss';
+@import '~lightgallery/css/lightgallery-bundle.css';
+
+// font awesome
+@import '~font-awesome/scss/font-awesome';
+@import '~slick-carousel/slick/slick-theme';
+@import '~slick-carousel/slick/slick';
+
+
+// Application
+@import "blog/all";
+@import "archive/archive";
+@import "single/single";
+@import "shared/all";
+@import "components/all";
+@import "layouts/all";
+@import "pages/all";
+@import "blocks/all";
+
+// Event
+@import "events";
+
+// Woocommerce
+@import "woocommerce/woocommerce";
+
+// animation
+@import "animation";

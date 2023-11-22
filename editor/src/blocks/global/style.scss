@@ -1,0 +1,157 @@
+$colors: (
+	'general': #d41b65,
+	'ngo': #ed9913,
+	'white': #FFF,
+	'black': #000,
+	'dream': #2c9cf2,
+    'water': #833dcc,
+    'charity': #4ca5ab,
+    'organization': #ec5e87,
+    'charity-green': #71b61b,
+    'ngo-dark': #d94532,
+    'water-charity': #18b7d0,
+);
+
+@each $name,
+$color in $colors {
+	.has-#{$name}-color {
+		color: $color;
+	}
+
+	.has-#{$name}-background-color {
+		background-color: $color;
+	}
+}
+
+
+.goza-has-parallax {
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50%;
+}
+
+
+.goza-has-background-dim::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: inherit;
+	opacity: 0;
+	z-index: 1;
+}
+
+.goza-has-background-dim.has-theme-primary-background-color::before,
+.goza-has-background-dim.goza-has-custom-background-color::before {
+	background-color: inherit;
+}
+
+.goza-has-background-dim-0 {
+
+	&::before {
+		opacity: 1;
+	}
+}
+
+.goza-has-background-dim-10 {
+
+	&::before {
+		opacity: 0.9;
+	}
+}
+
+.goza-has-background-dim-20 {
+
+	&::before {
+		opacity: 0.8;
+	}
+}
+
+.goza-has-background-dim-30 {
+
+	&::before {
+		opacity: 0.7;
+	}
+}
+
+.goza-has-background-dim-40 {
+
+	&::before {
+		opacity: 0.6;
+	}
+}
+
+.goza-has-background-dim-50 {
+
+	&::before {
+		opacity: 0.5;
+	}
+}
+
+.goza-has-background-dim-60 {
+
+	&::before {
+		opacity: 0.4;
+	}
+}
+
+.goza-has-background-dim-70 {
+
+	&::before {
+		opacity: 0.3;
+	}
+}
+
+.goza-has-background-dim-80 {
+
+	&::before {
+		opacity: 0.2;
+	}
+}
+
+.goza-has-background-dim-90 {
+
+	&::before {
+		opacity: 0.1;
+	}
+}
+
+.goza-has-background-dim-100 {
+
+	&::before {
+		opacity: 0;
+	}
+}
+
+div.goza-background-auto {
+	background-size: auto;
+	background-position: center center;
+}
+
+div.goza-background-cover {
+	background-size: cover;
+}
+
+div.goza-background-contain {
+	background-size: contain;
+	background-position: center center;
+}
+
+div.goza-background-no-repeat {
+	background-repeat: no-repeat;
+}
+
+div.goza-background-repeat {
+	background-repeat: repeat;
+}
+
+div.goza-background-repeat-x {
+	background-repeat: repeat-x;
+}
+
+div.goza-background-repeat-y {
+	background-repeat: repeat-y;
+	background-position: center center;
+}

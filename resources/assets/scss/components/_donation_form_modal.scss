@@ -1,0 +1,223 @@
+.goza-donation-form {
+    color: #333;
+    background: rgba(11, 11, 11, 0.8);
+    background-size: 100%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.5s cubic-bezier(0.91, -0.05, 0.53, 0.91);
+    transition: 0.5s cubic-bezier(0.91, -0.05, 0.53, 0.91);
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    overflow: auto;
+
+    .logged-in & {
+        top: 32px;
+    }
+
+    &.is-show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        @media (max-width: 767px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    &__wrap {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 40px 20px 20px;
+        font-size: 16px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            max-height: 85%;
+            overflow-y: auto;
+        }
+
+        .goza-form-close {
+            color: #333;
+            position: absolute;
+            -webkit-appearance: none;
+            background: transparent;
+            border: 0;
+            box-shadow: none;
+            cursor: pointer;
+            display: block;
+            outline: none;
+            overflow: visible;
+            padding: 0;
+            touch-action: manipulation;
+            z-index: 1000005;
+            font-size: 28px;
+            font-style: normal;
+            height: 44px;
+            line-height: 44px;
+            width: 44px;
+            right: 0;
+            text-align: center;
+            text-decoration: none;
+            top: 0;
+        }
+
+        .give-form-wrap {
+
+            .give-form-title {
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: -1px;
+                max-width: 100%;
+                text-align: center;
+                color: #333;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            .give_error,
+            .give_warning {
+                background: #f9f9f9;
+                border-left: 4px solid;
+                border-color: #ffba00;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, .125);
+                clear: both;
+                margin: 15px 0;
+                padding: 1em 1.5em 1em 2em;
+                position: relative;
+                font-size: 16px;
+            }
+
+            .give-form {
+                margin-bottom: 0;
+
+                .give-total-wrap {
+
+                    .give-donation-amount {
+                        display: table;
+                        width: 100%;
+                        margin: 0 0 15px;
+
+                        >* {
+                            display: table-cell;
+                            vertical-align: middle;
+                            float: none !important;
+                            max-width: none;
+                            height: 53px;
+                        }
+
+                        .give-currency-symbol {
+                            background: var(--link-color, #d41b65);
+                            color: #fff;
+                            border-color: var(--link-color, #d41b65);
+                            padding: 0 20px;
+                            text-align: center;
+                            width: 1%;
+                        }
+
+                        label.give-hidden {
+                            background: var(--link-color, #d41b65);
+                            color: #fff;
+                            border: solid var(--link-color, #d41b65);
+                            border-width: 1px 0;
+                            white-space: nowrap;
+                            width: 1%;
+                            padding-right: 20px;
+                        }
+
+                        #give-amount {
+                            background: #fff;
+                            border: 1px solid #ccc;
+                            border-radius: 0;
+                            box-sizing: border-box;
+                            float: left;
+                            font-size: 18px;
+                            line-height: 35px;
+                            margin: 0;
+                            min-width: 125px;
+                            outline: none;
+                            padding: 0 12px;
+                            height: 53px;
+                            text-align: left;
+                            border-color: var(--link-color, #d41b65);
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .give-select {
+                    height: 53px;
+                    display: block;
+                    width: 100%;
+                    border-color: var(--link-color, #d41b65);
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    margin-bottom: 15px;
+                    appearance: none;
+                    background: url(../images/arrow-down-icon.png) no-repeat scroll calc(100% - 10px) 50% / 16px auto;
+                }
+
+                #give-final-total-wrap {
+                    display: table;
+                    width: 100%;
+                    margin-top: 0;
+
+                    >* {
+                        display: table-cell;
+                        vertical-align: middle;
+                        float: none !important;
+                        max-width: none;
+                        height: 53px;
+                    }
+
+                    .give-donation-total-label {
+                        border: 1px solid #ccc;
+                        background: var(--link-color, #d41b65);
+                        color: #fff;
+                        border-color: var(--link-color, #d41b65); 
+                        padding: 0 20px;
+                        white-space: nowrap;
+                        height: 53px;
+                    }
+
+                    .give-final-total-amount {
+                        text-align: left;
+                        width: 100%;
+                        height: 53px;
+                        border: 1px solid var(--link-color, #d41b65) !important;
+                    }
+                }
+
+                .give-btn {
+                    height: 53px;
+                    display: block;
+                    width: 100%;
+                    background: var(--link-color, #d41b65);
+                    color: #fff;
+                    border: none;
+                    font-size: 16px;
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    -webkit-transition: 0.3s ease;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}

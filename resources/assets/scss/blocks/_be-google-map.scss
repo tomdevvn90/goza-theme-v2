@@ -1,0 +1,10 @@
+.be-google-map{
+    .be-google-map-box{
+        line-height: 0;
+        iframe{
+            height: var(--google-map-height, 400px);
+            width: 100%;
+            border: 0;
+        }
+    }
+}

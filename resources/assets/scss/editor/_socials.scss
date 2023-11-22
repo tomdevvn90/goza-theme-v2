@@ -1,0 +1,12 @@
+.editor-styles-wrapper .block-editor-block-list__layout{
+    .be-socials-block{    
+        &--heading{
+            font-size: 14px;
+            line-height: 44px;
+            text-align: left;
+            color: var(--heading-color);
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.is-root-container{
+    .be-single-post-block{
+        .be-single-post-inner{
+            &--name{
+                font-size: 39px;
+                line-height: 46px;
+                letter-spacing: 0;
+                font-family: var(--heading-family);
+                font-weight: 700;
+                color: var(--heading-color);
+            }
+        }
+
+        // &.is-style-water{
+        //     .be-single-post-inner{
+        //         &--name{
+        //             margin-top: 10px;
+        //         }
+        //     }
+        // }
+    }
+}

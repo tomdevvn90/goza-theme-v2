@@ -1,0 +1,165 @@
+.site-header {
+    &.site-header-charity {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        background: transparent !important;
+
+        .logged-in & {
+            top: 32px;
+
+            @media screen and (max-width: 782px) {
+                top: 46px;
+            }
+        }
+
+        .goza-header-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 33px 0;
+
+            &--logo {
+                a {
+                    display: block;
+
+                    img {
+                        max-width: 170px;
+                    }
+                }
+            }
+
+            &--menus {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &--menu {
+                .navbar-nav{
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                    gap: 25px;
+
+                    >li {
+                        >a {
+                            position: relative;
+                            display: block;
+                            text-decoration: none;
+                            color: var(--header-text-color, #FFF);
+                            line-height: 50px;
+                            font-size: 18px;
+                            letter-spacing: 0px;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-family: var(--body-family, Montserrat, sans-serif);
+                            -webkit-transition: 0.3s;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: var(--link-color-hover, rgb(113,182,27));
+                            }
+
+                            &.dropdown-toggle {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--cta {
+                margin-left: 35px;
+                display: flex;
+                align-items: center;
+                gap: 35px;
+
+                .goza-header-cart-icon {
+                    position: relative;
+                    cursor: pointer;
+
+                    i {
+                        color: var(--header-text-color, #FFF);
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: var(--link-color-hover, rgb(113,182,27));
+                        }
+                    }
+
+                    .goza-total-cart {
+                        right: -9px;
+                        background: var(--link-color, rgb(113,182,27));
+                        border-radius: 100%;
+                        font-size: 11px;
+                        font-weight: 600;
+                        width: 16px;
+                        color: var(--header-text-color, #FFF);
+                        height: 16px;
+                        padding: 0;
+                        text-align: center;
+                        font-family: sans-serif;
+                        line-height: 1;
+                        padding: 2.5px 0;
+                        margin-right: 1px;
+                        position: absolute;
+                        top: -6px;
+                    }
+                }
+
+                .goza-header-button-donate button.give-btn.give-btn-modal {
+                    background: var(--link-color, rgb(113,182,27));
+                    color: #fff;
+                    border: medium none;
+                    border-radius: 3px;
+                    transition: 0.3s;
+                    font-size: 16px;
+                    letter-spacing: 0px;
+                    padding: 13px 20px;
+                    line-height: 1.2;
+                    display: block;
+
+                    &:hover {
+                        background: #000;
+                        text-decoration: none;
+                    }
+                }
+
+                .goza-header-phone {
+                    a{
+                        font-size: 16px;
+                        font-weight: 400;
+                        position: relative;
+                        display: block;
+                        text-decoration: none;
+                        color: var(--header-text-color, #FFF);
+                        line-height: 50px;
+                        &:hover{
+                            color: var(--link-color-hover, rgb(113,182,27));;
+                        }
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                    
+                }
+
+                #goza-hamberger {
+                    display: block;
+                    cursor: pointer;
+
+                    i {
+                        color: var(--header-text-color, #FFF);
+                    }
+                }
+            }
+        }
+    }
+}

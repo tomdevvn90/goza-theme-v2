@@ -1,0 +1,24 @@
+{
+    "name": "goza/be-give-form-box",
+    "title": "Be Give Form Box",
+    "description": "Image background with text & call to action.",
+    "category": "goza-theme", 
+    "icon": "format-image",
+    "keywords": [
+        "give form",
+        "image"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "2", "label": "Style 2" },
+        { "name": "3", "label": "Style 3" }
+    ],
+    "align": "full"
+}

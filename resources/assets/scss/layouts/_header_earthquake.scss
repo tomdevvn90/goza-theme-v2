@@ -1,0 +1,321 @@
+.site-header {
+    &.site-header-earthquake {
+        position: relative;
+
+        #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item{
+            > a{
+                @media (max-width: 1507px){
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+                }
+
+                @media (max-width: 1199.98px){
+                    padding-left: 10px !important;
+                    padding-right: 10px !important;
+                }
+                &:hover{
+                    color: var(--link-color-hover, #00af4e);
+                }
+            }
+            &:last-child{
+                > a.mega-menu-link{
+                    padding-right: 0 !important;
+                }
+            }
+            &.mega-current-menu-ancestor {
+                >a.mega-menu-link {
+                    color: var(--link-color, #28C77B);
+                }
+            }
+            ul.mega-sub-menu{
+                li{
+                    a.mega-menu-link:hover {
+                        color: var(--link-color-hover, #00af4e);
+                    }  
+                }
+            }
+        }
+
+        .site-header-inner{
+            width: calc(100% - 7.5px);
+            position: absolute;
+            left: calc(15px / 2);
+            height: 98px;  
+            bottom: -49px;
+            z-index: 99;
+            @include media-breakpoint-down(sm){
+                bottom: -60px;
+            }
+            @include media-breakpoint-down(xs) { 
+                width: calc(100% - 30px);
+                left: calc(50% + (15px / 2));
+                transform: translateX(-50%);
+            }
+
+            > .container{
+                padding-left: 0px;
+                background-color: var(--header-bg-color, #fff);
+                border-radius: 0 15px 15px 0;
+                box-sizing: border-box;
+                position: relative;
+                box-sizing: border-box;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 25px;
+                &::before{
+                    content: " ";
+                    width: 60px;
+                    height: 100%;
+                    background-image: url(../images/home-earthquake/icon-polygon-header-earthquake.png);
+                    background-position: left center;
+                    background-size: 100% 100%;
+                    position: absolute;
+                    left: -15px;
+                    top: 0;
+                }
+                @media (min-width: 1508px){
+                    max-width: 1508px;
+                }
+
+                @media (max-width: 1507px){
+                    padding-left: 30px;
+                }
+
+                @media (max-width: 1199.98px){
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        .goza-header-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            box-sizing: border-box;
+            @media (min-width: 1508px){
+                padding-left: 60px;
+            }
+            
+            @include media-breakpoint-down(md) {
+                padding: 20px 0;
+            }
+
+            @include media-breakpoint-down(sm){
+                padding: 10px 0;
+            }
+
+            &--logo {
+                @include media-breakpoint-down(md) { 
+                    padding-left: 35px;
+                }
+                @include media-breakpoint-down(xs) { 
+                    padding-left: 15px;
+                }
+                a {
+                    display: block;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        max-width: 215px;
+                        @media (max-width: 1199.98px){
+                            max-width: 180px;
+                        }
+                        @include media-breakpoint-down(sm){
+                            max-width: 180px;
+                        }
+
+                        @include media-breakpoint-down(xs) { 
+                            max-width: 150px;
+                        }
+                    }
+                }
+            }
+
+            &--menus {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 247px;
+                @media (max-width: 1507px){
+                    padding-right: 208px;
+                }
+
+                @media (max-width: 1199.98px){
+                    padding-right: 170px;
+                }
+                
+                @include media-breakpoint-down(md) { 
+                    padding-right: 0;
+                }
+                .goza-header-button-donate button.give-btn.give-btn-modal {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 18px;
+                    font-family: var(--heading-family);
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160.2%;
+                    text-transform: uppercase;
+                    padding: 0;
+                    box-sizing: border-box;
+                    position: absolute;
+                    right: -15px;
+                    width: 100%;
+                    top:0;
+                    max-width: 225px;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0 15px 15px 0;
+                    @media (max-width: 1507px){
+                        max-width: 180px;
+                    }
+
+                    @media (max-width: 1199.98px){
+                        max-width: 150px;
+                        font-size: 16px;
+                    }
+
+                    @include media-breakpoint-up(lg){ 
+                        display: flex !important;
+                    }
+                    &:after{
+                        top: -35px;
+                    }
+                    @include media-breakpoint-down(md) { 
+                        display: none !important;
+                    }
+                }
+            }
+
+            &--menu {
+                .navbar-nav {
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                    gap: 35px;
+
+                    >li {
+                        >a {
+                            position: relative;
+                            display: block;
+                            text-decoration: none;
+                            color: var(--header-text-color, #FFF);
+                            font-size: 15px;
+                            -webkit-transition: 0.3s;
+                            transition: 0.3s;
+                            letter-spacing: 0px;
+                            line-height: 80px;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-family: var(--heading-family, Poppins, sans-serif);
+
+                            &:hover {
+                                color: var(--link-color, #28C77B);
+                            }
+
+                            &.dropdown-toggle {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--cta {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                border-radius: 0 10px 10px 0;
+                margin-left: 58px;
+                @media (max-width: 1507px){
+                    margin-left: 30px;
+                }
+                .goza-header-cart-icon {
+                    position: relative;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    border: 2px solid #222;
+                    padding: 0px;
+                    box-sizing: border-box;
+                    width: 60px;
+                    height: 58px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include media-breakpoint-down(sm){ 
+                        width: 50px;
+                        height: 48px;
+                    }
+                    svg{
+                        width: 100%;
+                        max-width: 24px;
+                        height: auto;
+
+                        @include media-breakpoint-down(sm) { 
+                            max-width: 20px;
+                        }
+                    }
+                    i {
+                        color: #282828;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: var(--link-color-hover, #28C77B);
+                        }
+                    }
+
+                    .goza-total-cart {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: 20px;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: var(--link-color, #28C77B);
+                        position: absolute;
+                        right: -15px;
+                        top: -10px;
+                        border-radius: 50%;
+                        @include media-breakpoint-down(sm){ 
+                            width: 25px;
+                            height: 25px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                #goza-hamberger {
+                    display: block;
+                    cursor: pointer;
+
+                    @include media-breakpoint-down(md) { 
+                        margin-left: 33px;
+                        i{
+                            font-size: 30px;
+                            color: var(--link-color);
+                        }
+                    }
+
+                    @include media-breakpoint-down(xs) { 
+                        margin-left: 20px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

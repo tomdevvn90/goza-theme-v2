@@ -1,0 +1,25 @@
+.goza-separator-blocks{
+	display: flex;
+	&.separator-fullwidth{
+		margin-left: calc(-50vw + 50%);
+		margin-right: calc(-50vw + 50%);
+		max-width: 100vw;
+		.separators{
+			width: 100% !important;
+		}
+	}
+	&.separator-center{
+		justify-content: center;
+	}
+	&.separator-left{
+		justify-content: flex-start;
+	}
+	&.separator-right{
+		justify-content: flex-end;
+	}
+	.separators{
+		height: 2px;
+		width: 64px;
+		background: $primary-color;
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "name": "be-gallery",
+    "title": "Be Gallery",
+    "category": "goza-theme",
+    "icon": "format-gallery",
+    "keywords": ["gallery", "photo", "be"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "styles": [
+        { "name": "ngo-dark", "label": "Default", "isDefault": true },
+        { "name": "water-charity", "label": "Water Charity" },
+        { "name": "charity-organization", "label": "Charity Organization" }
+    ],
+    "supports": {
+        "align": ["left", "center", "right"]
+    },
+    "align": "left"
+}

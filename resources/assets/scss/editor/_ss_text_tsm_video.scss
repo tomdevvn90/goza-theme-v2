@@ -1,0 +1,31 @@
+.editor-styles-wrapper .block-editor-block-list__layout{
+    .be-ss-text-tsm-video{
+        &--testimonial{
+            overflow: hidden;
+            &-slider{
+                display: flex;
+                overflow: auto;
+            }
+            .item-testimonial{
+                background-color: #fff;
+                padding: 16px;
+                min-width: 435px;
+                margin-right: 20px;
+                blockquote{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        &--video-cta{
+            .be-popup-video{
+                .__icon-play{
+                    margin: 0;
+                    height: auto;
+                    display: flex
+                }
+            }
+        }
+    }
+}

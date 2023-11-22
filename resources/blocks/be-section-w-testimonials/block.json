@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-section-w-testimonials",
+    "title": "Be Section with Testimonial",
+    "category": "goza-theme",
+    "icon": "embed-generic",
+    "keywords": ["section", "testimonials"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

@@ -1,0 +1,19 @@
+{
+    "name": "be-single-post",
+    "title": "Be Single Post",
+    "category": "goza-theme",
+    "icon": "align-pull-left",
+    "keywords": ["post", "single"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "water", "label": "Default", "isDefault": true },
+        { "name": "ngo-dark", "label": "Ngo Dark" }
+    ],
+    "align": "full"
+}

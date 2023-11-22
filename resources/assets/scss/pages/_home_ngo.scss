@@ -1,0 +1,10 @@
+.be-box-featured-block {
+    &.home-ngo{
+        margin-top: 40px;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: -40px;
+        }
+    }
+    
+} 

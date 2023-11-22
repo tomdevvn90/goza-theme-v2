@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-featured-box-grid",
+    "title": "Featured Box Grid",
+    "category": "goza-theme",
+    "icon": "grid-view",
+    "keywords": ["box", "featured", "grid"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+  }

@@ -1,0 +1,79 @@
+.goza-topbar {
+    &.goza-topbar-layout4 {
+        background: var(--topbar-bg-color, #222);
+        color: var(--topbar-text-color, #FFF);
+        padding-bottom: 46px;
+        @include media-breakpoint-down(sm){
+            padding-top: 24px;
+            padding-bottom: 64px;
+        }
+        .goza-topbar-link{
+            a{
+                text-decoration: none;
+                font-family: var(--heading-family);
+                font-size: 15px;
+                line-height: 50px;
+                letter-spacing: 0px;
+                color: var(--topbar-text-color, #FFF);
+                font-style: normal;
+                font-weight: 400;
+                text-transform: uppercase;
+                @include media-breakpoint-down(sm) {
+                    line-height: 115%;
+                }
+                i {
+                    color: var(--link-color, #2c9cf2);
+                    margin-right: 7px;
+                }
+            }
+        }
+
+        .goza-topbar-inner {
+            @include media-breakpoint-down(sm) {
+                flex-wrap: wrap;
+                justify-content: center !important;
+
+                .goza-topbar-ep{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            &-info {
+                gap: 20px;
+                @include media-breakpoint-down(sm) {
+                    gap: 0;
+                }
+                .goza-topbar-ep {
+                    @include media-breakpoint-down(sm) {
+                        padding-bottom: 16px;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-family: var(--heading-family);
+                        font-size: 15px;
+                        line-height: 50px;
+                        letter-spacing: 0px;
+                        color: var(--topbar-text-color, #FFF);
+                        font-style: normal;
+                        font-weight: 400;
+                        @include media-breakpoint-down(lg) {
+                            font-size: 14px;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            line-height: 115%;
+                        }
+                        > span{
+                            text-transform: uppercase;
+                        }
+                        i {
+                            color: var(--topbar-icon-color, #2c9cf2);
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

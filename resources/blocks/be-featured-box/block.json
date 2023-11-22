@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-featured-box",
+    "title": "Be Featured Box",
+    "category": "goza-theme",
+    "icon": "shield",
+    "keywords": ["box", "featured"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+  }

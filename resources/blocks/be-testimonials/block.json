@@ -1,0 +1,23 @@
+{
+    "name": "goza/be-testimonials",
+    "title": "Be Testimonials",
+    "description": "Display testimonials & gain instant credibility.",
+    "category": "goza-theme",
+    "icon": "testimonial",
+    "keywords": ["carousel", "testimonials"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "2", "label": "Charity 2" },
+        { "name": "3", "label": "Orgazination" },
+        { "name": "4", "label": "Ngo Dark" },
+        { "name": "5", "label": "Outlined" }
+    ],
+    "align": "full"
+  }

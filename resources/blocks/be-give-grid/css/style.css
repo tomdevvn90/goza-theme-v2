@@ -1,0 +1,109 @@
+.be-give-grid-block-inner {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default {
+    margin-bottom: 60px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .featured-image {
+    position: relative;
+    overflow: hidden;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .featured-image img {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .featured-image:before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .featured-image:hover:before {
+    -webkit-animation: shine 0.75s;
+    animation: shine 0.75s;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content {
+    padding: 30px;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content .form-category {
+    display: inline-block;
+    background: #f1f1f1;
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content a {
+    text-decoration: none;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content a h4.title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 23px;
+    margin-top: 20px;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content a:hover h4.title {
+    color: #d41b65;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content .extra-meta .meta-author {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content .extra-meta .give-price-wrap {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content .extra-meta .give-price-wrap sup {
+    top: -0.3em;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .entry-content .extra-meta .give-price-wrap span {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #d41b65;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .progress {
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-image: none;
+    background-color: #AAAAAA;
+    position: relative;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .progress .form-percent {
+    position: absolute;
+    font-size: 12px;
+    padding: 0px 5px;
+    color: #fff;
+    line-height: 20px;
+    margin-top: 6px;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .progress .form-percent span.bt-arrow {
+    top: -4px;
+    left: 0;
+    border-right: 7px solid #f3f3f3;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+  }
+  .be-give-grid-block-inner .give-forms-grid-layout-default .progress .bar {
+    width: 0;
+    height: 100%;
+  }
+  

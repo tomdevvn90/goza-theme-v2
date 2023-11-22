@@ -1,0 +1,57 @@
+.wp-block-columns{
+    &.be-gzwc-row-recent-post {
+        @include media-breakpoint-down(md) {
+            flex-wrap: wrap !important;
+        }
+        .wp-block-column {
+            &:nth-child(2){
+                .wp-block-image{
+                    margin-bottom: 0;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        -o-object-position: top center;
+                        object-position: top center;
+                        @include media-breakpoint-down(md) {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                order: 2;
+                body & {
+                    flex-basis: 100%!important
+                }
+
+                &:nth-child(2){
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    &.be-row-icb-gzwc{
+        .wp-block-column{
+            .be-icon-box-block.is-style-water-charity .be-icon-box-block-inner{
+                @include media-breakpoint-down(sm) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+
+            &:nth-child(2){
+                @include media-breakpoint-down(sm) {
+                    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+                    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+                    padding-top: 2em;
+                    padding-bottom: 2em;
+                }
+            }
+        }
+    }
+}

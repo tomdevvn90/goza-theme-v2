@@ -1,0 +1,15 @@
+{
+    "name": "be-projects-grid",
+    "title": "Be Projects Grid",
+    "category": "goza-theme",
+    "icon": "screenoptions",
+    "keywords": ["be projects grid", "be", "projects"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+}

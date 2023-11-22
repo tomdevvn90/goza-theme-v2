@@ -1,0 +1,19 @@
+{
+    "name": "be-team-carousel",
+    "title": "Be Team Carousel",
+    "category": "goza-theme",
+    "icon": "groups",
+    "keywords": ["team", "carousel", "be"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["left", "center", "right"]
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "2", "label": "Style 2" }
+    ],
+    "align": "left"
+}

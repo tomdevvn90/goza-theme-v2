@@ -1,0 +1,244 @@
+.site-header {
+    &.site-header-menu-center {
+        .goza-header-main {
+            padding: 22px 0;
+            background-color: var(--header-bg-color, #fff);
+
+            @include media-breakpoint-down (md) {
+                background-color: var(--header-bg-menu-color, #213e8c);
+            }
+
+            &--logo {
+                a {
+                    display: block;
+
+                    img {
+                        max-width: 170px;
+                    }
+                }
+            }
+
+            &--cta {
+                gap: 20px;
+
+                .goza-header-button-donate button.give-btn.give-btn-modal {
+                    background-color: var(--link-color, #ec5e87);
+                    color: #ebebeb;
+                    border: medium none;
+                    border-radius: 3px;
+                    font-size: 16px;
+                    letter-spacing: 0px;
+                    padding: 13px 20px;
+                    text-transform: uppercase;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: var(--header-bg-menu-color, #213e8c);
+                    }
+                }
+
+                .goza-header-link {
+                    font-style: normal;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    color: #353535;
+                    font-size: 18px;
+                    font-weight: 600;
+                    &:hover{
+                        color: var(--link-color-hover, #ec5e87);
+                    }
+                    i {
+                        margin-right: 5px;
+                        color: var(--link-color, #ec5e87);
+                        font-size: 23px;
+                    }
+                }
+
+                .goza-header-cart-icon {
+                    position: relative;
+                    cursor: pointer;
+
+                    // i {
+                    //     color: var(--header-text-color, #FFF);
+                    //     transition: 0.3s;
+
+                    //     &:hover {
+                    //         color: var(--link-color-hover, #ec5e87);
+                    //     }
+                    // }
+
+                    .goza-total-cart {
+                        right: -9px;
+                        background: var(--link-color, #ec5e87);
+                        border-radius: 100%;
+                        font-size: 11px;
+                        font-weight: 600;
+                        width: 16px;
+                        color: #fff;
+                        height: 16px;
+                        padding: 0;
+                        text-align: center;
+                        font-family: sans-serif;
+                        line-height: 1;
+                        padding: 2.5px 0;
+                        margin-right: 1px;
+                        position: absolute;
+                        top: -5px;
+                    }
+                }
+
+                .goza-header-search {
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 3px;
+                    display: inline-block;
+                    background: #efefef;
+                    text-align: center;
+                    line-height: 52px;
+                    padding: 0;
+
+                    i {
+                        color: #727b7b;
+                    }
+                }
+            }
+        }
+
+        .goza-header-menus {
+            background-color: var(--header-bg-menu-color, #213e8c);
+
+            .navbar-nav {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                gap: 35px;
+
+                >li {
+                    >a {
+                        position: relative;
+                        display: block;
+                        text-decoration: none;
+                        line-height: 60px;
+                        font-size: 17px;
+                        -webkit-transition: 0.3s;
+                        transition: 0.3s;
+                        color: var(--header-text-color, #FFF);
+                        -webkit-transition: 0.3s;
+                        letter-spacing: 0px;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-family: var(--heading-family, Fira Sans, sans-serif);
+
+                        &:hover {
+                            color: var(--link-color, #ec5e87);
+                        }
+
+                        &.dropdown-toggle {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-organization{
+        .goza-header-main{
+            @include media-breakpoint-down(md) {
+                background-color: var(--header-bg-color, #fff) !important;
+            }
+        }
+
+        #goza-hamberger i {
+            font-size: 30px;
+            color: var(--link-color);
+        }
+
+        #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title{
+            font-size: 18px;
+            line-height: 115%;
+            color: var(--heading-color);
+            margin: 0 0 24px 0;
+            font-weight: 500;
+        }
+
+        #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-megamenu > ul.mega-sub-menu{
+            max-width: 660px;
+        }
+
+        .goza-header-menus{
+            ul.max-mega-menu{
+                .mega-sub-menu{
+                    ul{
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        li{
+                            width: 100%;
+                            a{
+                                line-height: 110%;
+                            }
+
+                            ul.product_list_widget{
+                                > li{
+                                    position: relative;
+                                    padding-left: 75px;
+                                    margin: 0;
+                                    min-height: 60px;
+                                    a{
+                                        color: var(--heading-color);
+                                        img{
+                                            min-width: 60px;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                        }
+
+                                        &:hover{
+                                            color: var(--link-color, inherit);
+                                        }
+                                    }
+                                    
+                                    .woocommerce-Price-amount, .product-title{
+                                        margin-top: 5px;
+                                        display: inline-block;
+                                    }
+
+                                    &:not(:last-child){
+                                        margin-bottom: 16px;
+                                    }
+                                }
+                            }
+
+                            &.widget_nav_menu {
+                                .menu-template-container{
+                                    ul{
+                                        li {
+                                            margin: 0;
+                                            a{
+                                                font-size: 15px;
+                                                color: var(--heading-color);
+                                                font-weight: 500;
+                                                &:hover{
+                                                    color: var(--link-color, inherit);
+                                                }
+                                            }
+
+                                            &:not(:last-child){
+                                                margin-bottom: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

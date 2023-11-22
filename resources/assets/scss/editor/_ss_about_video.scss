@@ -1,0 +1,23 @@
+
+
+.is-root-container{
+    .be-ss-ab-vd{
+        &--heading{
+            font-size: 60px;
+            line-height: 120%;
+            font-family: var(--heading-family);
+            color: var(--heading-color);
+            font-weight: 700;
+        }
+
+        &--video{
+            a{
+                .__icon-play{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

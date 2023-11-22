@@ -1,0 +1,20 @@
+.is-root-container {
+    .btn {
+        display: inline-block;
+        font-family: var(--body-family, "Arimo", sans-serif);
+        font-weight: 700;
+        color: #FFF;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: var(--link-color, rgb(212, 27, 101));
+        border: 0px solid transparent;
+        padding: 16px 15px;
+        font-size: var(--body-font-size, 16px);
+        line-height: 1;
+        border-radius: 4px;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+}

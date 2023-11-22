@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-box-network-connect",
+    "title": "Be Box Network Connect - Section",
+    "category": "goza-theme",
+    "icon": "networking",
+    "keywords": ["box", "network", "section"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+  }

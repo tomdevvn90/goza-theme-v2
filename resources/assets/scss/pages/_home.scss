@@ -1,0 +1,327 @@
+.wp-block-columns{
+    &.be-ss-icon-box{
+        gap: 0;
+        margin-bottom:0;
+        .be-icon-box-block{
+            border-right: none;
+            height: 100%;
+            &:first-child{
+                border-left: 1px dotted #b7b7b7;
+            }
+    
+            &--button a{
+                background: #d41b65;
+            }
+        }
+    
+        .wp-block-column{
+            &:last-child{
+                .be-icon-box-block{
+                    border-right: 1px dotted #b7b7b7;
+                }
+            }
+
+            @media (max-width: 359px){
+                &:not(:last-child){
+                    .be-icon-box-block{
+                        border-bottom: 1px dotted #b7b7b7 !important;
+                    }
+                }
+            }
+    
+            @media (min-width: 360px) and (max-width: 991.98px) {
+                body & {
+                    flex-basis: 50%!important;
+                }
+
+                &:nth-child(2){
+                    .be-icon-box-block{
+                        border-right: 1px dotted #b7b7b7;
+                    }
+                }
+
+                &:nth-child(2), &:first-child{
+                    .be-icon-box-block{
+                        border-bottom: 1px dotted #b7b7b7;
+                    }
+                }
+            }
+
+            .be-icon-box-block{
+                @media (max-width: 359px){
+                    border:none !important;
+                    &:not(:last-child){
+                        border-bottom: 1px dotted #b7b7b7 !important;
+                    }
+                }
+                &-inner{
+                    @include media-breakpoint-down(sm) {
+                        padding: 48px 10px;
+                    }
+                }
+
+                &--heading{
+                    @include media-breakpoint-down(sm) {
+                        font-size: 18px;
+                        line-height: 120%;
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        font-size: 16px;
+                    }
+                }
+
+
+                &--icon{
+                    img{
+                        @include media-breakpoint-down(sm) {
+                            max-width: 55px;
+                        }
+                    }
+                }
+
+                &--button{
+                    @include media-breakpoint-down(sm) {
+                        text-align: center;
+                    }
+                    a{
+                        @include media-breakpoint-down(sm) {
+                            max-width: 90%;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    
+}
+
+.home-last-section {
+    overflow: unset;
+
+    .home-general-box {
+        margin-left: calc((-50vw + 50px) + 50%);
+        margin-right: calc((-50vw + 50px) + 50%);
+        max-width: calc(100vw - 100px);
+        margin-top: -150px;
+        margin-bottom: 0;
+        gap: 15px;
+
+        @media (max-width: 991px) {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &.wp-block-columns {
+            flex-wrap: wrap !important;
+
+            .wp-block-column {
+                @media (max-width: 991px) {
+                    width: 100%;
+                    max-width: calc(50% - 7.5px);
+                    flex-basis: auto;
+                    flex-grow: inherit;
+                }
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+                .be-icon-box-block {
+                    height: 100%;
+
+                    &-inner {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .last-home-button {
+        &.wp-block-columns {
+            @media (max-width: 767px) {
+                gap: 1em;
+            }
+        }
+
+        .wp-block-column {
+            @media (max-width: 767px) {
+                justify-content: center;
+                display: flex;
+            }
+
+            .wp-block-buttons {
+                @media (max-width: 767px) {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.be-give-progress {
+    margin: 0;
+    padding: 0;
+
+    .be-col-we-are-charity.wp-block-column {
+        padding-right: 10%;
+    }
+}
+
+.section-charity-upcoming {
+    gap: 0;
+
+    .goza-block-container {
+        height: 100%;
+    }
+}
+
+
+
+.charity-or-newsletter {
+    .tnp {
+        form {
+            position: relative;
+
+            .tnp-email {
+                height: 80px;
+                box-sizing: border-box;
+                border: 1px solid #f2f2f2;
+                padding: 0 210px 0 30px;
+                font-size: 18px;
+                line-height: 80px;
+                color: #999999;
+                max-width: 100%;
+                letter-spacing: 0.16px;
+                width: 100%;
+                border-radius: 0;
+                background-color: #fff;
+                outline: none;
+            }
+
+            .tnp-submit {
+                font-size: 16px;
+                line-height: 60px;
+                height: 60px;
+                font-weight: 700;
+                letter-spacing: 0.16px;
+                text-transform: uppercase;
+                padding: 0;
+                
+                text-align: center;
+                width: 100%;
+                margin-top: 16px;
+                background-color: #000; 
+                border-radius: 0;
+                color: #fff;
+                @media (min-width: 576px) {
+                    width: 180px;
+                    margin-top: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.site-header-charity-organization {
+    #mega-menu-wrap-main-menu {
+        #mega-menu-main-menu {
+            >li.mega-menu-item {
+                &.mega-current-menu-ancestor {
+                    >a.mega-menu-link {
+                        color: var(--link-color, #32cbfe);
+                    }
+                }
+
+                >a.mega-menu-link {
+                    color: var(--header-text-color, #FFF);
+                    font-weight: normal;
+                    font-family: var(--body-family, "Arimo", sans-serif);
+                    text-transform: none;
+                }
+            }
+
+            >li.mega-menu-flyout {
+                ul.mega-sub-menu {
+                    li.mega-menu-item {
+                        a.mega-menu-link {
+                            font-size: 15px;
+                            color: #666;
+                            font-weight: normal;
+
+                            &:hover {
+                                font-weight: normal;
+                                text-decoration: none;
+                                color: var(--link-color, #32cbfe);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.site-header-charity-new {
+    #mega-menu-wrap-main-menu {
+        #mega-menu-main-menu {
+            >li.mega-menu-item {
+                &.mega-current-menu-ancestor {
+                    >a.mega-menu-link {
+                        color: var(--link-color, #71b61b);
+                    }
+                }
+
+                >a.mega-menu-link {
+                    color: var(--header-text-color, #FFF);
+                    font-weight: 500;
+                    font-family: var(--heading-family, "Poppins", sans-serif);
+                    text-transform: none;
+                    font-size: 18px;
+                }
+            }
+
+            >li.mega-menu-flyout {
+                ul.mega-sub-menu {
+                    padding: 10px 0px 10px 0px;
+                    li.mega-menu-item {
+                        a.mega-menu-link {
+                            font-family: var(--heading-family, "Poppins", sans-serif);
+                            letter-spacing: 0px;
+                            font-style: normal;
+                            font-weight: 600;
+                            padding: 5px 20px;
+                            font-size: 16px;
+                            line-height: 30px; 
+                            color: #282828;
+
+                            &:hover {
+                                font-weight: 600;
+                                text-decoration: none;
+                                color: var(--link-color, #71b61b);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.wp-block-goza-blocks-goza-button{
+    &.be-gz-last-btn-home{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-inline-start: 0 !important;
+    }
+}

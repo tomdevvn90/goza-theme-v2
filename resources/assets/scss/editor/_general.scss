@@ -1,0 +1,27 @@
+// start css for home orgazination
+.block-editor-block-list__block{
+    .wp-block-columns{
+        &.be-gz-orgazination-item-progressbar{
+            > .wp-block-column{
+                .wp-block-acf-be-progressbar{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        &.be-gz-orgazination-row-button{
+            > .wp-block-column {
+                > .block-editor-block-list__block{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    } 
+}
+// end css for home orgazination
+
+.wp-block-columns.be-row-counter-gz-ngo-dark .be-counter-up.is-style-ngo-dark .be-counter-up-box{
+    padding: 0;
+}

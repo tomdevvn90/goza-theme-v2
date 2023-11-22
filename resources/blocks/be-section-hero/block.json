@@ -1,0 +1,15 @@
+{
+    "name": "be-section-hero",
+    "title": "Be Section Hero",
+    "category": "goza-theme",
+    "icon": "index-card",
+    "keywords": ["hero", "breadcrumb", "image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

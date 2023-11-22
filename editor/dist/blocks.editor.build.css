@@ -1,0 +1,364 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.goza-responsive-toggle {
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+  .goza-responsive-toggle .components-button.has-icon.has-text {
+    margin-right: 5px; }
+  .goza-responsive-toggle .components-button.has-icon .dashicon {
+    margin-right: 2px;
+    margin-left: 0; }
+  .goza-responsive-toggle .components-button.is-secondary, .goza-responsive-toggle .components-button.is-secondary:hover:not(:disabled), .goza-responsive-toggle .components-button.is-tertiary:hover:not(:disabled) {
+    -webkit-box-shadow: inset 0 0 0 1px #007cba;
+            box-shadow: inset 0 0 0 1px #007cba;
+    color: #007cba; }
+  .goza-responsive-toggle .components-button.is-primary {
+    background: #007cba; }
+  .goza-responsive-toggle .components-button.is-primary:hover:not(:disabled) {
+    background: #007cba; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * Editor styles for the admin
+ */
+/**
+ * Stopgap styles to improve usability of controls on full width alignment
+ */
+.goza-block-container .goza-container-content {
+  max-width: 1100px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.goza-blocks.goza-block-spacer {
+  background: wheat; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.goza-logo-carousel-block .block-editor {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: calc(var(--gap, 20px)); }
+  .goza-logo-carousel-block .block-editor .goza-logo__item {
+    padding: 0;
+    width: calc(100% / 5); }
+    .goza-logo-carousel-block .block-editor .goza-logo__item:nth-of-type(1n+6) {
+      display: none !important; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * Editor styles for the admin
+ */
+.goza-layout-column-wrap-admin,
+.goza-block-layout-column-inner .block-editor-inner-blocks {
+  position: relative;
+  z-index: 1; }
+
+.editor-styles-wrapper [data-type="goza-blocks/goza-columns"] .wp-block {
+  max-width: 100%; }
+
+.edit-post-visual-editor .editor-block-list__block [data-type="goza-blocks/goza-column"],
+.edit-post-visual-editor .block-editor-block-list__block [data-type="goza-blocks/goza-column"] {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0 2em;
+  min-height: 0; }
+
+/* Grid gap classes */
+.goza-block-layout-column-gap-0 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-0 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 0; }
+
+.goza-block-layout-column-gap-1 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-1 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 1em; }
+
+.goza-block-layout-column-gap-2 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-2 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 2em; }
+
+.goza-block-layout-column-gap-3 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-3 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 3em; }
+
+.goza-block-layout-column-gap-4 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-4 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 4em; }
+
+.goza-block-layout-column-gap-5 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-5 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 5em; }
+
+.goza-block-layout-column-gap-6 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-6 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 6em; }
+
+.goza-block-layout-column-gap-7 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-7 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 7em; }
+
+.goza-block-layout-column-gap-8 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-8 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 8em; }
+
+.goza-block-layout-column-gap-9 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-9 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 9em; }
+
+.goza-block-layout-column-gap-10 > .editor-inner-blocks > .editor-block-list__layout,
+.goza-block-layout-column-gap-10 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0 10em; }
+
+/* Grid column classes. */
+/* IE 11 support - Rows and column location must be explicitly defined. */
+.goza-layout-column-wrap-admin .editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(1),
+.goza-layout-column-wrap-admin .block-editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: col1; }
+
+.goza-layout-column-wrap-admin .editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(2),
+.goza-layout-column-wrap-admin .block-editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: col2; }
+
+.goza-layout-column-wrap-admin .editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(3),
+.goza-layout-column-wrap-admin .block-editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: col3; }
+
+.goza-layout-column-wrap-admin .editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(4),
+.goza-layout-column-wrap-admin .block-editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: col4; }
+
+.goza-layout-column-wrap-admin .editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(5),
+.goza-layout-column-wrap-admin .block-editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: col5; }
+
+.goza-layout-column-wrap-admin .editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(6),
+.goza-layout-column-wrap-admin .block-editor-block-list__layout [data-type="goza-blocks/goza-column"]:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: col6; }
+
+/* One column grid. */
+.goza-layout-columns-1 > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-layout-columns-1 > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "col1"; }
+
+/* Two column grid. */
+.goza-layout-columns-2 > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-layout-columns-2 > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "col1 col2"; }
+
+.goza-2-col-wideleft > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-2-col-wideleft > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr; }
+
+.goza-2-col-wideright > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-2-col-wideright > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr; }
+
+/* Three column grid. */
+.goza-layout-columns-3 > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-layout-columns-3 > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3"; }
+
+.goza-3-col-widecenter > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-3-col-widecenter > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr; }
+
+.goza-3-col-wideleft > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-3-col-wideleft > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr; }
+
+.goza-3-col-wideright > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-3-col-wideright > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 2fr; }
+
+/* Four column grid. */
+.goza-layout-columns-4 > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-layout-columns-4 > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3 col4"; }
+
+.goza-4-col-wideleft > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-4-col-wideleft > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr; }
+
+.goza-4-col-wideright > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-4-col-wideright > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr; }
+
+/* Five column grid. */
+.goza-layout-columns-5 > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-layout-columns-5 > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3 col4 col5"; }
+
+.goza-layout-columns-6 > .goza-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.goza-layout-columns-6 > .goza-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3 col4 col5 col6"; }
+
+.block-editor .goza-layout-columns-4,
+.block-editor .goza-layout-columns-5,
+.block-editor .goza-layout-columns-6 {
+  overflow-x: visible; }
+
+/* Alignment styles */
+.goza-block-layout-column .editor-block-list__block[data-align=full],
+.goza-block-layout-column .block-editor-block-list__block[data-align=wide],
+.goza-block-layout-column .editor-block-list__block[data-align=full],
+.goza-block-layout-column .block-editor-block-list__block[data-align=wide] {
+  margin-left: auto;
+  margin-right: auto; }
+
+[data-type="goza-blocks/goza-column"].goza-is-vertically-aligned-top {
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+[data-type="goza-blocks/goza-column"].goza-is-vertically-aligned-center {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+[data-type="goza-blocks/goza-column"].goza-is-vertically-aligned-bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+[data-type="goza-blocks/goza-column"] .components-placeholder {
+  padding: 30px; }
+
+[data-type="goza-blocks/goza-column"] .components-placeholder__fieldset {
+  max-width: 100%; }
+
+.goza-column-selector-button-back {
+  line-height: 1.4;
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 3px;
+  margin: 25px auto 0 auto; }
+  .goza-column-selector-button-back:hover {
+    color: #007cba; }
+  .goza-column-selector-button-back:active, .goza-column-selector-button-back:focus, .goza-column-selector-button-back:focus:enabled {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .goza-column-selector-button-back::before {
+    content: "\2190";
+    margin-right: 5px; }
+  .goza-column-selector-button-back svg {
+    width: 16px;
+    margin-right: 5px; }
+
+.goza-column-select-panel .components-button-group {
+  margin-bottom: 4px; }
+
+.goza-column-select-panel .components-button.is-small {
+  height: auto;
+  padding: 8px;
+  margin: 0 5px 5px 0; }
+
+.goza-column-select-panel .components-base-control__field + .components-base-control__help {
+  margin-top: 8px; }
+
+.goza-columns-center .goza-layout-column-wrap-admin {
+  margin: 0 auto; }
+
+.goza-block-layout-column .wp-block-image,
+.goza-block-layout-column .wp-block-image .components-resizable-box__container {
+  max-width: 100% !important; }
+
+.is-button.goza-inspector-icon-button {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 40px; }
+
+.goza-background-button-group {
+  margin-bottom: 25px; }
+
+.components-placeholder.goza-column-selector-placeholder {
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center; }
+
+.empty-adv-col .block-editor-block-list__layout .block-editor-rich-text__editable {
+  margin-top: 0; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.goza-separator-blocks {
+  padding: 5px 0; }
+  .goza-separator-blocks .separators {
+    height: 2px;
+    width: 64px;
+    background: var(--link-color, #d41b65); }

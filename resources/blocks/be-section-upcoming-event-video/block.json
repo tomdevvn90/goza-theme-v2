@@ -1,0 +1,15 @@
+{
+    "name": "be-section-upcoming-event-video",
+    "title": "Be Section Upcoming Event + Video",
+    "category": "goza-theme",
+    "icon": "playlist-video",
+    "keywords": ["event", "video", "upcoming"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

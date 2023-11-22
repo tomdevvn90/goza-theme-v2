@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-grid-post",
+    "title": "Be Grid Post",
+    "category": "goza-theme",
+    "icon": "grid-view",
+    "keywords": ["grid", "box", "post"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+  }

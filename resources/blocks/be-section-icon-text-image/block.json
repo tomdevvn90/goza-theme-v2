@@ -1,0 +1,15 @@
+{
+    "name": "be-section-icon-text-image",
+    "title": "Be Section Icon Text Image",
+    "category": "goza-theme",
+    "icon": "align-right",
+    "keywords": ["icon", "text", "image", "section"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

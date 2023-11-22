@@ -1,0 +1,15 @@
+{
+    "name": "be-section-about-video",
+    "title": "Be Section About Video",
+    "category": "goza-theme",
+    "icon": "feedback",
+    "keywords": ["about", "video"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

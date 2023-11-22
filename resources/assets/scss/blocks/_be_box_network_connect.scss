@@ -1,0 +1,60 @@
+.box-network-connect-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .block-box {
+        padding-top: 40px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        background-color: #000000;
+        border-radius: 3px;
+        max-width: 380px;
+        margin: 0 auto;
+        text-align: center;
+        @media (max-width: 991px){
+            max-width: 80%;
+        }
+
+        @media (max-width: 767px){
+            max-width: 90%;
+        }
+        
+        img {
+            max-width: 60px;
+            margin-bottom: 18px;
+        }
+
+        .bnc-title {
+            font-size: 24px;
+            line-height: 1.167;
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .bnc-description {
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .btn {
+            border: #fff solid 2px;
+            color: #fff;
+            margin-top: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            &.btn-organization{
+                border-color:var(--link-color, #ec5e87)
+            }
+            &:hover{
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.footer-ngo {
+    &.main-footer {
+        padding-top: 60px;
+
+        .main-footer-widget {
+            @include media-breakpoint-down(xl) {
+                margin-bottom: 32px;
+            }
+
+            &:not(:last-child) {
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .main-footer-logo {
+            display: block;
+            margin-bottom: 30px;
+            img{
+                max-width: 180px;
+            }
+        }
+
+        .main-footer-title {
+            color: var(--footer-heading-color, #FFF);
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0;
+            margin-bottom: 30px;
+
+            @include media-breakpoint-down(xl) {
+                margin-bottom: 16px;
+            }
+        }
+
+        .main-footer-desc {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        form {
+            input.tnp-email {
+                border: 1px solid rgba(53, 53, 53, 0.1);
+                width: calc(100% - 101px);
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+                border-radius: 0 !important;
+                background-color: #f4f4f4;
+                color: #444;
+                font-size: 14px;
+                padding: 10px;
+                outline: none;
+            }
+
+            .tnp-submit {
+                border-radius: 0;
+                border: none;
+                color: #fff;
+                padding: 8px 12px;
+                vertical-align: top;
+                font-size: 13px;
+                line-height: normal;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                display: inline-block;
+                text-transform: uppercase;
+                width: auto;
+                font-weight: 600;
+                height: 40px;
+                background-color: var(--link-color, rgb(131, 61, 204));
+
+                &:hover {
+                    background-color: var(--link-color-hover, rgb(131, 61, 204));
+                }
+            }
+        }
+
+        .main-footer-menu {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 8px;
+                    }
+
+                    a {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        color: var(--footer-text-color, #FFF);
+                        font-style: normal;
+                        line-height: 24px;
+                        letter-spacing: 0px;
+                        font-size: 16px;
+
+                        &:hover {
+                            color: var(--link-color-hover, #FFF);
+                        }
+
+                        &::before {
+                            content: "\f140";
+                            font: normal normal normal 14px/1 FontAwesome;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-footer-gallery {
+            &-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-row-gap: 8px;
+                grid-column-gap: 8px;
+
+                a {
+                    display: block;
+                    border-radius: 4px;
+
+                    img {
+                        border-radius: 4px;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+
+        .main-footer-socket {
+            padding: 10px 0;
+            margin-top: 55px;
+            border-top-width: 1px;
+            border-top-color: rgba(255, 255, 255, 0.2);
+            border-top-style: solid;
+            @include media-breakpoint-down(xl) {
+                margin-top: 28px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

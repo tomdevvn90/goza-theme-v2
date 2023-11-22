@@ -1,0 +1,64 @@
+.editor-styles-wrapper .block-editor-block-list__layout{
+    .be-ss-upcoming-event-video{
+        &--content{
+            background-color: transparent;
+            border: none;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 1170px;
+            &-heading{
+                font-size: 36px;
+                line-height: 48px;
+                color: var(--heading-color);
+                font-weight: 600;
+            }
+
+            &-event-list{
+                box-sizing: border-box;
+                .item-event{
+                    &--name{
+                        font-size: 22px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        @media screen and (max-width: 991px){
+                            font-size: 20px;
+                            line-height: 28px;
+                        }
+                    }
+
+                    &--cta{
+                        > a{
+                            color: #fff;
+                            text-transform: uppercase;
+                            opacity: 1;
+                            font-weight: 700;
+                            svg{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                pointer-events: none;
+                                animation: dashed_border_running 20s linear infinite both;
+                                animation-play-state: paused;
+                                stroke-width: 2;
+                                stroke-dasharray: 9, 5;
+                                stroke-dashoffset: 0;
+                                stroke-linecap: round;
+                                fill: none;
+                                transition: 0.4s;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-cta{
+                .__icon-play{
+                    opacity: 1;
+                    z-index: 9;
+                }
+            }
+        }
+    }
+}

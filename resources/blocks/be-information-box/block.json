@@ -1,0 +1,15 @@
+{
+    "name": "be-infomation-box",
+    "title": "Be Infomation Box",
+    "category": "goza-theme",
+    "icon": "format-image",
+    "keywords": ["infomation box", "be", "box"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+}

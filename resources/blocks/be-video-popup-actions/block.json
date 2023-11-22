@@ -1,0 +1,14 @@
+{
+    "name": "goza/be-video-popup-actions",
+    "title": "Be Video Popup Actions",
+    "category": "goza-theme",
+    "icon": "video-alt3",
+    "keywords": ["video", "popup", "goza"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  }

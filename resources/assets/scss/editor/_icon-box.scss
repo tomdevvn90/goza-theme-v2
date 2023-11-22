@@ -1,0 +1,65 @@
+.is-root-container{
+    .be-icon-box-block{
+        &--button{
+            a{
+                font-weight: 700;
+                font-family: var(--heading-family);
+                color: #fff;
+                font-size: 13px;
+                line-height: 45px;
+                
+            }
+        }
+    }
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout{
+    .be-icon-box-block{
+        &--heading{
+            line-height: 28px;
+            font-size: 16px;
+            font-weight: bold;
+            > a{
+                font-size: inherit;
+                font-weight: inherit;
+                font-family: inherit;
+                line-height: inherit;
+                letter-spacing: inherit;
+                color: inherit;
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+            }
+        }
+
+        &.is-style-2{
+            .be-icon-box-block--heading{
+                line-height: 28px;
+                font-size: 24px;
+            }
+        }
+
+        &.is-style-water-charity{
+            .be-icon-box-block-inner{
+                &--heading{
+                    font-size: 22px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    letter-spacing: 0.16px;
+                    margin: 24px 0  0 0;
+                    > a{
+                        font-size: inherit;
+                        font-weight: inherit;
+                        font-family: inherit;
+                        line-height: inherit;
+                        letter-spacing: inherit;
+                        color: inherit;
+                        margin: 0;
+                        padding: 0;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

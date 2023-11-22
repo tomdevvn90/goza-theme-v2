@@ -1,0 +1,139 @@
+.play-video-home-earthquake .block-inner #block-video-action a {
+  height: 80px !important;
+  width: 80px !important;
+background-color: #28C77B !important;
+color: #28C77B !important;
+}
+.play-video-home-earthquake .block-inner #block-video-action a i {
+  font-size: 50px;
+}
+.play-video-home-earthquake .block-inner #block-video-action a::before {
+  width: 80px !important;
+  height: 80px !important;
+}
+.give-block-hero {
+  margin-top: -170px;
+  z-index: 1;
+  position: relative;
+}
+.be-section-margin-video{
+  margin-top:-140px;
+}
+.be-section-video .gb-background-cover{
+border-radius:20px;
+}
+.be-section-video .gb-background-cover #block-video-action a.liquid {
+  background-color: #28C77B;
+}
+.be-row-donor .goza-layout-column-wrap{
+   -ms-grid-columns: 3fr 2fr;
+  grid-template-columns: 3fr 2fr;
+}
+.be-col-donate-box.goza-block-layout-column {
+  margin-top: -350px;
+}
+.be-row-donor .give-donor {
+  background: transparent;
+  border: none;
+    box-shadow: none !important;
+}
+.be-row-donor .give-donor .give-donor-container {
+  display: block;
+}
+.be-row-donor .give-donor .give-donor-container {
+  display: block;
+padding:0;
+}
+.be-row-donor .give-donor .give-donor-container__image {
+  width: 100px;
+    float: left;
+}
+.be-row-donor .give-donor .give-donor-container-variation {
+  display: block;
+  padding-left: 120px;
+  font-size: 18px;
+  color: #2222;
+  text-transform: uppercase;
+}
+.be-row-donor .give-donor .give-donor-details {
+  display: block;
+  padding-left: 120px;
+}
+.be-row-donor .give-donor .give-donor-details__wrapper {
+  width: 100%;
+}
+h2.be-heading-has-line {
+  display: inline-block;
+  font-size: 26px;
+  color: #222;
+  position: relative;
+  margin-right:15px;
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.be-row-donor button.give-donor__load_more {
+  display: none;
+}
+.be-box-mgt .goza-block-layout-column-inner {
+  margin-top: -70px;
+}
+ul.be-list-ul li{
+  font-size:20px;
+  color: #555;
+}
+@media only screen and (max-width: 1200px) {
+.be-row-donor .goza-layout-column-wrap {
+  max-width:960px !important;
+  margin:0 auto;
+  padding-left:22px;
+  padding-right:22px;
+}
+}
+@media only screen and (max-width: 992px) {
+.be-row-donor .goza-layout-column-wrap {
+  max-width:720px !important;
+  margin:0 auto;	
+  display: block;
+  padding-left:22px;
+  padding-right:22px;
+}
+.be-col-donate-box.goza-block-layout-column {
+  margin-top: 30px;
+}
+.be-can-help .goza-layout-column-wrap{
+  display:block;
+}
+.be-section-video .gb-background-cover{
+  padding:50px !important;
+}
+.be-section-towards .goza-block-layout-column-inner{
+  padding:50px !important;
+}
+}
+@media only screen and (max-width: 767px) {
+.give-block-hero {
+  margin-top: 50px;
+}
+.be-row-donor .goza-layout-column-wrap {
+  max-width:540px !important;
+  padding-left:15px;
+  padding-right:15px;
+}
+.be-section-icon-box {
+  gap: 0;
+}
+.be-section-video .gb-background-cover .video-popup-actions-block{
+  height: 150px !important;
+}
+.be-section-video .gb-background-cover{
+  padding:40px 32px !important;
+}
+.be-section-towards .goza-block-layout-column-inner {
+  padding: 50px 15px !important;
+}
+.be-section-earthquake-toward .goza-layout-column-wrap{
+  display:block;
+}
+}

@@ -1,0 +1,121 @@
+.error404 {
+    background: url(../images/background-page-404.jpg) center center / cover;
+    background-attachment: fixed;
+    .error-404{
+        padding: 170px 0 170px;
+        background-attachment: fixed;
+        .wrap-entry-404{
+            text-align: center;
+        }
+        h1{
+            font-size: 80px;
+            line-height: 80px;
+            margin-bottom: 28px;
+            color: #fff;
+            font-family: var(--body-family);
+            font-weight: 700;
+        }
+        p{
+            color: #fff;
+        }
+        .btn-go{
+            display: inline-block;
+            background: var(--link-color,#d41b65);
+            color: #ebebeb;
+            border: medium none;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            &:hover{
+                background: #dd548b;
+                color: #fff;
+            }
+        }
+        form{
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            width: 450px;
+            margin: 20px auto;
+            label{
+                display: block;
+                position: relative;
+                width: 100%;
+                margin-bottom: 0;
+                &::after{
+                    content: "\f002";
+                    position: absolute;
+                    right: 25px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    display: inline-block;
+                    font-family: "FontAwesome";
+                    font-style: normal;
+                    font-variant: normal;
+                    font-weight: normal;
+                    line-height: 1;
+                    text-rendering: auto;
+                    text-transform: none;
+                    font-size: 24px;
+                    color: var(--link-color);
+                }
+            }
+            input{
+                padding: 0 35px 0 10px;
+                width: 100%;
+                height: 50px ;
+                border-radius: 100px;
+                padding-left: 24px;
+                padding-right: 80px;
+                color: #333;
+                border: 1px solid rgba(53, 53, 53, 0.1);
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                max-width: 100%;
+                &:focus{
+                    border: 1px solid rgba(212, 27, 101, 0.5);
+                    -webkit-box-shadow: 0px 0px 5px rgba(212, 27, 101, 0.25);
+                    -moz-box-shadow: 0px 0px 5px rgba(212, 27, 101, 0.25);
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            .search-submit{
+                width: 70px;
+                height: 50px;
+                padding: 0 25px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                background: none;
+                font-size: 0;
+                opacity: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 991px){
+        .error-404{
+            padding: 150px 0 150px;
+            h1{
+                font-size: 72px;
+                line-height: 72px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .error-404{
+            padding: 120px 0 120px;
+            h1{
+                font-size: 65px;
+                line-height: 65px;
+            }
+        }
+    }
+}

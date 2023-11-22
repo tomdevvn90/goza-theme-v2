@@ -1,0 +1,15 @@
+{
+    "name": "be-google-map",
+    "title": "Be Google Map",
+    "category": "goza-theme",
+    "icon": "format-image",
+    "keywords": ["google map", "be", "location"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+}

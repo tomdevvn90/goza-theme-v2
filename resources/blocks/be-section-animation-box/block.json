@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-section-animation-box",
+    "title": "Be Section Animation Box",
+    "category": "goza-theme",
+    "icon": "ellipsis",
+    "keywords": ["section", "box", "animation"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+  }

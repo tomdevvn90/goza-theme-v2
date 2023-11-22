@@ -1,0 +1,19 @@
+{
+    "name": "be-single-event",
+    "title": "Be Single Event Block",
+    "category": "goza-theme",
+    "icon": "calendar",
+    "keywords": ["single", "upcoming", "event"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "charity", "label": "Charity" }
+    ],
+    "align": "full"
+}

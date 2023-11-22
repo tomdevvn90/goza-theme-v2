@@ -1,0 +1,15 @@
+{
+    "name": "be-section-text-testimonial-video",
+    "title": "Be Section Text Testimonial Video",
+    "category": "goza-theme",
+    "icon": "playlist-video",
+    "keywords": ["testimonial", "video", "text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+}

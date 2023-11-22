@@ -1,0 +1,25 @@
+{
+    "name": "goza/be-give-grid",
+    "title": "Be Give Grid",
+    "description": "Display Give Donate Grid",
+    "editorStyle": "file:./css/editor.css",
+    "style": "block-be-give-grid",
+    "script": "block-be-give-grid",
+    "category": "goza-theme",
+    "icon": "grid-view",
+    "keywords": ["grid", "give"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "2", "label": "Style 2" },
+        { "name": "3", "label": "Style 3" },
+        { "name": "4", "label": "Style 4" }
+    ],
+    "align": "full"
+  }

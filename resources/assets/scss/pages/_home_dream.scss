@@ -1,0 +1,52 @@
+.wp-block-goza-blocks-goza-button {
+    &.be-gz-dream-btn-last-home{
+        .wp-block-goza-button_link{
+            @media (min-width: 782px) and (max-width: 991.98px) { 
+                font-size: 16px !important;
+             }
+        }
+    }
+}
+
+
+.be-column-image-text-video-block{
+    &.be-column-image-text-video-block--home-dream{
+        .block-grid .block-col__content.block-col__box{
+            @media (max-width: 991.98px){
+                width: 80%;
+                max-width: 310px;
+                left: calc(50% - 17.5px);
+            }
+        }
+
+        .block-grid .block-col__name{
+            @media (max-width: 991.98px){
+                font-size: 20px;
+                line-height: 120%;
+            }
+
+            @media (max-width: 767.98px){
+                font-size: 18px;
+            }
+
+            @media (max-width: 359.98px){
+                font-size: 16px;
+            }
+        }
+
+
+        .block-grid .block-col__position{
+            @media (max-width: 359.98px){
+                font-size: 14px;
+                line-height: 120%;
+            }
+        }
+
+        .block-grid .block-col__content.block-col__box{
+            @media (max-width: 767.98px){
+                padding-left: 20px;
+                padding-right: 40px;
+            }
+        }
+    }
+}

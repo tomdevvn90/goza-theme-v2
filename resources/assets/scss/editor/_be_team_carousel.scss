@@ -1,0 +1,26 @@
+.is-root-container{
+    .be-team-carousel {
+        &-inner{
+            display: flex;
+            overflow: auto;
+            justify-content: flex-start;
+            .item-team{
+                min-width: 300px;
+                margin-right: 20px;
+                &--name{
+                    font-size: 23px;
+                    line-height: 30px;
+                    color: var(--heading-color);
+                    margin: 10px 0px 0px 0px;
+                    font-style: normal;
+                    font-weight: 600;
+                }
+    
+                &--postion{
+                    color: #868686;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

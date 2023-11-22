@@ -1,0 +1,13 @@
+.be-events-carousel{
+    &-inner{
+        display: flex;
+        overflow: auto;
+        padding-bottom: 20px;
+        .item-event{
+            min-width: 450px;
+            margin-right: 20px;
+            background: #eee;
+            padding: 24px;
+        }
+    }
+}
