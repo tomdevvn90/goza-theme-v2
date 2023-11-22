@@ -3210,6 +3210,17 @@
   padding: 0;
 }
 
+.is-layout-constrained.block-editor-block-list__block:not(.is-selected) > .block-list-appender:only-child::after,
+.is-layout-flow.block-editor-block-list__block:not(.is-selected) > .block-list-appender:only-child::after,
+.is-layout-constrained.block-editor-block-list__block:not(.is-selected) > .wp-block-group__inner-container > .block-list-appender:only-child::after,
+.is-layout-flow.block-editor-block-list__block:not(.is-selected) > .wp-block-group__inner-container > .block-list-appender:only-child::after {
+  border: 1px dashed;
+}
+
+body .editor-styles-wrapper :where(.wp-block-columns.is-layout-flex) {
+  gap: 2em;
+}
+
 .editor-styles-wrapper .block-editor-block-list__layout .be-progressbar-block.circle .be-progressbar-block-warp.__editor svg {
   width: 100%;
   height: 100%;
