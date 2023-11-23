@@ -1,0 +1,17 @@
+.wp-block-columns{
+    &.goza-ss-vd-about{
+        > .wp-block-column{
+            &:nth-child(2){
+                @media (min-width: 1200px) {
+                    padding-left: 43px;
+                }
+            }
+
+
+            .video-popup-actions-block .block-inner__heading{
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+}

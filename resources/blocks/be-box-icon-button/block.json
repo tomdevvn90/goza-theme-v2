@@ -1,0 +1,15 @@
+{
+    "name": "goza/be-box-icon-button",
+    "title": "Be Box Icon Button",
+    "category": "goza-theme",
+    "icon": "testimonial",
+    "keywords": ["icon", "box", "button"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": true
+    },
+    "align": "full"
+  }

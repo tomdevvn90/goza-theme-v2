@@ -16929,6 +16929,17 @@ div[id*=give-form].give-display-reveal .give-btn {
   display: inline-block;
 }
 
+@media (min-width: 1200px) {
+  .wp-block-columns.goza-ss-vd-about > .wp-block-column:nth-child(2) {
+    padding-left: 43px;
+  }
+}
+
+.wp-block-columns.goza-ss-vd-about > .wp-block-column .video-popup-actions-block .block-inner__heading {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .block-editor-block-list__block .be-testimonials-block-carousel {
   display: flex;
   overflow: auto;
