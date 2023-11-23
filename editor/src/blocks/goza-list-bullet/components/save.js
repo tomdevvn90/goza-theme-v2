@@ -21,12 +21,7 @@ const Save = (props) => {
 						'--spaceItem': spaceItem,
 					}
 				})()}>
-				<ul 
-					data-aos="fade-up"
-					data-aos-duration="600"
-					data-aos-delay="0"
-					data-aos-easing="ease-in-out"
-				>
+				<ul>
 					{values}
 				</ul>
 			</div>
