@@ -1,0 +1,28 @@
+.wp-block-goza-blocks-goza-container{
+    &.gz-ss-help-ab-page{
+        > .container{
+            > .block-editor-inner-blocks{
+                > .block-editor-block-list__layout{
+                    > .wp-block-columns{
+                        > .wp-block-column{
+                            &:first-child{
+                                .be-box-icon-btn{
+                                    @media (min-width: 1200px){
+                                        width: 100%;
+                                        max-width: 485px;
+                                    }
+                                }
+                            }
+    
+                            &:last-child{
+                                .wp-block-image {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

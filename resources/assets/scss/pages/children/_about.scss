@@ -29,3 +29,35 @@
         }
     }
 }
+
+
+.wp-block-goza-blocks-goza-container{
+    &.gz-ss-help-ab-page{
+        > .container{
+            > .wp-block-columns{
+                &:first-child{
+                    @include media-breakpoint-down(md) {
+                        gap: 16px;
+                    }
+                }
+
+                > .wp-block-column{
+                    &:first-child{
+                        .be-box-icon-btn{
+                            @media (min-width: 1200px){
+                                width: 100%;
+                                max-width: 485px;
+                            }
+                        }
+                    }
+
+                    &:last-child{
+                        .wp-block-image {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

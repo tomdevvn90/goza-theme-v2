@@ -1,0 +1,19 @@
+.is-root-container{
+    .be-box-icon-btn{
+        &--heading{
+            font-size: 20px;
+            line-height: 115%;
+        }
+
+        &--cta{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--btn-color);
+            margin-top: 10px;
+            &:hover{
+                color: var(--btn-color-hv);
+            }
+        }
+    }
+}
