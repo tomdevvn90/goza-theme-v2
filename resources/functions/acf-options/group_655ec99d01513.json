@@ -1,0 +1,55 @@
+{
+    "key": "group_655ec99d01513",
+    "title": "Give Form Style",
+    "fields": [
+        {
+            "key": "field_655ec99e798bd",
+            "label": "Give Form Style",
+            "name": "be_give_form_style",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "style1": "Style 1",
+                "style2": "Style 2",
+                "style3": "Style 3",
+                "style4": "Style 4",
+                "style5": "Style 5"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "give_forms"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1700729108
+}
