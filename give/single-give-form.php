@@ -26,7 +26,28 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 
-	give_get_template_part( 'single-give-form/content', 'single-give-form' );
+	$be_give_st = get_field('be_give_form_style');
+
+	switch ($be_give_st) {
+		case "style1":
+			give_get_template_part( 'single-give-form/content', 'style-1' );
+			break;
+		case "style2":
+			give_get_template_part( 'single-give-form/content', 'style-2' );
+			break;
+		case "style3":
+			give_get_template_part( 'single-give-form/content', 'style-3' );
+			break;
+		case "style4":
+			give_get_template_part( 'single-give-form/content', 'style-4' );
+			break;
+		case "style5":
+			give_get_template_part( 'single-give-form/content', 'style-5' );
+			break;
+		default:
+			give_get_template_part( 'single-give-form/content', 'single-give-form' );
+	}
+	//give_get_template_part( 'single-give-form/content', 'single-give-form' );
 	?>
 	<div class="be-give-navi">
 	<div class="container responsive">
