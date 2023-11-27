@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $form_id = get_the_ID();
 ?>
-<div class="single-give-forms-template">
+<div class="single-give-forms-template-default">
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'give-form-wrap' ); ?>>
 
 <div class="give-header-ss">
