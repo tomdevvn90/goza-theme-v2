@@ -24515,8 +24515,7 @@ form.give-form.give-form-type-multi button.give-btn.give-btn-modal {
   margin: 0;
   display: flex;
   justify-content: center;
-  -webkit-margin-start: 0 !important;
-          margin-inline-start: 0 !important;
+  margin-inline-start: 0 !important;
 }
 
 .error404 {
@@ -25020,8 +25019,7 @@ form.give-form.give-form-type-multi button.give-btn.give-btn-modal {
 
   .wp-block-columns.be-gz-orgazination-row-counter > .wp-block-column .be-counter-up.alignright {
     text-align: center;
-    -webkit-margin-start: 0;
-            margin-inline-start: 0;
+    margin-inline-start: 0;
   }
 
   .wp-block-columns.be-gz-orgazination-row-counter > .wp-block-column:not(:last-child) {

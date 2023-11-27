@@ -1,230 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/js/theme"],{
 
-/***/ "./node_modules/aos/dist/aos.css":
-/*!***************************************!*\
-  !*** ./node_modules/aos/dist/aos.css ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../css-loader??ref--18-1!../../postcss-loader/src??ref--18-2!./aos.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/aos/dist/aos.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/aos/dist/aos.js":
-/*!**************************************!*\
-  !*** ./node_modules/aos/dist/aos.js ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\aos\\dist\\aos.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\aos\\dist\\aos.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/counterup2/dist/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/counterup2/dist/index.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\counterup2\\dist\\index.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\counterup2\\dist\\index.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/aos/dist/aos.css":
-/*!*************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--18-1!./node_modules/postcss-loader/src??ref--18-2!./node_modules/aos/dist/aos.css ***!
-  \*************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/postcss-loader/src/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\aos\\dist\\aos.css'");
-=======
-throw new Error("Module build failed (from ./node_modules/postcss-loader/src/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\aos\\dist\\aos.css'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/jquery/dist/jquery.js":
-/*!********************************************!*\
-  !*** ./node_modules/jquery/dist/jquery.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\jquery\\dist\\jquery.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\jquery\\dist\\jquery.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/lightgallery/lightgallery.es5.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/lightgallery/lightgallery.es5.js ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\lightgallery\\lightgallery.es5.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\lightgallery\\lightgallery.es5.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/lightgallery/plugins/autoplay/lg-autoplay.es5.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/lightgallery/plugins/autoplay/lg-autoplay.es5.js ***!
-  \***********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\lightgallery\\plugins\\autoplay\\lg-autoplay.es5.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\lightgallery\\plugins\\autoplay\\lg-autoplay.es5.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.es5.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.es5.js ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\lightgallery\\plugins\\thumbnail\\lg-thumbnail.es5.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\lightgallery\\plugins\\thumbnail\\lg-thumbnail.es5.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/lightgallery/plugins/video/lg-video.es5.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/lightgallery/plugins/video/lg-video.es5.js ***!
-  \*****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\lightgallery\\plugins\\video\\lg-video.es5.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\lightgallery\\plugins\\video\\lg-video.es5.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/lightgallery/plugins/zoom/lg-zoom.es5.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/lightgallery/plugins/zoom/lg-zoom.es5.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\lightgallery\\plugins\\zoom\\lg-zoom.es5.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\lightgallery\\plugins\\zoom\\lg-zoom.es5.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/progressbar.js/src/main.js":
-/*!*************************************************!*\
-  !*** ./node_modules/progressbar.js/src/main.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\progressbar.js\\src\\main.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\progressbar.js\\src\\main.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/slick-carousel/slick/slick.js":
-/*!****************************************************!*\
-  !*** ./node_modules/slick-carousel/slick/slick.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\slick-carousel\\slick\\slick.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\slick-carousel\\slick\\slick.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/lib/addStyles.js":
-/*!****************************************************!*\
-  !*** ./node_modules/style-loader/lib/addStyles.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\style-loader\\lib\\addStyles.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\style-loader\\lib\\addStyles.js'");
->>>>>>> main
-
-/***/ }),
-
-/***/ "./node_modules/waypoints/lib/jquery.waypoints.min.js":
-/*!************************************************************!*\
-  !*** ./node_modules/waypoints/lib/jquery.waypoints.min.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-<<<<<<< HEAD
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\waypoints\\lib\\jquery.waypoints.min.js'");
-=======
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\waypoints\\lib\\jquery.waypoints.min.js'");
->>>>>>> main
-
-/***/ }),
-
 /***/ "./resources/assets/js/blocks/counter-box.js":
 /*!***************************************************!*\
   !*** ./resources/assets/js/blocks/counter-box.js ***!
@@ -529,7 +304,7 @@ $(document).ready(function () {
   var beProgressbarBlock = function beProgressbarBlock() {
     var $progressbar = $('.be-progressbar-block');
     if ($progressbar.length === 0) return;
-    var ProgressBar = __webpack_require__(/*! progressbar.js */ "./node_modules/progressbar.js/src/main.js");
+    var ProgressBar = __webpack_require__(/*! progressbar.js */ "./node_modules/progressbar.js/dist/progressbar.js");
     $progressbar.each(function () {
       var $idProgressbar = $(this).find('.be-progressbar-block-warp').attr('id'),
         $shape = $(this).data('shape'),
@@ -885,7 +660,7 @@ be_projects_grid_loadmore.forEach(function (element) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lightgallery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lightgallery */ "./node_modules/lightgallery/lightgallery.es5.js");
 /* harmony import */ var lightgallery_plugins_video__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lightgallery/plugins/video */ "./node_modules/lightgallery/plugins/video/lg-video.es5.js");
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
@@ -1189,7 +964,7 @@ __webpack_require__.r(__webpack_exports__);
     $isProgressbar.each(function () {
       var $value = $(this).data('progressbar') / 100,
         $idProgressbar = $(this).attr('id'),
-        ProgressBar = __webpack_require__(/*! progressbar.js */ "./node_modules/progressbar.js/src/main.js"),
+        ProgressBar = __webpack_require__(/*! progressbar.js */ "./node_modules/progressbar.js/dist/progressbar.js"),
         $heading = $(this).data('heading') ? $(this).data('heading') : '',
         $duration = $(this).data('duration'),
         $trailcolor = $(this).data('trailcolor'),
@@ -1605,11 +1380,7 @@ $(document).on("load", function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n\r\n@import '~font-awesome/scss/font-awesome';\r\n       ^\r\n      Can't find stylesheet to import.\n  ╷\n1 │ @import '~font-awesome/scss/font-awesome';\n  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  stdin 1:9  root stylesheet\r\n      in C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\resources\\assets\\scss\\editor\\editor.scss (line 1, column 9)\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass-loader\\dist\\index.js:89:7\n    at Function.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:103872:16)\n    at render_closure1.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:88449:12)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3803:17)\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:20461:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3828:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28886:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28880:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3803:17)\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:15859:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3828:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28886:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28880:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3803:17)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n\r\n@import '~font-awesome/scss/font-awesome';\r\n       ^\r\n      Can't find stylesheet to import.\n  ╷\n1 │ @import '~font-awesome/scss/font-awesome';\r\n  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  stdin 1:9  root stylesheet\r\n      in C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\resources\\assets\\scss\\editor\\editor.scss (line 1, column 9)\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass-loader\\dist\\index.js:89:7\n    at Function.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:103872:16)\n    at render_closure1.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:88449:12)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3803:17)\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:20461:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3828:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28886:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28880:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3803:17)\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:15859:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3828:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28886:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28880:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3803:17)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1620,11 +1391,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1635,11 +1402,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1650,11 +1413,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1665,11 +1424,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1680,11 +1435,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1695,11 +1446,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1710,11 +1457,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1725,11 +1468,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1740,11 +1479,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1755,11 +1490,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1770,11 +1501,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\css-loader\\lib\\css-base.js'\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at Array.<anonymous> (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19)\n    at Storage.finished (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:55:16)\n    at ReadFileContext.<anonymous> (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:91:9)\n    at ReadFileContext.callback (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\graceful-fs\\graceful-fs.js:123:16)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (node:fs:314:13)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1785,11 +1512,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n\r\n@import \"~bootstrap/scss/functions\";\r\n       ^\r\n      Can't find stylesheet to import.\n  ╷\n2 │ @import \"~bootstrap/scss/functions\";\n  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  stdin 2:9  root stylesheet\r\n      in C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\resources\\assets\\scss\\theme.scss (line 2, column 9)\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass-loader\\dist\\index.js:89:7\n    at Function.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:103872:16)\n    at render_closure1.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:88449:12)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3803:17)\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:20461:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3828:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28886:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28880:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3803:17)\n    at C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:15859:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3828:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28886:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28880:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Vuong\\Local Sites\\goza-v2-dev\\app\\public\\wp-content\\themes\\goza-theme\\node_modules\\sass\\sass.dart.js:3803:17)");
-=======
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n\r\n@import \"~bootstrap/scss/functions\";\r\n       ^\r\n      Can't find stylesheet to import.\n  ╷\n2 │ @import \"~bootstrap/scss/functions\";\r\n  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  stdin 2:9  root stylesheet\r\n      in C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\resources\\assets\\scss\\theme.scss (line 2, column 9)\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass-loader\\dist\\index.js:89:7\n    at Function.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:103872:16)\n    at render_closure1.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:88449:12)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3803:17)\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:20461:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3828:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28886:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28880:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3803:17)\n    at C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:15859:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3828:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28886:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28880:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:30537:18)\n    at _FutureListener.handleError$1 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29066:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29373:49)\n    at Object._Future__propagateToListeners (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:4001:77)\n    at _Future._completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:29219:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:28867:12)\n    at Object._asyncRethrow (C:\\Users\\Admin\\Local Sites\\goza\\app\\public\\wp-content\\themes\\goza-theme-v2\\node_modules\\sass\\sass.dart.js:3803:17)");
->>>>>>> main
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1800,39 +1523,22 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\js\theme.js */"./resources/assets/js/theme.js");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\theme.scss */"./resources/assets/scss/theme.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\editor\editor.scss */"./resources/assets/scss/editor/editor.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\general.scss */"./resources/assets/scss/home/general.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\charity.scss */"./resources/assets/scss/home/charity.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\dream.scss */"./resources/assets/scss/home/dream.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\ngo-dark.scss */"./resources/assets/scss/home/ngo-dark.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\ngo.scss */"./resources/assets/scss/home/ngo.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\organization.scss */"./resources/assets/scss/home/organization.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\water-charity.scss */"./resources/assets/scss/home/water-charity.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\water.scss */"./resources/assets/scss/home/water.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\charity-new.scss */"./resources/assets/scss/home/charity-new.scss");
-__webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\charity-organization.scss */"./resources/assets/scss/home/charity-organization.scss");
-module.exports = __webpack_require__(/*! C:\Users\Vuong\Local Sites\goza-v2-dev\app\public\wp-content\themes\goza-theme\resources\assets\scss\home\earthquake.scss */"./resources/assets/scss/home/earthquake.scss");
-=======
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\js\theme.js */"./resources/assets/js/theme.js");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\theme.scss */"./resources/assets/scss/theme.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\editor\editor.scss */"./resources/assets/scss/editor/editor.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\general.scss */"./resources/assets/scss/home/general.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\charity.scss */"./resources/assets/scss/home/charity.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\dream.scss */"./resources/assets/scss/home/dream.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\ngo-dark.scss */"./resources/assets/scss/home/ngo-dark.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\ngo.scss */"./resources/assets/scss/home/ngo.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\organization.scss */"./resources/assets/scss/home/organization.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\water-charity.scss */"./resources/assets/scss/home/water-charity.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\water.scss */"./resources/assets/scss/home/water.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\charity-new.scss */"./resources/assets/scss/home/charity-new.scss");
-__webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\charity-organization.scss */"./resources/assets/scss/home/charity-organization.scss");
-module.exports = __webpack_require__(/*! C:\Users\Admin\Local Sites\goza\app\public\wp-content\themes\goza-theme-v2\resources\assets\scss\home\earthquake.scss */"./resources/assets/scss/home/earthquake.scss");
->>>>>>> main
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/js/theme.js */"./resources/assets/js/theme.js");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/theme.scss */"./resources/assets/scss/theme.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/editor/editor.scss */"./resources/assets/scss/editor/editor.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/general.scss */"./resources/assets/scss/home/general.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/charity.scss */"./resources/assets/scss/home/charity.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/dream.scss */"./resources/assets/scss/home/dream.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/ngo-dark.scss */"./resources/assets/scss/home/ngo-dark.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/ngo.scss */"./resources/assets/scss/home/ngo.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/organization.scss */"./resources/assets/scss/home/organization.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/water-charity.scss */"./resources/assets/scss/home/water-charity.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/water.scss */"./resources/assets/scss/home/water.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/charity-new.scss */"./resources/assets/scss/home/charity-new.scss");
+__webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/charity-organization.scss */"./resources/assets/scss/home/charity-organization.scss");
+module.exports = __webpack_require__(/*! /Users/vuongvovan/Local Sites/goza-v2-dev/app/public/wp-content/themes/goza-theme/resources/assets/scss/home/earthquake.scss */"./resources/assets/scss/home/earthquake.scss");
 
 
 /***/ })
 
-},[[0,"/js/manifest"]]]);
+},[[0,"/js/manifest","/js/vendor"]]]);
