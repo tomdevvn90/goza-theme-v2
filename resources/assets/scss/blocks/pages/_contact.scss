@@ -1,0 +1,71 @@
+.wp-block-column{
+    &.gz-col-info-contact-page{
+        .be-infomation-section{
+            width: 100%;
+            max-width: 360px;
+        }
+    }
+}
+
+.wp-block-goza-blocks-goza-container{
+    &.gz-ss-form-contact-page{
+        overflow: inherit;
+        .gz-form-contact-page{
+            margin-top: -360px;
+
+            .wpcf7-form{
+                @include media-breakpoint-up(md) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    > div, > p{
+                        width:100%;
+                        text-align: center;
+                    }
+    
+                    input[type=submit] {
+                        max-width: 200px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .column-submit{
+                        position: relative;
+                        padding-bottom: 30px;
+                        .wpcf7-spinner{
+                            position: absolute;
+                            left: 50%;
+                            bottom: -40px;
+                            transform: translateX(-50%);
+                            margin: 0;
+                        }
+                    }
+
+                    .wpcf7-response-output{
+                        margin-top: 0;
+                    }
+
+                    .wpcf7-not-valid-tip{
+                        text-align: left;
+                        font-size: 15px;
+                        line-height: 115%;
+                        margin-top: 10px;
+                    }
+    
+                    .column{
+                        &.name, &.email{
+                            width: calc(50% - 10px);
+                            padding:0;
+    
+                        }
+    
+                        &.subject{
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -11,5 +11,9 @@
     "supports": {
         "align": true
     },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "list", "label": "List" }
+    ],
     "align": "full"
 }
