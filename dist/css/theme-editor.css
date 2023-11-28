@@ -11774,6 +11774,10 @@ body .editor-styles-wrapper :where(.wp-block-columns.is-layout-flex) {
   text-decoration: underline;
 }
 
+.be-infomation-section .be-infomation-box .be-infomation-list .be-infmation-item--heading {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .be-infomation-section .be-infomation-box .be-infomation-list {
     grid-template-columns: repeat(1, 1fr);
@@ -11798,6 +11802,53 @@ body .editor-styles-wrapper :where(.wp-block-columns.is-layout-flex) {
   .be-infomation-section .be-infomation-box .be-infomation-list .be-infmation-item {
     padding: 10px 20px;
   }
+}
+
+.be-infomation-section.is-style-list .be-infomation-list {
+  grid-template-columns: repeat(1, 1fr);
+  background: transparent !important;
+}
+
+.be-infomation-section.is-style-list .be-infomation-list .be-infmation-item {
+  padding: 0;
+  border: none !important;
+  display: flex;
+  align-items: center;
+}
+
+.be-infomation-section.is-style-list .be-infomation-list .be-infmation-item:not(:first-child) {
+  margin-top: 24px;
+}
+
+.be-infomation-section.is-style-list .be-infomation-list .be-infmation-item--icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  min-width: 90px;
+  min-height: 90px;
+}
+
+.be-infomation-section.is-style-list .be-infomation-list .be-infmation-item--icon-wrap img {
+  width: 100%;
+  max-width: 35px;
+  min-width: 35px;
+  height: auto;
+}
+
+.be-infomation-section.is-style-list .be-infomation-list .be-infmation-item--text {
+  font-size: 18px;
+  line-height: 115%;
+}
+
+.be-infomation-section.is-style-list .be-infomation-list .be-infmation-item--heading {
+  display: block;
+  color: inherit;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .be-projects-grid-section .grid-layout {
@@ -17085,6 +17136,74 @@ div[id*=give-form].give-display-reveal .give-btn {
 .wp-block-columns.goza-ss-vd-about > .wp-block-column .video-popup-actions-block .block-inner__heading {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.wp-block-column.gz-col-info-contact-page .be-infomation-section {
+  width: 100%;
+  max-width: 360px;
+}
+
+.wp-block-goza-blocks-goza-container.gz-ss-form-contact-page {
+  overflow: inherit;
+}
+
+.wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page {
+  margin-top: -360px;
+}
+
+@media (min-width: 768px) {
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form > div,
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form > p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form input[type=submit] {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form .column-submit {
+    position: relative;
+    padding-bottom: 30px;
+  }
+
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form .column-submit .wpcf7-spinner {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form .wpcf7-response-output {
+    margin-top: 0;
+  }
+
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form .wpcf7-not-valid-tip {
+    text-align: left;
+    font-size: 15px;
+    line-height: 115%;
+    margin-top: 10px;
+  }
+
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form .column.name,
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form .column.email {
+    width: calc(50% - 10px);
+    padding: 0;
+  }
+
+  .wp-block-goza-blocks-goza-container.gz-ss-form-contact-page .gz-form-contact-page .wpcf7-form .column.subject {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .block-editor-block-list__block .be-testimonials-block-carousel {
