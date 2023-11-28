@@ -16,6 +16,7 @@ define('THEME_PATH', get_template_directory());
 define('THEME_URI_DIST', get_template_directory_uri() . '/dist');
 
 
+require THEME_PATH . '/resources/functions/ajax.php';
 require THEME_PATH . '/resources/functions/reset.php';
 require THEME_PATH . '/resources/functions/initialize.php';
 require THEME_PATH . '/resources/functions/assets.php';

@@ -3617,6 +3617,7 @@ body .editor-styles-wrapper :where(.wp-block-columns.is-layout-flex) {
 
 .be-team-carousel-inner .item-team--postion {
   color: #868686;
+  margin: 0;
 }
 
 .be-team-carousel-inner .item-team--social {

@@ -7,6 +7,8 @@ import counterUp from 'counterup2'
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import lgZoom from 'lightgallery/plugins/zoom'
 
+import './pages/fw-portfolio';
+
 (function ($) {
     "use strict";
 
