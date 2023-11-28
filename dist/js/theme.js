@@ -1,5 +1,96 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/js/theme"],{
 
+/***/ "./resources/assets/js/blocks/be-fw-portfolio.js":
+/*!*******************************************************!*\
+  !*** ./resources/assets/js/blocks/be-fw-portfolio.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+(function ($) {
+  "use strict";
+
+  var beFilterFwPortfolio = function beFilterFwPortfolio() {
+    var $btnFilter = $('.be-fw-portfolio-block-categorys--item > a');
+    var $btnLoadmore = $('.be-fw-portfolio-block--loadmore-btn');
+    $btnLoadmore.click(function (e) {
+      e.preventDefault();
+      var page = $(this).data('page'),
+        maxPage = $(this).data('max-page'),
+        term = $(this).data('term'),
+        loadmore = this.getAttribute('data-loadmore'),
+        actioned = 'loadmore',
+        postsPerPpage = $(this).parents('.be-fw-portfolio-block').data('posts-per-page'),
+        order = $(this).parents('.be-fw-portfolio-block').data('order'),
+        orderby = $(this).parents('.be-fw-portfolio-block').data('orderby');
+      page = page + 1;
+      __ajax_filter({
+        page: page,
+        maxPage: maxPage,
+        term: term,
+        loadmore: loadmore,
+        actioned: actioned,
+        postsPerPpage: postsPerPpage,
+        order: order,
+        orderby: orderby
+      });
+      $(this).parents('.be-fw-portfolio-block').find('.be-fw-portfolio-block--loadmore-btn').attr('data-page', page);
+      ;
+    });
+    $btnFilter.click(function (e) {
+      e.preventDefault();
+      $btnFilter.removeClass('active');
+      $(this).addClass('active');
+      var dataFilter = $(this).data('filter'),
+        page = 1,
+        actioned = 'filter',
+        postsPerPpage = $(this).parents('.be-fw-portfolio-block').data('posts-per-page'),
+        order = $(this).parents('.be-fw-portfolio-block').data('order'),
+        orderby = $(this).parents('.be-fw-portfolio-block').data('orderby');
+      $(this).parents('.be-fw-portfolio-block').find('.be-fw-portfolio-block--loadmore-btn').attr('data-term', dataFilter);
+      __ajax_filter({
+        dataFilter: dataFilter,
+        page: page,
+        actioned: actioned,
+        postsPerPpage: postsPerPpage,
+        order: order,
+        orderby: orderby
+      });
+    });
+    function __ajax_filter() {
+      var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      try {
+        $.ajax({
+          type: "post",
+          url: php_data.ajax_url,
+          dataType: "json",
+          data: _objectSpread({
+            action: "be_load_item_fw_portfolio"
+          }, val),
+          success: function success(data) {
+            $('.be-fw-portfolio-block--list-posts').html(data.items);
+            if (data.hideLoadMore) $btnLoadmore.hide();else $btnLoadmore.show();
+          }
+        });
+      } catch (e) {
+        console.log(e);
+      }
+    }
+  };
+  $(window).on("load", function () {
+    beFilterFwPortfolio();
+  });
+})(jQuery);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
 /***/ "./resources/assets/js/blocks/counter-box.js":
 /*!***************************************************!*\
   !*** ./resources/assets/js/blocks/counter-box.js ***!
@@ -1381,6 +1472,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_logo_carousel__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_blocks_logo_carousel__WEBPACK_IMPORTED_MODULE_19__);
 /* harmony import */ var _blocks_projects_grid_action__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/projects-grid-action */ "./resources/assets/js/blocks/projects-grid-action.js");
 /* harmony import */ var _blocks_counter_box__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/counter-box */ "./resources/assets/js/blocks/counter-box.js");
+/* harmony import */ var _blocks_be_fw_portfolio__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/be-fw-portfolio */ "./resources/assets/js/blocks/be-fw-portfolio.js");
+/* harmony import */ var _blocks_be_fw_portfolio__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_blocks_be_fw_portfolio__WEBPACK_IMPORTED_MODULE_22__);
 
 
 
@@ -1408,6 +1501,7 @@ $(document).ready(function () {
 $(document).on("load", function () {
   aos__WEBPACK_IMPORTED_MODULE_6___default.a.refresh();
 });
+
 
 
 

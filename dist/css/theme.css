@@ -39365,6 +39365,130 @@ div[id*=give-form].give-display-reveal .give-btn {
   fill: var(--btn-color-hv);
 }
 
+.be-fw-portfolio-block.alignfull > .container {
+  max-width: 100% !important;
+}
+
+.be-fw-portfolio-block-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.be-fw-portfolio-block-categorys {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 32px auto;
+  padding: 0;
+}
+
+.be-fw-portfolio-block-categorys--item {
+  list-style-type: none;
+}
+
+.be-fw-portfolio-block-categorys--item:first-child a {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.be-fw-portfolio-block-categorys--item:last-child a {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.be-fw-portfolio-block-categorys--item:not(:last-child) a {
+  border-right: 1px solid #4D6995;
+}
+
+.be-fw-portfolio-block-categorys--item a {
+  padding: 20px 40px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 115%;
+  font-weight: var(--heading-font-weight);
+  letter-spacing: var(--heading-letter-spacing);
+  font-family: var(--heading-family);
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.be-fw-portfolio-block-categorys--item a.active,
+.be-fw-portfolio-block-categorys--item a:hover {
+  background-color: var(--link-color);
+  color: var(--heading-color);
+  border-color: var(--link-color);
+}
+
+.be-fw-portfolio-block--list-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio {
+  border: solid 0.5px rgba(212, 27, 101, 0.5);
+  border-top: none;
+  position: relative;
+  padding-bottom: 56px;
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--content {
+  padding: 32px 16px;
+  text-align: left;
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--thumbnail {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--thumbnail img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--heading {
+  font-size: 20px;
+  line-height: 115%;
+  margin: 0 0 16px 0;
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--excerpt {
+  color: var(--body-color);
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--excerpt p {
+  margin: 0;
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--cta {
+  position: absolute;
+  left: 16px;
+  bottom: 32px;
+  width: 100%;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--cta::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 1px;
+  background: #dedede;
+}
+
 @media (min-width: 1200px) {
   .wp-block-columns.goza-ss-vd-about > .wp-block-column:nth-child(2) {
     padding-left: 43px;
