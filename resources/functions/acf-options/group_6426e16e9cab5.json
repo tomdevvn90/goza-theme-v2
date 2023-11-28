@@ -108,7 +108,8 @@
                     "return_format": "id",
                     "multiple": 1,
                     "allow_null": 1,
-                    "ui": 1
+                    "ui": 1,
+                    "bidirectional_target": []
                 },
                 {
                     "key": "field_642adeaac8466",
@@ -131,7 +132,8 @@
                     "return_format": "id",
                     "field_type": "multi_select",
                     "allow_null": 1,
-                    "multiple": 0
+                    "multiple": 0,
+                    "bidirectional_target": []
                 },
                 {
                     "key": "field_642adef6c8467",
@@ -180,5 +182,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688952383
+    "modified": 1701181919
 }

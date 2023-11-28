@@ -17144,22 +17144,42 @@ div[id*=give-form].give-display-reveal .give-btn {
   padding: 0;
 }
 
+@media (max-width: 575.98px) {
+  .be-fw-portfolio-block-categorys {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
 .be-fw-portfolio-block-categorys--item {
   list-style-type: none;
 }
 
-.be-fw-portfolio-block-categorys--item:first-child a {
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+@media (max-width: 575.98px) {
+  .be-fw-portfolio-block-categorys--item {
+    width: 100%;
+  }
 }
 
-.be-fw-portfolio-block-categorys--item:last-child a {
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+@media (min-width: 576px) {
+  .be-fw-portfolio-block-categorys--item:first-child a {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
 }
 
-.be-fw-portfolio-block-categorys--item:not(:last-child) a {
-  border-right: 1px solid #4D6995;
+@media (min-width: 576px) {
+  .be-fw-portfolio-block-categorys--item:last-child a {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  .be-fw-portfolio-block-categorys--item:not(:last-child) a {
+    border-right: 1px solid #4D6995;
+  }
 }
 
 .be-fw-portfolio-block-categorys--item a {
@@ -17170,22 +17190,58 @@ div[id*=give-form].give-display-reveal .give-btn {
   font-weight: var(--heading-font-weight);
   letter-spacing: var(--heading-letter-spacing);
   font-family: var(--heading-family);
-  background-color: #000;
-  color: #fff;
+  background-color: var(--filter-bg-nm);
+  color: var(--filter-cl-nm);
   transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 991.98px) {
+  .be-fw-portfolio-block-categorys--item a {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .be-fw-portfolio-block-categorys--item a {
+    padding: 15px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .be-fw-portfolio-block-categorys--item a {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+  }
 }
 
 .be-fw-portfolio-block-categorys--item a.active,
 .be-fw-portfolio-block-categorys--item a:hover {
-  background-color: var(--link-color);
-  color: var(--heading-color);
-  border-color: var(--link-color);
+  background-color: var(--filter-bg-hv);
+  color: var(--filter-cl-hv);
+  border-color: var(--filter-bg-hv);
 }
 
 .be-fw-portfolio-block--list-posts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  row-gap: var(--row-gap);
+  -moz-column-gap: var(--column-gap);
+       column-gap: var(--column-gap);
+}
+
+@media (max-width: 991.98px) {
+  .be-fw-portfolio-block--list-posts {
+    grid-template-columns: repeat(var(--columns-tb), 1fr);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .be-fw-portfolio-block--list-posts {
+    grid-template-columns: repeat(var(--columns-mb), 1fr);
+  }
 }
 
 .be-fw-portfolio-block--list-posts .item-fw-portfolio {
@@ -17202,7 +17258,7 @@ div[id*=give-form].give-display-reveal .give-btn {
 
 .be-fw-portfolio-block--list-posts .item-fw-portfolio--thumbnail {
   width: 100%;
-  height: 350px;
+  height: 300px;
   position: relative;
 }
 
@@ -17222,10 +17278,11 @@ div[id*=give-form].give-display-reveal .give-btn {
   font-size: 20px;
   line-height: 115%;
   margin: 0 0 16px 0;
+  color: var(--hd-color);
 }
 
 .be-fw-portfolio-block--list-posts .item-fw-portfolio--excerpt {
-  color: var(--body-color);
+  color: var(--ex-color);
 }
 
 .be-fw-portfolio-block--list-posts .item-fw-portfolio--excerpt p {
@@ -17241,6 +17298,11 @@ div[id*=give-form].give-display-reveal .give-btn {
   margin-top: 16px;
 }
 
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--cta i,
+.be-fw-portfolio-block--list-posts .item-fw-portfolio--cta span {
+  color: var(--btn-color);
+}
+
 .be-fw-portfolio-block--list-posts .item-fw-portfolio--cta::before {
   content: "";
   position: absolute;
@@ -17249,6 +17311,10 @@ div[id*=give-form].give-display-reveal .give-btn {
   width: 30%;
   height: 1px;
   background: #dedede;
+}
+
+.be-fw-portfolio-block--loadmore > a {
+  margin-top: 32px;
 }
 
 @media (min-width: 1200px) {
