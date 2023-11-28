@@ -40741,10 +40741,47 @@ div[id*=give-form].give-display-reveal .give-btn {
   }
 }
 
+.woocommerce-page .main-woocommerce .products.columns-1 .product-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.woocommerce-page .main-woocommerce .products.columns-2 .product-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.woocommerce-page .main-woocommerce .products.columns-3 .product-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.woocommerce-page .main-woocommerce .products.columns-5 .product-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.woocommerce-page .main-woocommerce .products.columns-6 .product-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.woocommerce-page .main-woocommerce .products .product-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
 .woocommerce-page .main-woocommerce .products .product-item .product {
+  overflow: hidden;
+  position: relative;
+  background: #f8f7f5;
   text-align: center;
   line-height: 0;
-  margin-bottom: 40px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .onsale {
@@ -40773,11 +40810,11 @@ div[id*=give-form].give-display-reveal .give-btn {
 
 .woocommerce-page .main-woocommerce .products .product-item .product .woocommerce-loop-product__title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--body-family);
   letter-spacing: 0;
   line-height: 26px;
-  padding: 20px 0 10px;
+  padding: 20px 10px 10px;
   color: #222;
 }
 
@@ -40794,22 +40831,40 @@ div[id*=give-form].give-display-reveal .give-btn {
   margin: 0;
   padding: 10px 0;
   font-size: 16px;
+  font-weight: 600;
   color: var(--link-color);
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .price .amount {
+  font-weight: 600;
   color: var(--link-color);
 }
 
-.woocommerce-page .main-woocommerce .products .product-item .product .add_to_cart_button {
-  position: relative;
+.woocommerce-page .main-woocommerce .products .product-item .product .button {
+  position: absolute;
+  top: calc(50% - 38px);
+  left: 50%;
+  transform: translate(-50%, 0%);
   overflow: hidden;
   background-color: var(--link-color);
   color: #FFFFFF;
-  padding: 10px 12px;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s;
+  opacity: 0;
+  width: 100%;
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.woocommerce-page .main-woocommerce .products .product-item .product .add_to_cart_button::after {
+.woocommerce-page .main-woocommerce .products .product-item .product .button .icon {
+  margin-right: 10px;
+}
+
+.woocommerce-page .main-woocommerce .products .product-item .product .button::before {
   background: #fff;
   content: "";
   height: 155px;
@@ -40823,16 +40878,18 @@ div[id*=give-form].give-display-reveal .give-btn {
   z-index: 1;
 }
 
-.woocommerce-page .main-woocommerce .products .product-item .product .add_to_cart_button:hover::after {
+.woocommerce-page .main-woocommerce .products .product-item .product .button:hover::after {
   left: 120%;
   transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .added_to_cart {
+  width: 100%;
   position: absolute;
-  top: 45px;
+  top: auto;
+  bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(37px);
   padding: 5px 12px;
   background-color: var(--link-color);
   color: #ffffff;
@@ -40841,17 +40898,32 @@ div[id*=give-form].give-display-reveal .give-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 32px;
+  height: 38px;
   min-width: 92px;
-  border-radius: 3px;
-  font-weight: 700;
-  transition: all 0.3s;
+  border-radius: 0;
+  font-weight: 500;
+  transition: transform 0.4s ease 0.2s;
   z-index: 3;
+  opacity: 0;
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .added_to_cart:hover {
   background-color: #eaeaea;
   color: #333;
+}
+
+.woocommerce-page .main-woocommerce .products .product-item .product:hover .button {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.woocommerce-page .main-woocommerce .products .product-item .product:hover .added_to_cart {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.woocommerce-page .main-woocommerce .woocommerce-pagination {
+  padding-top: 30px;
 }
 
 .woocommerce-page .main-woocommerce .woocommerce-pagination .page-numbers {
@@ -41067,11 +41139,16 @@ div[id*=give-form].give-display-reveal .give-btn {
     padding-bottom: 80px;
   }
 
-  .woocommerce-page .main-woocommerce .products .product-row {
-    display: grid;
+  .woocommerce-page .main-woocommerce .products.columns-1 .product-row,
+  .woocommerce-page .main-woocommerce .products.columns-2 .product-row,
+  .woocommerce-page .main-woocommerce .products.columns-3 .product-row,
+  .woocommerce-page .main-woocommerce .products.columns-5 .product-row,
+  .woocommerce-page .main-woocommerce .products.columns-6 .product-row {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px 20px;
-    padding-bottom: 30px;
+  }
+
+  .woocommerce-page .main-woocommerce .products .product-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .woocommerce-page .main-woocommerce .products .product-item .product {
@@ -41095,7 +41172,21 @@ div[id*=give-form].give-display-reveal .give-btn {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
+  .woocommerce-page .main-woocommerce .products.columns-1 .product-row,
+  .woocommerce-page .main-woocommerce .products.columns-2 .product-row,
+  .woocommerce-page .main-woocommerce .products.columns-3 .product-row,
+  .woocommerce-page .main-woocommerce .products.columns-5 .product-row,
+  .woocommerce-page .main-woocommerce .products.columns-6 .product-row {
+    grid-template-columns: 1fr;
+  }
+
+  .woocommerce-page .main-woocommerce .products .product-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .woocommerce-page .main-woocommerce .products .product-row {
     grid-gap: 35px 15px;
   }
