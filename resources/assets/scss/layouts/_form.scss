@@ -151,3 +151,38 @@ form.give-form.give-form-type-multi button.give-btn.give-btn-modal {
     display: block;
     margin: 0 auto !important; 
 }
+
+body .wp-block-tnp-minimal{
+    > p{
+        display: none;
+    }
+    
+    .tnp-subscription-minimal{
+        input{
+            width: 100%;
+            max-width: 100%;
+            float: left;
+            border-radius: 3px;
+            border: 1px solid rgba(53, 53, 53, 0.1);
+            transition: all 0.3s ease;
+            max-width: 100%;
+            background: #f6f6f6;
+            height: 60px;
+            line-height: 60px;
+            &.tnp-submit{
+                background-color: var(--link-color);
+                color: #fff;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+        }
+
+        input, input::placeholder{
+            font-size: var(--body-font-size);
+            line-height: var(--body-line-height);
+            font-weight: var(--body-font-weight);
+            font-family: var(--body-family);
+            color:var(--body-color);
+        }
+    }
+}

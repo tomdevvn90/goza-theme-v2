@@ -17396,6 +17396,12 @@ div[id*=give-form].give-display-reveal .give-btn {
   }
 }
 
+.goza-box-featured-grid-block.goza-box-featured-newsletter {
+  margin-bottom: -160px;
+  z-index: 999;
+  position: relative;
+}
+
 .block-editor-block-list__block .be-testimonials-block-carousel {
   display: flex;
   overflow: auto;
