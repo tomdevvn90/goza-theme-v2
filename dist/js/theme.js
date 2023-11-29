@@ -91,6 +91,41 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 
 /***/ }),
 
+/***/ "./resources/assets/js/blocks/be-tab-faqs.js":
+/*!***************************************************!*\
+  !*** ./resources/assets/js/blocks/be-tab-faqs.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
+  "use strict";
+
+  var beTabFaqs = function beTabFaqs() {
+    var $tabItem = $('.be-tab-faqs-block--header li'),
+      $btnFaq = $('.be-tab-faqs-block .item-faq--question');
+    $tabItem.click(function (e) {
+      var $dataTab = $(this).data('tab');
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
+      $(this).parents('.be-tab-faqs-block').find('.tab-item').hide();
+      $(this).parents('.be-tab-faqs-block').find(".tab-item.".concat($dataTab)).show();
+    });
+    $btnFaq.click(function (e) {
+      $(this).parent().siblings().find('.item-faq--answer').slideUp('slow');
+      $(this).parent().find('.item-faq--answer').slideToggle('slow');
+      $(this).parent().siblings().removeClass('active');
+      $(this).parent().toggleClass('active');
+    });
+  };
+  $(window).on("load", function () {
+    beTabFaqs();
+  });
+})(jQuery);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
 /***/ "./resources/assets/js/blocks/counter-box.js":
 /*!***************************************************!*\
   !*** ./resources/assets/js/blocks/counter-box.js ***!
@@ -1474,6 +1509,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_counter_box__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/counter-box */ "./resources/assets/js/blocks/counter-box.js");
 /* harmony import */ var _blocks_be_fw_portfolio__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/be-fw-portfolio */ "./resources/assets/js/blocks/be-fw-portfolio.js");
 /* harmony import */ var _blocks_be_fw_portfolio__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_blocks_be_fw_portfolio__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _blocks_be_tab_faqs__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./blocks/be-tab-faqs */ "./resources/assets/js/blocks/be-tab-faqs.js");
+/* harmony import */ var _blocks_be_tab_faqs__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_blocks_be_tab_faqs__WEBPACK_IMPORTED_MODULE_23__);
 
 
 
@@ -1501,6 +1538,7 @@ $(document).ready(function () {
 $(document).on("load", function () {
   aos__WEBPACK_IMPORTED_MODULE_6___default.a.refresh();
 });
+
 
 
 

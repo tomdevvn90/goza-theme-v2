@@ -1,0 +1,15 @@
+{
+    "name": "be-tab-faqs",
+    "title": "Be Tab FAQs",
+    "category": "goza-theme",
+    "icon": "layout",
+    "keywords": ["be tab faqs", "tab", "faqs", "be"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["left", "center", "right"]
+    },
+    "align": "left"
+}

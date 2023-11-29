@@ -1,0 +1,11 @@
+.wp-block-search {
+    &.be-form-search-faqs-page{
+        .wp-block-search__label{
+            display: none;
+        }
+        
+        .wp-block-search__input{
+            border:none
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.be-search-posts-list{
+    background-color: #f8f7f5;
+    padding: 90px 0;
+
+    @include media-breakpoint-down(md) {
+        padding: 60px 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 48px 0;
+    }
+
+    .post-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      .entry-image {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 66%;
+        background: #E7E6E4;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+      }
+      .entry-content {
+        background: #FFFFFF;
+        padding: 24px 32px;
+
+        @include media-breakpoint-down(md) {
+            padding: 24px 15px;
+        }
+
+        .entry-cat-links {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 100%;
+          margin-bottom: 4px;
+          a {
+            // color: $main-color;
+            text-decoration: none;
+            &:hover {
+             
+            }
+          }
+        }
+        .entry-title {
+            font-weight: var(--heading-font-weight);
+            font-size: var(--h3-font-size);
+            line-height: var(--h3-font-size);
+            margin-bottom: 12px;
+            color: var(--heading-color);
+            letter-spacing: var(--heading-letter-spacing);
+            font-style: var(--heading-font-style);
+            font-family:var(--heading-family);
+
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+                line-height: 116%;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 20px;
+            }
+
+            > a{
+                color: inherit;
+                font-weight: inherit;
+                font-size: inherit;
+                line-height: inherit;
+                letter-spacing: inherit;
+                font-style: inherit;
+                font-family: inherit;
+            }
+        }
+        .entry-summary {
+          margin-bottom: 12px;
+          > *:first-child {
+            margin-top: 0;
+          }
+          > *:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .entry-meta {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 16px;
+            &:not(:last-child):after {
+              content: "";
+              display: inline-block;
+              vertical-align: middle;
+              width: 4px;
+              height: 4px;
+              background-color: var(--link-color);
+              border-radius: 4px;
+              margin: 0 16px;
+            }
+          }
+        }
+      }
+    }
+  }
