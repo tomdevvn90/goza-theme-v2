@@ -3,6 +3,7 @@
     .woocommerce{
 
         .woocommerce-form-coupon{
+            background: #FFFFFF;
             .form-row-first, .form-row-last{
                 @media screen and (min-width: 451px){
                     width: calc(50% - 4.5px);
@@ -29,7 +30,8 @@
                 background-color: var(--link-color);
                 color: #FFFFFF;
                 display: inline-block;
-                height: 48px;
+                padding: 16px;
+                font-weight: 600;
                 &::after{
                     background: #fff;
                     content: "";
@@ -55,6 +57,10 @@
         }
 
         .woocommerce-checkout{
+            background: #fff;
+            padding: 20px;
+            border-radius: 3px;
+            font-size: 16px;
             #customer_details{
                 width: calc(100% + 30px);
                 margin-left: -15px;
@@ -140,13 +146,16 @@
                     }
                 }
             }
-            .woocommerce-checkout-payment{
+            #payment{
+                background: #eee;
                 .button{
                     position: relative;
                     overflow: hidden;
                     background-color: var(--link-color);
                     color: #FFFFFF;
+                    font-weight: 600;
                     display: inline-block;
+
                     &::after{
                         background: #fff;
                         content: "";

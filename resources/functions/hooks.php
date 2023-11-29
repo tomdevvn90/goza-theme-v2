@@ -287,9 +287,12 @@ function goza_override_comment_list($args)
 add_action('wp', function () {
 	remove_action('woocommerce_sidebar', 'generate_construct_sidebars');
 
-	add_action('woocommerce_sidebar', function () {
-		get_sidebar('woocommerce');
-	});
+	if( !is_product() ){
+		add_action('woocommerce_sidebar', function () {
+			get_sidebar('woocommerce');
+		});
+	}
+
 });
 
 // Single product
@@ -331,11 +334,11 @@ function goza_woocommerce_before_main_content_single_product_func()
 				<?php do_action('woocommerce_sidebar'); ?>
 				<div class="product-content <?php echo $classes; ?>">
 				<?php
-			}
+}
 
-			add_action('woocommerce_after_main_content', 'goza_woocommerce_after_main_content_single_product_func');
-			function goza_woocommerce_after_main_content_single_product_func()
-			{
+add_action('woocommerce_after_main_content', 'goza_woocommerce_after_main_content_single_product_func');
+function goza_woocommerce_after_main_content_single_product_func()
+{
 
 				if (!is_single() && !is_product()) {
 					return;
@@ -348,13 +351,25 @@ function goza_woocommerce_before_main_content_single_product_func()
 	</section><!-- </section> product-main -->
 <?php
 
-			}
+}
 
-			add_action('wp_footer', 'goza_wp_footer_func');
-			function goza_wp_footer_func()
-			{
+// Display plus button after Add to Cart button.
+add_action( 'woocommerce_after_quantity_input_field', 'goza_display_quantity_plus_func' );
+function goza_display_quantity_plus_func() {
+	echo '<button type="button" class="plus">+</button>';
+}
 
-				$icon_cart = __get_field('goza_enable_cart', 'option');
+// Display minus button before Add to Cart button.
+add_action( 'woocommerce_before_quantity_input_field', 'goza_display_quantity_minus_func' );
+function goza_display_quantity_minus_func() {
+	echo '<button type="button" class="minus">-</button>';
+}
+
+add_action('wp_footer', 'goza_wp_footer_func');
+function goza_wp_footer_func()
+{
+
+	$icon_cart = __get_field('goza_enable_cart', 'option');
 ?>
 	<?php if ($icon_cart && class_exists('WooCommerce')) { ?>
 		<div id="menu-mini-cart" class="menu-mini-cart__container">
@@ -366,11 +381,48 @@ function goza_woocommerce_before_main_content_single_product_func()
 			</div>
 		</div>
 	<?php } ?>
+	<script type="text/javascript">
+		(function($){ 
+
+			$( document.body ).on( 
+				'added_to_cart',
+				function ( e, fragments, cart_hash, $button  ) {
+					var menu_mini_cart = $('#menu-mini-cart');
+					menu_mini_cart.addClass('active');
+				}
+			);
+
+		})(jQuery);
+	</script>
 <?php
-			}
+	if ( is_product() || is_cart() ) {
+		wc_enqueue_js(
+			"$(document).on( 'click', 'button.plus, button.minus', function() {
+				var qty = $( this ).parent( '.quantity' ).find( '.qty' );
+				var val = parseFloat(qty.val());
+				var max = parseFloat(qty.attr( 'max' ));
+				var min = parseFloat(qty.attr( 'min' ));
+				var step = parseFloat(qty.attr( 'step' ));
+				if ( $( this ).is( '.plus' ) ) {
+					if ( max && ( max <= val ) ) {
+					qty.val( max ).change();
+					} else {
+					qty.val( val + step ).change();
+					}
+				} else {
+					if ( min && ( min >= val ) ) {
+					qty.val( min ).change();
+					} else if ( val > 1 ) {
+					qty.val( val - step ).change();
+					}
+				}
+			});"
+		);
+	}
 
-// Shop page
+}
 
+// woocommerce loop add to cart link
 add_filter( 'woocommerce_loop_add_to_cart_link', 'goza_woocommerce_loop_add_to_cart_link_func', 10, 3 );
 function goza_woocommerce_loop_add_to_cart_link_func( $add_to_cart_html, $product, $args ){
 
@@ -391,3 +443,17 @@ function goza_woocommerce_loop_add_to_cart_link_func( $add_to_cart_html, $produc
 		__( $button, 'goza' )
 	);
 }
+
+// woocommerce add to cart fragments
+add_filter( 'woocommerce_add_to_cart_fragments', 'goza_woocommerce_add_to_cart_fragments_func');
+function goza_woocommerce_add_to_cart_fragments_func( $fragments ) {
+    ob_start();
+    ?>
+    <span class="goza-total-cart">
+        <?php echo WC()->cart->get_cart_contents_count(); ?>
+    </span>
+    <?php
+    $fragments['.goza-total-cart'] = ob_get_clean();
+    return $fragments;
+}
+

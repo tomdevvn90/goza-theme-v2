@@ -58,22 +58,73 @@
         }
     }
 
+    .site-wrap{
+        form{
+            &.woocommerce-cart-form,
+            &.cart{
+                div.quantity{
+                    width: 100%;
+                    max-width: 126px;
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #fff;
+                    padding: 4px;
+                    border-radius: 3px;
+                    border: 1px solid rgba(53, 53, 53, 0.1);
+                    button{
+                        background: #FFFFFF;
+                        border: 0;
+                        width: 28px;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 20px;
+                        &:hover{
+                            color: var(--link-color);
+                        }
+                    }
+                    .qty{
+                        border: 0;
+                        outline: none;
+                        background: #FFFFFF;
+                        height: 100%;
+                    }
+                    /* Chrome, Safari, Edge, Opera */
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                    /* Firefox */
+                    input[type=number] {
+                        -moz-appearance: textfield;
+                    }
+                }
+            }
+        }
+    }
+
     .woocommerce{
         padding-top: 100px;
         padding-bottom: 100px;
         .woocommerce-info{
+            background: #FFFFFF;
+            font-size: 16px;
             border-top-color: var(--link-color);
             &::before{
                 color: var(--link-color);
             }
         }
+
         .button{
             position: relative;
             overflow: hidden;
             background-color: var(--link-color);
             color: #FFFFFF;
             font-size: 16px;
-            padding: 10px 12px;
+            padding: 12px;
+            font-weight: 600;
             vertical-align: middle;
             &::after{
                 background: #fff;
