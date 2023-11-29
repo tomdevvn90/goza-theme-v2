@@ -41778,6 +41778,7 @@ div[id*=give-form].give-display-reveal .give-btn {
   border: 0;
   border-radius: 3px;
   margin-left: 1px;
+  transform: translateY(0);
 }
 
 .woocommerce-page .main-woocommerce .goza-sidebar .wg-wrap form button::before {
@@ -41980,6 +41981,21 @@ div[id*=give-form].give-display-reveal .give-btn {
 .woocommerce-page .main-woocommerce .goza-sidebar .wg-wrap .wc-block-grid__product-add-to-cart .add_to_cart_button:hover::after {
   left: 150%;
   transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.woocommerce-page .main-woocommerce .goza-sidebar .wg-wrap ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.woocommerce-page .main-woocommerce .goza-sidebar .wg-wrap ul li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.woocommerce-page .main-woocommerce .goza-sidebar .wg-wrap ul li:last-child {
+  margin-bottom: 0;
 }
 
 .woocommerce-page .main-woocommerce .goza-sidebar .wg-wrap .wc-block-product-categories {

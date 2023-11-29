@@ -407,6 +407,7 @@
                         border: 0;
                         border-radius: 3px;
                         margin-left: 1px;
+                        transform: translateY(0);
                         &::before{
                             display: flex;
                             justify-content: center;
@@ -619,6 +620,18 @@
                                     transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
                                 }
                             }
+                        }
+                    }
+                }
+                ul{
+                    list-style: none;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    li{
+                        font-size: 14px;
+                        margin-bottom: 4px;
+                        &:last-child{
+                            margin-bottom: 0;
                         }
                     }
                 }
