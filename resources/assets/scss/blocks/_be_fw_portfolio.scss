@@ -112,6 +112,11 @@
             border-top: none;
             position: relative;
             padding-bottom: 56px;
+            @include media-breakpoint-down(sm) {
+                opacity: 1 !important;
+                transform: scale(1);
+            }
+            
             &--content{
                 padding: 32px 16px;
                 text-align: left;

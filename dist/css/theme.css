@@ -25588,6 +25588,16 @@ ul.be-list-ul li {
   margin: 0;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .goza-box-featured-grid-block.goza-box-featured-newsletter > .block-inner-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .goza-box-featured-grid-block.goza-box-featured-newsletter > .block-inner-grid .block-inner-grid-box__content {
+    padding: 40px 15px;
+  }
+}
+
 .be-progressbar-block {
   width: 100%;
   height: auto;
@@ -39528,6 +39538,13 @@ div[id*=give-form].give-display-reveal .give-btn {
   border-top: none;
   position: relative;
   padding-bottom: 56px;
+}
+
+@media (max-width: 767.98px) {
+  .be-fw-portfolio-block--list-posts .item-fw-portfolio {
+    opacity: 1 !important;
+    transform: scale(1);
+  }
 }
 
 .be-fw-portfolio-block--list-posts .item-fw-portfolio--content {
