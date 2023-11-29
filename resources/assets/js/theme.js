@@ -44,3 +44,4 @@ import './blocks/logo-carousel';
 import './blocks/projects-grid-action';
 import './blocks/counter-box';
 import './blocks/be-fw-portfolio';
+import './blocks/be-tab-faqs';
