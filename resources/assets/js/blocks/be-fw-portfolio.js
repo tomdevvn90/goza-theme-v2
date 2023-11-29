@@ -4,22 +4,20 @@
     const beFilterFwPortfolio = () =>{
         const $btnFilter   = $('.be-fw-portfolio-block-categorys--item > a')
         const $btnLoadmore = $('.be-fw-portfolio-block--loadmore-btn')
+        const $result      = $('.be-fw-portfolio-block--list-posts');
 
         $btnLoadmore.click(function(e){
             e.preventDefault();
 
-            let page     = $(this).data('page'),
+            let page     = this.getAttribute('data-page'),
                 maxPage  = $(this).data('max-page'),
                 term     = $(this).data('term'),
-                loadmore = this.getAttribute('data-loadmore'),
                 actioned = 'loadmore',
                 postsPerPpage = $(this).parents('.be-fw-portfolio-block').data('posts-per-page'),
                 order         = $(this).parents('.be-fw-portfolio-block').data('order'),
                 orderby       = $(this).parents('.be-fw-portfolio-block').data('orderby');
-
-            page = page + 1;
-            __ajax_filter({page, maxPage, term, loadmore, actioned, postsPerPpage, order, orderby})     
-            $(this).parents('.be-fw-portfolio-block').find('.be-fw-portfolio-block--loadmore-btn').attr('data-page', page);;
+            
+            __ajax_load_item({page, maxPage, term, actioned, postsPerPpage, order, orderby})     
 
         })
 
@@ -38,11 +36,11 @@
             
             $(this).parents('.be-fw-portfolio-block').find('.be-fw-portfolio-block--loadmore-btn').attr('data-term', dataFilter);
             
-            __ajax_filter({dataFilter, page, actioned, postsPerPpage, order, orderby})
+            __ajax_load_item({dataFilter, page, actioned, postsPerPpage, order, orderby})
 
         })
 
-        function __ajax_filter(val = {}) {
+        function __ajax_load_item(val = {}) {
             try {
                 $.ajax({
                    type: "post",
@@ -53,8 +51,19 @@
                         ...val,
                    },
                    success: function (data) {
-                        $('.be-fw-portfolio-block--list-posts').html( data.items);
+                        
+                        if(val.actioned == 'filter'){
+                            $result.html( data.items);
+                        }else{
+                            let page = ++val.page
+                            $result.append( data.items);
+                            $btnLoadmore.attr('data-page', page);
 
+                            setTimeout( function() {
+                                $('html, body').stop().animate({scrollTop: $btnLoadmore.offset().top - 350}, 1000);
+                            }, 500);
+                        }    
+                        
                         if (data.hideLoadMore)
                             $btnLoadmore.hide();
                         else

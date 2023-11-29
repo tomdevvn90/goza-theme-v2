@@ -77,8 +77,6 @@ function be_load_item_fw_portfolio(){
             ];
         }
     }
-
-    ob_start();
     
     $the_query = new WP_Query($args);
 

@@ -125,7 +125,7 @@ $max_num_pages = $the_query->max_num_pages;
             <?php if ( $loadmore && $max_num_pages > 0 ):?>
                 <div class="be-fw-portfolio-block--loadmore"  data-aos="fade-up" data-aos-duration="1000">
                     <a href="#!" class="be-fw-portfolio-block--loadmore-btn btn <?= esc_attr($load_more_style) ?>"
-                        data-page="1"
+                        data-page="2"
                         data-max-page ="<?= esc_attr( $max_num_pages ) ?>"
                         data-term ="all"
                     >

@@ -19,29 +19,25 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
   var beFilterFwPortfolio = function beFilterFwPortfolio() {
     var $btnFilter = $('.be-fw-portfolio-block-categorys--item > a');
     var $btnLoadmore = $('.be-fw-portfolio-block--loadmore-btn');
+    var $result = $('.be-fw-portfolio-block--list-posts');
     $btnLoadmore.click(function (e) {
       e.preventDefault();
-      var page = $(this).data('page'),
+      var page = this.getAttribute('data-page'),
         maxPage = $(this).data('max-page'),
         term = $(this).data('term'),
-        loadmore = this.getAttribute('data-loadmore'),
         actioned = 'loadmore',
         postsPerPpage = $(this).parents('.be-fw-portfolio-block').data('posts-per-page'),
         order = $(this).parents('.be-fw-portfolio-block').data('order'),
         orderby = $(this).parents('.be-fw-portfolio-block').data('orderby');
-      page = page + 1;
-      __ajax_filter({
+      __ajax_load_item({
         page: page,
         maxPage: maxPage,
         term: term,
-        loadmore: loadmore,
         actioned: actioned,
         postsPerPpage: postsPerPpage,
         order: order,
         orderby: orderby
       });
-      $(this).parents('.be-fw-portfolio-block').find('.be-fw-portfolio-block--loadmore-btn').attr('data-page', page);
-      ;
     });
     $btnFilter.click(function (e) {
       e.preventDefault();
@@ -54,7 +50,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
         order = $(this).parents('.be-fw-portfolio-block').data('order'),
         orderby = $(this).parents('.be-fw-portfolio-block').data('orderby');
       $(this).parents('.be-fw-portfolio-block').find('.be-fw-portfolio-block--loadmore-btn').attr('data-term', dataFilter);
-      __ajax_filter({
+      __ajax_load_item({
         dataFilter: dataFilter,
         page: page,
         actioned: actioned,
@@ -63,7 +59,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
         orderby: orderby
       });
     });
-    function __ajax_filter() {
+    function __ajax_load_item() {
       var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       try {
         $.ajax({
@@ -74,7 +70,18 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
             action: "be_load_item_fw_portfolio"
           }, val),
           success: function success(data) {
-            $('.be-fw-portfolio-block--list-posts').html(data.items);
+            if (val.actioned == 'filter') {
+              $result.html(data.items);
+            } else {
+              var page = ++val.page;
+              $result.append(data.items);
+              $btnLoadmore.attr('data-page', page);
+              setTimeout(function () {
+                $('html, body').stop().animate({
+                  scrollTop: $btnLoadmore.offset().top - 350
+                }, 1000);
+              }, 500);
+            }
             if (data.hideLoadMore) $btnLoadmore.hide();else $btnLoadmore.show();
           }
         });
