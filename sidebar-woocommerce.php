@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <?php if ( is_active_sidebar( 'shop-sidebar' ) ) { ?>
-<div class="col-md-4 col-sm-12 goza-sidebar" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+<div class="col-lg-4 col-sm-12 goza-sidebar" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 	<div class="bt-col-inner">
 		<?php dynamic_sidebar( 'shop-sidebar' ); ?>
 	</div><!-- /.inner -->

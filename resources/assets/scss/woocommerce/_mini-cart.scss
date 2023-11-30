@@ -107,7 +107,8 @@
 
                 .remove{
                     position: absolute;
-                    left: 0;
+                    left: auto;
+                    right: 0;
                     top: 0;
                     z-index: 10;
                     width: 20px;
@@ -116,10 +117,24 @@
                     text-align: center;
                     color: #fff !important;
                     border-radius: 0;
-                    background-color: #333;
+                    background-color: transparent;
+                    font-size: 0;
+                    .remove-icon{
+                        font-size: 16px;
+                    }
+                    svg{
+                        width: 1em;
+                        height: 1em;
+                    }
+                    &:hover{
+                        svg{
+                            fill: var(--link-color);
+                        }
+                    }
                 }
                 a:not(.remove){
-                    font-size: 16px;
+                    padding-right: 16px;
+                    font-size: 14px;
                     line-height: 24px;
                     font-weight: 500;
                     display: block;
@@ -132,7 +147,7 @@
                     }
                 }
                 img{
-                    max-width: 60px;
+                    max-width: 54px;
                     width: 100%;
                     float: left;
                     margin-right: 10px;
@@ -140,7 +155,7 @@
                 }
                 .quantity{
                     display: block;
-                    margin-top: 8px;
+                    margin-top: 6px;
                 }
             }
         }
@@ -158,11 +173,12 @@
                 text-align: center;
                 vertical-align: middle;
                 width: 100%;
-                padding: 12px;
+                padding: 14px;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 14px;
-                line-height: 1.5;
+                line-height: 1;
+                border-radius: 3px;
                 text-decoration: none;
                 -webkit-transition: 0.3s ease;
                 transition: 0.3s ease;

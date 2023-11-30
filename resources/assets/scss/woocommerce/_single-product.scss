@@ -49,13 +49,14 @@
             order: 1;
             .product{
                 .onsale{
-                    min-height: 3em;
+                    min-height: 2.5em;
                     min-width: 3em;
-                    line-height: 3;
+                    line-height: 2.5em;
                     background: var(--link-color, #d41b65);
                     border-radius: 1px;
                     color: #fff;
                     font-size: 14px;
+                    font-weight: 600;
                     top: 0;
                     left: 0;
                     right: auto;
@@ -191,11 +192,21 @@
                             text-underline-position: under;
                         }
 
+                        p{
+                            font-size: 16px;
+                        }
+
                         #reviews{
                             .commentlist{
                                 li{
                                     &::before{
                                         display: none;
+                                    }
+                                    .comment-body{
+                                        background: #fff;
+                                        padding: 10px;
+                                        border-radius: 3px;
+                                        font-size: 14px;
                                     }
                                     .comment-meta{
                                         padding-left: 50px;
@@ -367,7 +378,7 @@
                         font-size: 20px;
                         line-height: 26px;
                         margin: 0 0 20px;
-                        font-weight: 700;
+                        font-weight: 600;
                         text-decoration: underline;
                         text-underline-position: under;
                     }

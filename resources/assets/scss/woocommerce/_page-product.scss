@@ -76,9 +76,9 @@
                     button{
                         background: #FFFFFF;
                         border: 0;
-                        width: 28px;
-                        height: 28px;
-                        line-height: 28px;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
                         font-size: 20px;
                         &:hover{
                             color: var(--link-color);
@@ -89,6 +89,7 @@
                         outline: none;
                         background: #FFFFFF;
                         height: 100%;
+                        padding: 8px;
                     }
                     /* Chrome, Safari, Edge, Opera */
                     input::-webkit-outer-spin-button,
@@ -104,18 +105,47 @@
             }
         }
     }
+    .woocommerce-error{
+        background: #FFFFFF;
+        font-size: 16px;
+    }
+    .woocommerce-message{
+        background: #FFFFFF;
+        font-size: 16px;
+    }
+    .woocommerce-info{
+        background: #FFFFFF;
+        font-size: 16px;
+        border-top-color: var(--link-color);
+        &::before{
+            color: var(--link-color);
+        }
+    }
+    @media screen and (max-width: 480px){
+        .woocommerce-message{
+            padding: 16px 16px 16px 40px;
+            &::before{
+                left: 1em;
+            }
+        }
+        .woocommerce-error{
+            padding: 16px 16px 16px 40px;
+            &::before{
+                left: 1em;
+            }
+        }
+        .woocommerce-info{
+            padding: 16px 20px 16px 40px;
+            &::before{
+                left: 1em;
+            }
+        }
+
+    }
 
     .woocommerce{
         padding-top: 100px;
         padding-bottom: 100px;
-        .woocommerce-info{
-            background: #FFFFFF;
-            font-size: 16px;
-            border-top-color: var(--link-color);
-            &::before{
-                color: var(--link-color);
-            }
-        }
 
         .button{
             position: relative;
@@ -123,7 +153,7 @@
             background-color: var(--link-color);
             color: #FFFFFF;
             font-size: 16px;
-            padding: 12px;
+            padding: 15px;
             font-weight: 600;
             vertical-align: middle;
             &::after{
@@ -175,21 +205,6 @@
             padding-bottom: 60px;
         }
 
-        @media screen and (max-width: 450px){
-            .woocommerce-error{
-                padding: 16px 16px 16px 40px;
-                &::before{
-                    left: 1em;
-                }
-            }
-            .woocommerce-info{
-                padding: 16px 20px 16px 40px;
-                &::before{
-                    left: 1em;
-                }
-            }
-
-        }
 
     }
 

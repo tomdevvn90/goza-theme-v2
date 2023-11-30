@@ -6,17 +6,41 @@
             line-height: 56px;
             letter-spacing: 0px;
             color: var(--heading-color, #333);
+            @media screen and (max-width: 767px) {
+                font-size: 32px;
+                line-height: 46px;
+            }
         }
-        .woocommerce-MyAccount-navigation{
+
+        .lost_reset_password{
             background: #FFFFFF;
             padding: 20px;
             border-radius: 3px;
+            font-size: 16px;
+            @media screen and (max-width: 480px) {
+                padding: 16px;
+            }
+        }
+        .woocommerce-form-login{
+            background: #FFFFFF;
+            font-size: 16px;
+            .woocommerce-form-login__rememberme{
+                margin-top: 6px;
+                margin-bottom: 6px;
+            }
+        }
+        .woocommerce-MyAccount-navigation{
+            background: #FFFFFF;
+            padding: 24px 20px;
+            border-radius: 3px;
+            margin-bottom: 24px;
             ul{
                 list-style: none;
                 padding-left: 0;
                 margin-bottom: 0;
                 li{
-                    line-height: 32px;
+                    line-height: 36px;
+                    font-size: 16px;
                     a{
                         font-weight: 500;
                         text-decoration: none;
@@ -28,14 +52,22 @@
         }
         .woocommerce-MyAccount-content{
             background: #FFFFFF;
-            padding: 20px;
+            padding: 30px 20px 20px;
             border-radius: 3px;
+            font-size: 16px;
+            .woocommerce-message{
+                background: #f8f7f7;
+            }
+            .woocommerce-customer-details{
+                margin-bottom: 1em;
+            }
             h2{
                 font-weight: 600;
-                font-size: 30px;
+                font-size: 28px;
                 line-height: 38px;
                 letter-spacing: 0px;
                 color: var(--heading-color,#333);
+                margin-bottom: 16px;
             }
             h3{
                 font-weight: 600;
@@ -100,6 +132,14 @@
                     padding: 6px 10px;
                 }
             }
+            .woocommerce-Addresses{
+                @media screen and (min-width: 992px) {
+                    width: calc(100% + 30px);
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+
+            }
             .woocommerce-Address{
                 max-width: 100%;
                 width: 50%;
@@ -111,10 +151,11 @@
                 }
                 h3{
                     font-weight: 600;
-                    font-size: 28px;
-                    line-height: 38px;
+                    font-size: 24px;
+                    line-height: 36px;
                     letter-spacing: 0px;
                     color: var(--heading-color,#333);
+                    margin-bottom: 10px;
                 }
                 .edit{
                     position: relative;
@@ -148,10 +189,17 @@
                         }
                     }
                 }
+                address{
+                    border: 1px solid rgba(0,0,0,.1);
+                    border-bottom-width: 2px;
+                    border-right-width: 2px;
+                    border-radius: 5px;
+                }
             }
             address{
-                padding: 16px 16px 16px 0;
+                padding: 12px;
             }
+
 
         }
 
@@ -213,7 +261,20 @@
             }
         }
 
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 480px){
+            .woocommerce-MyAccount-navigation{
+                padding: 20px 16px;
+            }
+            .woocommerce-MyAccount-content{
+                padding: 30px 16px 20px;
+                font-size: 14px;
+                h2{
+                    font-size: 24px;
+                }
+                h3{
+                    font-size: 24px;
+                }
+            }
             form{
                 &.login{
                     padding: 16px;

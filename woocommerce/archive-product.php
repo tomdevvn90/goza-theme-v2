@@ -26,7 +26,7 @@ $icon_hero_bar = __get_field('goza_icon_hero_bar', 'option') ? :  get_template_d
 $bg_hero_bar   = __get_field('goza_bg_hero_bar', 'option') ? :  get_template_directory_uri(). '/resources/assets/images/bg-img-hero-default.jpg';
 
 $has_sidebar = goza_check_sidebars_widgets_exists('shop-sidebar');
-$classes = $has_sidebar ? 'col-md-8 col-sm-12': 'col-sm-12';
+$classes = $has_sidebar ? 'col-lg-8 col-sm-12': 'col-sm-12';
 
 ?>
 <section class="product-hero" style="background-image:url('<?= esc_url($bg_hero_bar) ?>')">
