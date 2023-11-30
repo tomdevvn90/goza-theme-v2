@@ -43021,6 +43021,10 @@ div[id*=give-form].give-display-reveal .give-btn {
   border: none;
 }
 
+.woocommerce-page .woocommerce .woocommerce-cart-form table tr:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.025);
+}
+
 .woocommerce-page .woocommerce .woocommerce-cart-form table tr:hover td {
   border-color: rgba(212, 27, 101, 0.5);
 }
@@ -43947,8 +43951,8 @@ div[id*=give-form].give-display-reveal .give-btn {
 }
 
 .menu-mini-cart__container .menu-cart__close-button {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   position: relative;
   margin: 0 0 20px;
   align-self: flex-end;
@@ -43998,13 +44002,14 @@ div[id*=give-form].give-display-reveal .give-btn {
   overflow-y: auto;
   list-style: none;
   padding-left: 0;
+  margin-bottom: 10px;
 }
 
 .menu-mini-cart__container .widget_shopping_cart_content .cart_list li {
   position: relative;
   display: block;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .menu-mini-cart__container .widget_shopping_cart_content .cart_list li .remove {
@@ -44037,10 +44042,10 @@ div[id*=give-form].give-display-reveal .give-btn {
 }
 
 .menu-mini-cart__container .widget_shopping_cart_content .cart_list li a:not(.remove) {
-  padding-right: 16px;
+  padding-right: 20px;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 600;
   display: block;
   text-decoration: underline;
   color: var(--heading-color, #333);
@@ -44052,7 +44057,7 @@ div[id*=give-form].give-display-reveal .give-btn {
 }
 
 .menu-mini-cart__container .widget_shopping_cart_content .cart_list li img {
-  max-width: 54px;
+  max-width: 50px;
   width: 100%;
   float: left;
   margin-right: 10px;
@@ -44062,6 +44067,22 @@ div[id*=give-form].give-display-reveal .give-btn {
 .menu-mini-cart__container .widget_shopping_cart_content .cart_list li .quantity {
   display: block;
   margin-top: 6px;
+  padding-left: 60px;
+  font-weight: 500;
+  color: var(--link-color, #d41b65);
+}
+
+.menu-mini-cart__container .widget_shopping_cart_content .woocommerce-mini-cart__total {
+  border-top: 1px solid rgba(53, 53, 53, 0.1);
+  padding-top: 16px;
+  font-size: 16px;
+}
+
+.menu-mini-cart__container .widget_shopping_cart_content .woocommerce-mini-cart__total .amount {
+  font-size: 18px;
+  color: var(--link-color, #d41b65);
+  float: right;
+  font-weight: 600;
 }
 
 .menu-mini-cart__container .widget_shopping_cart_content .woocommerce-mini-cart__buttons {

@@ -52,8 +52,8 @@
         margin-top: 0;
     }
     .menu-cart__close-button{
-        width: 25px;
-        height: 25px;
+        width: 24px;
+        height: 24px;
         position: relative;
         margin: 0 0 20px;
         align-self: flex-end;
@@ -99,11 +99,12 @@
             overflow-y: auto;
             list-style: none;
             padding-left: 0;
+            margin-bottom: 10px;
             li{
                 position: relative;
                 display: block;
                 padding: 0;
-                margin-bottom: 10px;
+                margin-bottom: 12px;
 
                 .remove{
                     position: absolute;
@@ -133,10 +134,10 @@
                     }
                 }
                 a:not(.remove){
-                    padding-right: 16px;
+                    padding-right: 20px;
                     font-size: 14px;
                     line-height: 24px;
-                    font-weight: 500;
+                    font-weight: 600;
                     display: block;
                     text-decoration: underline;
                     color: var(--heading-color, #333);
@@ -147,7 +148,7 @@
                     }
                 }
                 img{
-                    max-width: 54px;
+                    max-width: 50px;
                     width: 100%;
                     float: left;
                     margin-right: 10px;
@@ -156,7 +157,22 @@
                 .quantity{
                     display: block;
                     margin-top: 6px;
+                    padding-left: 60px;
+                    font-weight: 500;
+                    color: var(--link-color, #d41b65);
                 }
+            }
+        }
+
+        .woocommerce-mini-cart__total{
+            border-top: 1px solid rgba(53, 53, 53, 0.1);
+            padding-top: 16px;
+            font-size: 16px;
+            .amount{
+                font-size: 18px;
+                color: var(--link-color, #d41b65);
+                float: right;
+                font-weight: 600;
             }
         }
 

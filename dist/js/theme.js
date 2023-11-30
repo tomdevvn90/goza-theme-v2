@@ -1437,6 +1437,9 @@ __webpack_require__.r(__webpack_exports__);
   "use strict";
 
   var miniCartPopup = function miniCartPopup() {
+    if ($('body').hasClass('woocommerce-cart')) {
+      return;
+    }
     var cart_icon = $('.goza-header-cart-icon');
     var menu_mini_cart = $('#menu-mini-cart');
     var menu_mini_cart_main = menu_mini_cart.find('.menu-mini-cart__main');

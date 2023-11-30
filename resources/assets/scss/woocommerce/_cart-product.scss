@@ -6,6 +6,9 @@
             table{
                 border: none;
                 tr{
+                    &:nth-child(2n){
+                        background: rgba(0,0,0,.025);
+                    }
                     &:hover{
                         td{
                             border-color: rgba(212, 27, 101, 0.5);
