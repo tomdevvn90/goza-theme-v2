@@ -85,6 +85,11 @@
                 align-items: center;
                 gap: 35px;
 
+                @include media-breakpoint-down(lg){ 
+                    margin-left: 15px;
+                    gap: 22px;
+                }
+
                 .goza-header-cart-icon {
                     position: relative;
                     cursor: pointer;

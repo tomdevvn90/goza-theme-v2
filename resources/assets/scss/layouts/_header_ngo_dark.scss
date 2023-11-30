@@ -159,6 +159,11 @@
                 align-items: center;
                 gap: 35px;
 
+                @media (min-width: 1200px) and (max-width: 1399px) { 
+                    gap: 15px;
+                    margin-left: 15px;
+                }
+
                 @include media-breakpoint-down(lg) {
                     gap: 10px;
                     margin-left: 10px;
@@ -242,9 +247,13 @@
                             -webkit-transition: 0.3s;
                             transition: 0.3s;
 
-                            @include media-breakpoint-down(lg) {
+                            @media (max-width: 1399px){
                                 font-size: 14px;
                                 line-height: 100%;
+                            }
+
+                            @include media-breakpoint-down(lg) {
+                                font-size: 12px;
                             }
 
                             &:hover {
@@ -299,12 +308,13 @@
                         @media (min-width: 1200px) and (max-width: 1399px) { 
                             padding-left: 10px;
                             padding-right: 10px;
+                            font-size: 14px;
                         }
     
                         @media (min-width: 992px) and (max-width: 1199px) { 
                             padding-left: 8px;
                             padding-right: 8px;
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                     }
                 }

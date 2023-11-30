@@ -93,7 +93,7 @@ if ($logo) $goza_ft_logo = $logo;
                 </div>
                 <div class="main-footer-socket-copyright">
                     <?php if (isset($goza_txt_copyright) && !empty($goza_txt_copyright)) { ?>
-                        <?= $goza_txt_copyright ?>
+                        <?= str_replace('{{YEAR}}', date('Y'), $goza_txt_copyright); ?> 
                     <?php } ?>
                 </div>
             </div>

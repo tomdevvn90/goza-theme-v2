@@ -4,10 +4,10 @@
  */
 
 return [
-	'general'                => THEME_URI.'/resources/assets/images/logo/logo.png',
+	'general'                => THEME_URI.'/resources/assets/images/logo/logo-default.png',
 	'ngo'                    => THEME_URI.'/resources/assets/images/logo/logo-ngo.png',
     'dream'                  => THEME_URI.'/resources/assets/images/logo/logo-dream.png',
-    'charity'                => THEME_URI.'/resources/assets/images/logo/logo.png',
+    'charity'                => THEME_URI.'/resources/assets/images/logo/logo-default.png',
     'charity-new'            => THEME_URI.'/resources/assets/images/logo/logo-charity-new.png',
     'water'                  => THEME_URI.'/resources/assets/images/logo/logo-water.png',
     'organization'           => THEME_URI.'/resources/assets/images/logo/logo-organization.png',

@@ -91,7 +91,7 @@ $goza_social_network = __get_field('goza_social_network', 'option');
         <div class="main-footer-socket">
             <div class="main-footer-socket-copyright">
                 <?php if (isset($goza_txt_copyright) && !empty($goza_txt_copyright)) { ?>
-                    <?= $goza_txt_copyright ?>
+                    <?= str_replace('{{YEAR}}', date('Y'), $goza_txt_copyright); ?> 
                 <?php } ?>
             </div>
             <div class="main-footer-socket-menu">
