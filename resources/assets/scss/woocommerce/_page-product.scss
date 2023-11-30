@@ -64,13 +64,13 @@
             &.cart{
                 div.quantity{
                     width: 100%;
-                    max-width: 126px;
-                    height: 42px;
+                    max-width: 132px;
+                    height: 56px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     background: #fff;
-                    padding: 4px;
+                    padding: 3px;
                     border-radius: 3px;
                     border: 1px solid rgba(53, 53, 53, 0.1);
                     button{
@@ -90,6 +90,7 @@
                         background: #FFFFFF;
                         height: 100%;
                         padding: 8px;
+                        outline: none;
                     }
                     /* Chrome, Safari, Edge, Opera */
                     input::-webkit-outer-spin-button,
@@ -152,8 +153,9 @@
             overflow: hidden;
             background-color: var(--link-color);
             color: #FFFFFF;
-            font-size: 16px;
-            padding: 15px;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 16px 32px;
             font-weight: 600;
             vertical-align: middle;
             &::after{

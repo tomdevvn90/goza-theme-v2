@@ -1,13 +1,12 @@
 .woocommerce-page{
-    background: #f8f7f7;
+
     .woocommerce{
         .woocommerce-cart-form{ 
             background: #FFFFFF;
             table{
-                border: none;
                 tr{
                     &:nth-child(2n){
-                        background: rgba(0,0,0,.025);
+                        background: #f8f7f7;
                     }
                     &:hover{
                         td{
@@ -16,21 +15,35 @@
                     }
                 }
                 th{
-                    padding: 16px 10px;
+                    padding: 15px 20px;
                     font-size: 14px;
                     text-transform: uppercase;
                     background: var(--link-color);
                     color: #FFFFFF;
-                    font-weight: 600;
+                    font-weight: 700;
                 }
                 td{
-                    font-size: 16px;
-                    padding: 16px 10px; 
+                    font-size: 14px;
+                    padding: 15px 20px; 
                     border-top: none;
                     border-bottom: 1px solid;
                     border-color: #f8f7f7;
                     -webkit-transition: all 0.6s;
                     transition: all 0.6s;
+                    a{
+                        font-weight: 600;
+                        color: #111111;
+                        &:hover{
+                            color: var(--link-color);
+                        }
+                    }
+                    &.product-thumbnail{
+                        text-align: center;
+                    }
+                    &.product-price{
+                        color: var(--link-color);
+                        font-weight: 600;
+                    }
                 }
                 .product-remove{
                     min-width: 2em;
@@ -56,8 +69,7 @@
                     }
                 }
                 img{
-                    width: 60px;
-                    border-radius: 5px;
+                    width: 75px;
                 }
                 input[type="number"]{
                     line-height: 1;
@@ -89,7 +101,7 @@
                             margin: 0 4px 0 0;
                             outline: 0;
                             border-radius: 3px;
-                            padding: 10px 15px;
+                            padding: 16px 24px;
                             vertical-align: middle;
                             float: none;
                             &:focus{
@@ -106,9 +118,8 @@
                         overflow: hidden;
                         background-color: var(--link-color);
                         color: #FFFFFF;
-                        padding: 15px;
-                        font-weight: 600;
                         vertical-align: middle;
+                        padding: 16px 32px;
                         &::after{
                             background: #fff;
                             content: "";
@@ -143,27 +154,20 @@
             }
 
             h2{
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 24px;
-                line-height: 1.5;
+                line-height: 30px;
                 letter-spacing: 0px;
-                color: var(--heading-color, #333);
-                margin-bottom: 10px;
+                color: var(--link-color);
+                margin-bottom: 24px;
             }
             table{
-                border: none;
-                tr{
-                    &:hover{
-                        th,td{
-                            border-color: var(--link-color);
-                        }
-                    }
-                }
+                border-radius: 2px;
                 th{
                     font-size: 16px;
-                    padding: 16px 16px 16px 0;
+                    padding: 16px;
                     border-top: none;
-                    border-bottom: 1px solid;
+                    border-bottom: none;
                     border-color: #f8f7f7;
                     -webkit-transition: 0.6s;
                     transition: 0.6s;
@@ -172,10 +176,20 @@
                     font-size: 16px;
                     padding: 16px;
                     border-top: none;
-                    border-bottom: 1px solid;
+                    border-bottom: none;
                     border-color: #f8f7f7;
                     -webkit-transition: 0.6s;
                     transition: 0.6s;
+                }
+                .cart-subtotal{
+                    th{
+                        border-bottom: 1px solid;
+                        border-color: rgba(0,0,0,.1);
+                    }
+                    td{
+                        border-bottom: 1px solid;
+                        border-color: rgba(0,0,0,.1);
+                    }
                 }
             }
             .wc-proceed-to-checkout{
@@ -187,7 +201,7 @@
                 background-color: var(--link-color);
                 color: #FFFFFF;
                 padding: 16px 30px;
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 600;
                 border-radius: 3px;
                 margin-bottom: 0;

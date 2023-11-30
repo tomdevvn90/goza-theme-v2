@@ -41463,13 +41463,13 @@ div[id*=give-form].give-display-reveal .give-btn {
 .woocommerce-page .site-wrap form.woocommerce-cart-form div.quantity,
 .woocommerce-page .site-wrap form.cart div.quantity {
   width: 100%;
-  max-width: 126px;
-  height: 42px;
+  max-width: 132px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
-  padding: 4px;
+  padding: 3px;
   border-radius: 3px;
   border: 1px solid rgba(53, 53, 53, 0.1);
   /* Chrome, Safari, Edge, Opera */
@@ -41498,6 +41498,7 @@ div[id*=give-form].give-display-reveal .give-btn {
   background: #FFFFFF;
   height: 100%;
   padding: 8px;
+  outline: none;
 }
 
 .woocommerce-page .site-wrap form.woocommerce-cart-form div.quantity input::-webkit-outer-spin-button,
@@ -41569,8 +41570,9 @@ div[id*=give-form].give-display-reveal .give-btn {
   overflow: hidden;
   background-color: var(--link-color);
   color: #FFFFFF;
-  font-size: 16px;
-  padding: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 16px 32px;
   font-weight: 600;
   vertical-align: middle;
 }
@@ -41764,15 +41766,16 @@ div[id*=give-form].give-display-reveal .give-btn {
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .onsale {
-  min-height: 2.5em;
+  min-height: 2.25em;
   min-width: 3em;
-  line-height: 2.5em;
+  line-height: 2.25em;
   background: var(--link-color, #d41b65);
-  border-radius: 1px;
+  border-radius: 3px;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
-  left: 0;
+  top: 10px;
+  left: 10px;
   right: auto;
   padding: 0 10px;
   margin: 0;
@@ -41826,27 +41829,37 @@ div[id*=give-form].give-display-reveal .give-btn {
   left: 50%;
   transform: translate(-50%, 0%);
   overflow: hidden;
-  background-color: var(--link-color);
-  color: #FFFFFF;
-  padding: 12px 16px;
+  background: #fff;
+  color: var(--link-color);
+  padding: 0;
   font-weight: 600;
   font-size: 14px;
+  line-height: 20px;
   transition: all 0.3s;
   opacity: 0;
   width: 100%;
-  max-width: 160px;
+  max-width: -moz-max-content;
+  max-width: max-content;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .button.add_to_cart_button::after {
+  background: #fff;
+  padding: 12px 12px 12px 0;
   position: unset;
-  margin-left: 0.53rem;
+  margin-left: -1px;
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .button .icon {
-  margin-right: 10px;
+  padding: 12px 14px;
+  background-color: var(--link-color);
+}
+
+.woocommerce-page .main-woocommerce .products .product-item .product .button .text {
+  background: #fff;
+  padding: 12px;
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .button::before {
@@ -41878,15 +41891,14 @@ div[id*=give-form].give-display-reveal .give-btn {
   padding: 5px 12px;
   background-color: var(--link-color);
   color: #ffffff;
-  font-size: 14px;
-  z-index: 1;
+  font-size: 13px;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 38px;
   min-width: 92px;
   border-radius: 0;
-  font-weight: 500;
   transition: transform 0.4s ease 0.2s;
   z-index: 3;
   opacity: 0;
@@ -42533,8 +42545,9 @@ div[id*=give-form].give-display-reveal .give-btn {
   overflow: hidden;
   background-color: var(--link-color);
   color: #FFFFFF;
-  padding: 13px 20px;
-  font-size: 16px;
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 600;
 }
 
@@ -43009,20 +43022,12 @@ div[id*=give-form].give-display-reveal .give-btn {
   }
 }
 
-.woocommerce-page {
-  background: #f8f7f7;
-}
-
 .woocommerce-page .woocommerce .woocommerce-cart-form {
   background: #FFFFFF;
 }
 
-.woocommerce-page .woocommerce .woocommerce-cart-form table {
-  border: none;
-}
-
 .woocommerce-page .woocommerce .woocommerce-cart-form table tr:nth-child(2n) {
-  background: rgba(0, 0, 0, 0.025);
+  background: #f8f7f7;
 }
 
 .woocommerce-page .woocommerce .woocommerce-cart-form table tr:hover td {
@@ -43030,21 +43035,39 @@ div[id*=give-form].give-display-reveal .give-btn {
 }
 
 .woocommerce-page .woocommerce .woocommerce-cart-form table th {
-  padding: 16px 10px;
+  padding: 15px 20px;
   font-size: 14px;
   text-transform: uppercase;
   background: var(--link-color);
   color: #FFFFFF;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .woocommerce-page .woocommerce .woocommerce-cart-form table td {
-  font-size: 16px;
-  padding: 16px 10px;
+  font-size: 14px;
+  padding: 15px 20px;
   border-top: none;
   border-bottom: 1px solid;
   border-color: #f8f7f7;
   transition: all 0.6s;
+}
+
+.woocommerce-page .woocommerce .woocommerce-cart-form table td a {
+  font-weight: 600;
+  color: #111111;
+}
+
+.woocommerce-page .woocommerce .woocommerce-cart-form table td a:hover {
+  color: var(--link-color);
+}
+
+.woocommerce-page .woocommerce .woocommerce-cart-form table td.product-thumbnail {
+  text-align: center;
+}
+
+.woocommerce-page .woocommerce .woocommerce-cart-form table td.product-price {
+  color: var(--link-color);
+  font-weight: 600;
 }
 
 .woocommerce-page .woocommerce .woocommerce-cart-form table .product-remove {
@@ -43077,8 +43100,7 @@ div[id*=give-form].give-display-reveal .give-btn {
 }
 
 .woocommerce-page .woocommerce .woocommerce-cart-form table img {
-  width: 60px;
-  border-radius: 5px;
+  width: 75px;
 }
 
 .woocommerce-page .woocommerce .woocommerce-cart-form table input[type=number] {
@@ -43107,7 +43129,7 @@ div[id*=give-form].give-display-reveal .give-btn {
   margin: 0 4px 0 0;
   outline: 0;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 16px 24px;
   vertical-align: middle;
   float: none;
 }
@@ -43123,9 +43145,8 @@ div[id*=give-form].give-display-reveal .give-btn {
   overflow: hidden;
   background-color: var(--link-color);
   color: #FFFFFF;
-  padding: 15px;
-  font-weight: 600;
   vertical-align: middle;
+  padding: 16px 32px;
 }
 
 .woocommerce-page .woocommerce .woocommerce-cart-form table .actions .button::after {
@@ -43158,28 +43179,23 @@ div[id*=give-form].give-display-reveal .give-btn {
 }
 
 .woocommerce-page .woocommerce .cart-collaterals h2 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 30px;
   letter-spacing: 0px;
-  color: var(--heading-color, #333);
-  margin-bottom: 10px;
+  color: var(--link-color);
+  margin-bottom: 24px;
 }
 
 .woocommerce-page .woocommerce .cart-collaterals table {
-  border: none;
-}
-
-.woocommerce-page .woocommerce .cart-collaterals table tr:hover th,
-.woocommerce-page .woocommerce .cart-collaterals table tr:hover td {
-  border-color: var(--link-color);
+  border-radius: 2px;
 }
 
 .woocommerce-page .woocommerce .cart-collaterals table th {
   font-size: 16px;
-  padding: 16px 16px 16px 0;
+  padding: 16px;
   border-top: none;
-  border-bottom: 1px solid;
+  border-bottom: none;
   border-color: #f8f7f7;
   transition: 0.6s;
 }
@@ -43188,9 +43204,19 @@ div[id*=give-form].give-display-reveal .give-btn {
   font-size: 16px;
   padding: 16px;
   border-top: none;
-  border-bottom: 1px solid;
+  border-bottom: none;
   border-color: #f8f7f7;
   transition: 0.6s;
+}
+
+.woocommerce-page .woocommerce .cart-collaterals table .cart-subtotal th {
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.woocommerce-page .woocommerce .cart-collaterals table .cart-subtotal td {
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .woocommerce-page .woocommerce .cart-collaterals .wc-proceed-to-checkout {
@@ -43203,7 +43229,7 @@ div[id*=give-form].give-display-reveal .give-btn {
   background-color: var(--link-color);
   color: #FFFFFF;
   padding: 16px 30px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   border-radius: 3px;
   margin-bottom: 0;
