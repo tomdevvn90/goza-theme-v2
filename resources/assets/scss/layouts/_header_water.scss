@@ -75,8 +75,9 @@
             &--cta {
                 margin-left: 80px;
                 @include media-breakpoint-down(lg) {
-                    margin-left: 30px;
+                    margin-left: 15px;
                 }
+
                 .goza-header-button-donate button.give-btn.give-btn-modal {
                     background: var(--link-color, #833dcc);
                     color: #fff;
@@ -288,7 +289,7 @@
     }
 }
 
-.site-header-water{
+.site-header-water .goza-header-main--menu {
     #mega-menu-wrap-main-menu {
         #mega-menu-main-menu {
             >li.mega-menu-item {
@@ -305,6 +306,11 @@
                     text-transform: none;
                     font-size: 18px;
                     line-height: 80px;
+                    box-sizing: border-box;
+                    @include media-breakpoint-down(lg) {
+                        padding: 0px 15px;
+                        font-size: 16px;
+                    }
                 }
             }
 

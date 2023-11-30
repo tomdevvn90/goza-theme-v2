@@ -12,8 +12,10 @@
         #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item > a.mega-menu-link{
             @include media-breakpoint-down(lg) {
                 padding: 0  10px;
+                font-size: 14px;
             }
         }
+
         .navbar-nav {
             .menu-item {
                 .sub-menu {
@@ -68,7 +70,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            // padding: 38px 0;
             @include media-breakpoint-down(md) {
                 padding: 38px 0;
             }
@@ -131,6 +132,11 @@
                 display: flex;
                 align-items: center;
                 gap: 35px;
+
+                @include media-breakpoint-down(lg){ 
+                    margin-left: 15px;
+                    gap: 22px;
+                }
 
                 .goza-header-cart-icon {
                     position: relative;

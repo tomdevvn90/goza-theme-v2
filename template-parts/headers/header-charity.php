@@ -9,11 +9,11 @@ $classes = [
    'site-header-charity'
 ];
 
-$logo = goza_get_logo_header_site();
-$header_btn = __get_field('goza_header_button', 'option');
-$icon_cart = __get_field('goza_enable_cart', 'option');
-$goza_phone_number = __get_field('goza_phone_number', 'option');
-$goza_button_type = __get_field('goza_button_type', 'option');
+$logo               = goza_get_logo_header_site();
+$header_btn         = __get_field('goza_header_button', 'option');
+$icon_cart          = __get_field('goza_enable_cart', 'option');
+$goza_phone_number  = __get_field('goza_phone_number', 'option');
+$goza_button_type   = __get_field('goza_button_type', 'option');
 $goza_form_donation = __get_field('goza_form_donation', 'option');
 ?>
 <header class="<?php echo implode(' ', $classes) ?>">
@@ -31,15 +31,15 @@ $goza_form_donation = __get_field('goza_form_donation', 'option');
          <div class="goza-header-main--menus">
             <div class="d-none d-xl-block goza-header-main--menu">
                <?php
-               if (has_nav_menu('main-menu')) {
-                  wp_nav_menu([
-                     'theme_location' => 'main-menu',
-                     'menu_class' => 'main-menu',
-                     'container_class' => 'menu-container',
-                     'items_wrap' => '<ul id="%1$s" class="%2$s navbar-nav">%3$s</ul>',
-                     'bootstrap' => false
-                  ]);
-               }
+                  if (has_nav_menu('main-menu')) {
+                     wp_nav_menu([
+                        'theme_location'  => 'main-menu',
+                        'menu_class'      => 'main-menu',
+                        'container_class' => 'menu-container',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s navbar-nav">%3$s</ul>',
+                        'bootstrap'       => false
+                     ]);
+                  }
                ?>
             </div>
             <div class="goza-header-main--cta">

@@ -8,11 +8,11 @@ $classes = [
    'site-header',
    'site-header-default',
 ];
-$logo = goza_get_logo_header_site();
-$header_btn = __get_field('goza_header_button', 'option');
-$icon_cart = __get_field('goza_enable_cart', 'option');
+$logo               = goza_get_logo_header_site();
+$header_btn         = __get_field('goza_header_button', 'option');
+$icon_cart          = __get_field('goza_enable_cart', 'option');
 $goza_enable_topbar = __get_field('goza_enable_topbar', 'option');
-$goza_button_type = __get_field('goza_button_type', 'option');
+$goza_button_type   = __get_field('goza_button_type', 'option');
 $goza_form_donation = __get_field('goza_form_donation', 'option');
 ?>
 <header class="<?php echo implode(' ', $classes) ?>">

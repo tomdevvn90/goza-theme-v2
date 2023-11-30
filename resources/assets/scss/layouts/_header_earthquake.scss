@@ -2,31 +2,34 @@
     &.site-header-earthquake {
         position: relative;
 
-        #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item{
+        .goza-header-main--menu #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item{
             > a{
-                @media (max-width: 1507px){
-                    padding-left: 15px !important;
-                    padding-right: 15px !important;
+                @include media-breakpoint-up(xl){
+                    font-size: 15px;
+                    padding: 0 15px;
                 }
 
-                @media (max-width: 1199.98px){
-                    padding-left: 10px !important;
-                    padding-right: 10px !important;
+                @include media-breakpoint-down(lg) {
+                   font-size: 13px;
                 }
+
                 &:hover{
                     color: var(--link-color-hover, #00af4e);
                 }
             }
+
             &:last-child{
                 > a.mega-menu-link{
                     padding-right: 0 !important;
                 }
             }
+
             &.mega-current-menu-ancestor {
                 >a.mega-menu-link {
                     color: var(--link-color, #28C77B);
                 }
             }
+
             ul.mega-sub-menu{
                 li{
                     a.mega-menu-link:hover {
@@ -140,13 +143,14 @@
                     padding-right: 208px;
                 }
 
-                @media (max-width: 1199.98px){
-                    padding-right: 170px;
+                @include media-breakpoint-down(lg) {
+                    padding-right: 163px;
                 }
                 
                 @include media-breakpoint-down(md) { 
                     padding-right: 0;
                 }
+
                 .goza-header-button-donate button.give-btn.give-btn-modal {
                     color: #FFF;
                     text-align: center;
@@ -233,9 +237,15 @@
                 box-sizing: border-box;
                 border-radius: 0 10px 10px 0;
                 margin-left: 58px;
+
                 @media (max-width: 1507px){
                     margin-left: 30px;
                 }
+
+                @include media-breakpoint-down(lg) {
+                    margin-left: 20px;
+                }
+
                 .goza-header-cart-icon {
                     position: relative;
                     cursor: pointer;
