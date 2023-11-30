@@ -41832,6 +41832,7 @@ div[id*=give-form].give-display-reveal .give-btn {
   background: #fff;
   color: var(--link-color);
   padding: 0;
+  padding-right: 12px;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -41847,9 +41848,8 @@ div[id*=give-form].give-display-reveal .give-btn {
 
 .woocommerce-page .main-woocommerce .products .product-item .product .button.add_to_cart_button::after {
   background: #fff;
-  padding: 12px 12px 12px 0;
   position: unset;
-  margin-left: -1px;
+  margin-left: 0.53rem;
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .button .icon {
@@ -41859,7 +41859,7 @@ div[id*=give-form].give-display-reveal .give-btn {
 
 .woocommerce-page .main-woocommerce .products .product-item .product .button .text {
   background: #fff;
-  padding: 12px;
+  padding-left: 12px;
 }
 
 .woocommerce-page .main-woocommerce .products .product-item .product .button::before {
