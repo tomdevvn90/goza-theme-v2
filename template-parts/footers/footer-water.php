@@ -135,7 +135,7 @@ if ($logo) $goza_ft_logo = $logo;
         </div>
         <div class="main-footer-socket">
             <?php if (isset($goza_txt_copyright) && !empty($goza_txt_copyright)) { ?>
-                <p><?= $goza_txt_copyright ?></p>
+                <p><?= str_replace('{{YEAR}}', date('Y'), $goza_txt_copyright); ?> </p>
             <?php } ?>
             <div id="back-to-top"><span>Back to top</span> <i class="fa fa-chevron-up" aria-hidden="true"></i></div>
         </div>

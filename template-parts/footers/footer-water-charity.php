@@ -52,7 +52,7 @@ $goza_txt_copyright = __get_field('goza_txt_copyright', 'option');
             </div>
         </div>
         <?php if (isset($goza_txt_copyright) && !empty($goza_txt_copyright)) { ?>
-            <div class="main-footer-copyright"><?= $goza_txt_copyright ?></div>
+            <div class="main-footer-copyright"><?= str_replace('{{YEAR}}', date('Y'), $goza_txt_copyright); ?> </div>
         <?php } ?>
         <div class="main-footer-socket-menu">
             <?php
