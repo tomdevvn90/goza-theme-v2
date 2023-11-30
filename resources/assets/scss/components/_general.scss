@@ -1,0 +1,121 @@
+.page-id-7178  .main-footer.footer-organization .main-footer-widget .main-footer-info i{
+	color: #ec5e87;
+}
+
+html :where(.wp-block)[data-align=wide] .container{
+	max-width: 1100px;
+}
+
+.page-id-6878 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link{
+	color:#2c9cf2;
+}
+.page-id-6878 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover, .page-id-6878 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus {
+    color: #2c9cf2;
+}
+.page-id-6878 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item > a.mega-menu-link:hover{
+	color: #2c9cf2;
+}
+.page-id-6160 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link{
+	color:#4ca5ab;
+}
+.page-id-6160 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover, .page-id-6160 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus {
+    color: #4ca5ab;
+}
+.page-id-6160 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item > a.mega-menu-link:hover{
+	color: #4ca5ab;
+}
+
+.wp-block-column.be-col-who-are-you{
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.wp-block-column.be-col-who-are-you > .wp-block-buttons{
+	margin-right:30px;
+}
+
+.be-col-we-are-charity.wp-block-column{
+	padding-right:10%;
+}
+
+.wpcf7-form .column{
+	width: calc(100% / 3);
+	padding: 0 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+.wpcf7-form .name{
+	padding-left: 0;
+}
+.wpcf7-form .subject{
+	padding-right: 0;
+}
+.wpcf7-form p input[type=submit]{
+	margin-top: 20px;
+}
+
+.btn-general.btn-style-custom a{
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+    background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: 200%;
+    background-position: 0 -100%;
+}
+
+.btn-general.btn-pl-pr a{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.mg-top.goza-block-container{
+	margin-top: -200px;
+	z-index: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+	.wp-block-heading.heading-about{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 782px){
+	.wp-block-columns.counter-columns-about{
+		max-width: 620px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.be-single-post-block.is-style-ngo-dark .be-single-post-inner--cta{
+		margin-bottom:0;
+	}
+	
+    .be-infomation-section .be-infomation-box .be-infomation-list.shadow{
+        margin-top: 50px !important;
+    }	
+
+    .wpcf7-form .column{
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin-bottom: 0;
+    }
+	
+    .main-footer.footer-water .main-footer--instagram #sb_instagram #sbi_images{
+        min-width: 100%;
+        display: contents;
+    }
+
+    .be-row-numbers-earthquake.goza-layout-columns-4{
+		overflow-x: visible;
+	}
+}
+
+.be-charity2-video {
+    justify-content: flex-start;
+}

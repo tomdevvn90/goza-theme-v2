@@ -1,0 +1,17 @@
+.be-menu-template{
+    ul.menu{
+        padding:0;
+        list-style-type:none;
+        li {
+            a{
+                padding: 5px 2px;
+                font-size: 15px;
+                line-height: 30px;
+                color: var(--header-text-color, rgb(10, 10, 10));
+                &:hover{
+                    color: var(--link-color);
+                }
+            }
+        }
+    }
+}
