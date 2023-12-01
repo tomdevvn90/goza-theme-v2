@@ -46,7 +46,7 @@
                     }
                 }
                 .product-remove{
-                    min-width: 2em;
+                    min-width: 54px;
                 }
                 .remove{
                     color: #d9d9d9 !important;
@@ -70,6 +70,7 @@
                 }
                 img{
                     width: 75px;
+                    min-width: 75px;
                 }
                 input[type="number"]{
                     line-height: 1;
@@ -148,10 +149,6 @@
         }
 
         .cart-collaterals{
-            .cart_totals {
-                padding: 20px;
-                background: #FFFFFF;
-            }
 
             h2{
                 font-weight: 600;
@@ -229,7 +226,7 @@
             }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
 
             .woocommerce-cart-form{
                 table{
@@ -239,6 +236,14 @@
                                 border-color: #f8f7f7;
                             }
                         }
+                    }
+                    .product-remove{
+                        padding: 25px 20px;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .remove{
+                        margin-right: 15px;
                     }
                     .product-quantity{
                         display: flex;
@@ -261,6 +266,28 @@
 
             }
   
+        }
+
+        @media screen and (max-width: 600px){
+            .woocommerce-cart-form{
+                table{
+                    .actions{
+                        .coupon{
+                            #coupon_code{
+                                padding: 12px 24px;
+                            }
+                        }
+                        .button{
+                            padding: 12px 24px;
+                        }
+                    }
+                }
+            }
+            .cart-collaterals{
+                .button{
+                    padding: 12px 24px;
+                }
+            }
         }
 
         @media screen and (max-width: 480px){
@@ -288,8 +315,6 @@
                 }
                 .button{
                     width: 100%;
-                    padding: 16px;
-                    font-size: 18px;
                 }
             }
         }

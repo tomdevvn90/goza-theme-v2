@@ -13,24 +13,35 @@
         }
 
         .lost_reset_password{
-            background: #FFFFFF;
+            background: #f8f7f5;
             padding: 20px;
             border-radius: 3px;
             font-size: 16px;
             @media screen and (max-width: 480px) {
                 padding: 16px;
             }
+            .button{
+                padding: 12px 24px;
+            }
         }
         .woocommerce-form-login{
-            background: #FFFFFF;
+            background: #f8f7f5;
             font-size: 16px;
             .woocommerce-form-login__rememberme{
+                display: block;
                 margin-top: 6px;
-                margin-bottom: 6px;
+            }
+            p{
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            .button{
+                padding: 12px 24px;
             }
         }
         .woocommerce-MyAccount-navigation{
-            background: #FFFFFF;
+            background: #f8f7f5;
             padding: 24px 20px;
             border-radius: 3px;
             margin-bottom: 24px;
@@ -51,12 +62,13 @@
             }
         }
         .woocommerce-MyAccount-content{
-            background: #FFFFFF;
+            background: #f8f7f5;
             padding: 30px 20px 20px;
             border-radius: 3px;
             font-size: 16px;
             .woocommerce-message{
                 background: #f8f7f7;
+                border-top-color: var(--link-color);
             }
             .woocommerce-customer-details{
                 margin-bottom: 1em;
@@ -76,16 +88,25 @@
                 letter-spacing: 0px;
                 color: var(--heading-color,#333);
             }
+            .button{
+                padding: 12px 24px;
+            }
             table{
+                &.shop_table{
+                    margin-bottom: 16px;
+                    background: #FFFFFF;
+                }
                 &.order_details{
                     border-collapse: collapse;
                     border: none;
+                    background: #fff;
                     thead{
                         th{
+                            color: #FFFFFF;
                             font-size: 14px;
                             text-transform: uppercase;
-                            background: #f8f7f7;
-                            border: 1px solid #f8f7f7;
+                            background: var(--link-color);
+                            border: 1px solid var(--link-color);
                         }
                     }
                     tr{
@@ -101,11 +122,9 @@
                         border-bottom: 1px solid;
                         border-color: #f8f7f7;
                         padding: 16px 10px;
+                        
                     }
                     td{
-                        &:first-child{
-                            padding-left: 0;
-                        }
                         transition: 0.6s;
                         border-top: none;
                         border-bottom: 1px solid;
@@ -120,16 +139,16 @@
                                 }
                             }
                         }
-                        th {
-                            padding-left: 0;
-                        }
                     }
                 }
                 th{
                     padding: 6px 10px;
+                    font-size: 14px;
                 }
                 td{
                     padding: 6px 10px;
+                    font-size: 14px;
+                    font-weight: 500;
                 }
             }
             .woocommerce-Addresses{
@@ -163,7 +182,7 @@
                     background-color: var(--link-color);
                     color: #FFFFFF;
                     font-size: 16px;
-                    padding: 5px 12px;
+                    padding: 10px 20px;
                     font-weight: 600;
                     border-radius: 3px;
                     display: inline-block;
@@ -204,6 +223,9 @@
         }
 
         form{
+            .form-row{
+                padding: 3px 0;
+            }
             input{
                 border-radius: 3px;
                 border: 1px solid rgba(53, 53, 53, 0.1);

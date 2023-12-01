@@ -278,7 +278,11 @@ function goza_wpseo_breadcrumb_single_link($link_output, $link)
 // Filter the comment list arguments
 add_filter('wp_list_comments_args', 'goza_override_comment_list');
 function goza_override_comment_list($args)
-{
+{	
+	if( is_product() ){
+		return $args;
+	}
+
 	$args['callback'] = 'goza_single_comment_list_template';
 	return $args;
 }
@@ -422,6 +426,39 @@ function goza_wp_footer_func()
 
 }
 
+// Remove the default content product part
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+
+// Add the default content product part
+add_action( 'woocommerce_before_shop_loop_item', 'goza_woocommerce_before_shop_loop_item_func', 9 );
+function goza_woocommerce_before_shop_loop_item_func() {
+	global $product;
+	$product_id = $product->get_id();
+	?>
+	<div class="woocommerce-loop-product__header" data-product-id="<?php echo $product_id; ?>">
+		<div class="woocommerce-loop-product__overlay"></div>
+	<?php
+		the_post_thumbnail();
+		woocommerce_template_loop_add_to_cart();
+	?>
+	</div>
+	<?php
+}
+add_action( 'woocommerce_after_shop_loop_item', 'goza_woocommerce_after_shop_loop_item_func', 20 );
+function goza_woocommerce_after_shop_loop_item_func() {
+	?>
+	<div class="woocommerce-loop-product__bottom">
+	<?php
+		woocommerce_template_loop_rating();
+		woocommerce_template_loop_price();
+	?>
+	</div>
+	<?php
+}
+
 // woocommerce loop add to cart link
 add_filter( 'woocommerce_loop_add_to_cart_link', 'goza_woocommerce_loop_add_to_cart_link_func', 10, 3 );
 function goza_woocommerce_loop_add_to_cart_link_func( $add_to_cart_html, $product, $args ){
@@ -473,4 +510,5 @@ function goza_woocommerce_cart_item_remove_link_func( $sprintf, $cart_item_key )
 
 	return $sprintf;
 }
+
 

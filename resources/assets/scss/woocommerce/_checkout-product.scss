@@ -31,7 +31,7 @@
                 background-color: var(--link-color);
                 color: #FFFFFF;
                 display: inline-block;
-                padding: 15px;
+                padding: 12px;
                 font-weight: 600;
                 &::after{
                     background: #fff;
@@ -103,6 +103,13 @@
             table{
                 border: none;
                 border-collapse: collapse;
+                thead{
+                    th{
+                        color: #FFFFFF;
+                        border: 1px solid var(--link-color);
+                        background: var(--link-color);
+                    }
+                }
                 tr{
                     &:hover{
                         td{
@@ -116,12 +123,12 @@
                     border-top: none;
                     border-bottom: 1px solid;
                     border-color: #f8f7f7;
-                    padding: 16px 10px;
+                    padding: 15px 20px;
                 }
                 th{
                     font-size: 14px;
                     text-transform: uppercase;
-                    background: #f8f7f7;
+                    background: #FFFFFF;
                     border: 1px solid #f8f7f7;
                     border-left: none;
                     border-right: none;
@@ -139,6 +146,11 @@
                             th{
                                 border-color: rgba(212, 27, 101, 0.5);
                             }
+                        }
+                    }
+                    .order-total{
+                        th,td{
+                            color: var(--link-color);
                         }
                     }
                     th{
@@ -214,8 +226,9 @@
                     th{
                         font-size: 14px;
                         text-transform: uppercase;
-                        background: #f8f7f7;
-                        border: 1px solid #f8f7f7;
+                        color: #FFFFFF;
+                        border: 1px solid var(--link-color);
+                        background: var(--link-color);
                     }
                 }
                 tr{
@@ -231,7 +244,7 @@
                     border-top: none;
                     border-bottom: 1px solid;
                     border-color: #f8f7f7;
-                    padding: 16px 10px;
+                    padding: 15px 20px;
                 }
                 td{
                     &:first-child{
