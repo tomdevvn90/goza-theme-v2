@@ -12056,6 +12056,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   position: absolute;
   right: 1px;
   top: 1px;
+  transform: translateY(0);
   width: 50px;
   height: calc(100% - 2px);
   border: 0;
@@ -16293,6 +16294,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 .be-give-navi .post-navigation .nav-links .nav-previous a,
 .be-give-navi .post-navigation .nav-links .nav-next a {
   color: #111111;
+}
+
+.be-give-navi .post-navigation .nav-links .nav-previous a:hover,
+.be-give-navi .post-navigation .nav-links .nav-next a:hover {
+  color: var(--link-color, #d41b65);
 }
 
 .be-give-navi .post-navigation .nav-links .nav-previous .meta-nav,
@@ -25896,6 +25902,86 @@ ul.be-list-ul li {
   background-color: var(--link-color);
   border-radius: 4px;
   margin: 0 16px;
+}
+
+.search .not-found {
+  padding: 100px 0;
+}
+
+.search .not-found .page-header {
+  text-align: center;
+}
+
+.search .not-found .page-header .page-title {
+  font-family: var(--body-family);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.search .not-found .page-content {
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search .not-found .page-content form {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
+.search .not-found .page-content form label {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.search .not-found .page-content form input[type=search] {
+  border-radius: 3px;
+  border: 1px solid rgba(53, 53, 53, 0.1);
+  transition: all 0.3s ease;
+  max-width: 100%;
+  font-size: 16px;
+  padding: 20px;
+  background: #f6f6f6;
+  height: 56px;
+  line-height: 56px;
+  width: 100%;
+}
+
+.search .not-found .page-content form input[type=search]:focus {
+  border: 1px solid rgba(212, 27, 101, 0.5);
+  box-shadow: none;
+  outline: none;
+}
+
+.search .not-found .page-content form input[type=submit] {
+  border-radius: 3px;
+  padding: 16px 32px;
+  background-color: var(--link-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: 0;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+
+.search .not-found .page-content form input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .search .page-content form {
+    flex-direction: column;
+  }
+
+  .search .page-content form input[type=submit] {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -39460,6 +39546,7 @@ div[id*=give-form].give-display-reveal .give-btn {
   bottom: 0;
   transform: unset;
   top: unset;
+  z-index: 9;
 }
 
 .be-section-w-testinials-block .be-testimonials-list .slick-arrow.slick-prev {

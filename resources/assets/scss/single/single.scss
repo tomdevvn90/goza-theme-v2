@@ -1889,6 +1889,9 @@
                 width: 50%;
                 a {
                     color: #111111;
+					&:hover{
+						color: var(--link-color, #d41b65);
+					}
                 }
                 .meta-nav {
                     font-size: 14px;

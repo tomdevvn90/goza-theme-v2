@@ -16818,6 +16818,7 @@ div[id*=give-form].give-display-reveal .give-btn {
   bottom: 0;
   transform: unset;
   top: unset;
+  z-index: 9;
 }
 
 .be-section-w-testinials-block .be-testimonials-list .slick-arrow.slick-prev {
