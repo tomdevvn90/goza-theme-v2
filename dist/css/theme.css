@@ -12043,7 +12043,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   height: 100%;
   padding: 0 35px 0 10px;
   color: #353535;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .has-sidebar .post-sidebar .wg-wrap .wp-block-search .wp-block-search__inside-wrapper .wp-block-search__input:focus {
@@ -16285,6 +16285,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 .be-give-navi .post-navigation .nav-links {
   display: flex;
+}
+
+.be-give-navi .post-navigation .nav-links:not(:has(.nav-previous)) {
+  justify-content: flex-end;
 }
 
 .be-give-navi .post-navigation .nav-links .nav-previous,

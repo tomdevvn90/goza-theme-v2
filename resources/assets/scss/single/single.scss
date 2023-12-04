@@ -1886,6 +1886,9 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         .nav-links {
             display: flex;
+			&:not(:has(.nav-previous)){
+				justify-content: flex-end;
+			}
             .nav-previous, .nav-next {
                 width: 50%;
                 a {
