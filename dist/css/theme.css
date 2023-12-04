@@ -38945,6 +38945,10 @@ div[id*=give-form] .form-row textarea {
 form[id*=give-form] .give-submit-button-wrap,
 div[id*=give-form] .give-submit-button-wrap {
   position: relative;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form[id*=give-form] .give-submit-button-wrap .give-submit,

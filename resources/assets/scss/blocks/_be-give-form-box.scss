@@ -965,6 +965,9 @@ div[id*=give-form] {
 	}
 	.give-submit-button-wrap {
 		position: relative;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 		.give-submit {
 			margin-top: 0;
 		}
