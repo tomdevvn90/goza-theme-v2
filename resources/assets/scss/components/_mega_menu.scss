@@ -17,14 +17,14 @@
 }
 
 #mega-menu-wrap-main-menu{
-    ul{
-        li{
+    #mega-menu-main-menu{
+        li.mega-menu-item{
             .mega-sub-menu{
                 box-shadow: 0 3px 6px rgba(0,0,0,0.075);
             }
         }
     }
-    
+
     .widget_products{
         .product_list_widget{
             li{

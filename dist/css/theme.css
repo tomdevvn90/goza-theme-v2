@@ -18622,7 +18622,7 @@ h6 {
   color: var(--link-color);
 }
 
-#mega-menu-wrap-main-menu ul li .mega-sub-menu {
+#mega-menu-wrap-main-menu #mega-menu-main-menu li.mega-menu-item .mega-sub-menu {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.075);
 }
 
