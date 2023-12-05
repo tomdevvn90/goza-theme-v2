@@ -158,6 +158,10 @@ body .wp-block-tnp-minimal{
     }
     
     .tnp-subscription-minimal{
+        form{
+            display: flex;
+            align-items: center;
+        }
         input{
             width: 100%;
             max-width: 100%;
@@ -173,7 +177,8 @@ body .wp-block-tnp-minimal{
                 background-color: var(--link-color);
                 color: #fff;
                 font-weight: 700;
-                margin-top: 15px;
+                max-width: max-content;
+                padding: 10px 36px;
             }
         }
 
@@ -183,6 +188,21 @@ body .wp-block-tnp-minimal{
             font-weight: var(--body-font-weight);
             font-family: var(--body-family);
             color:var(--body-color);
+        }
+
+        @media screen and (max-width: 767px) {
+            form{
+                flex-direction: column;
+                input{
+                    &.tnp-email{
+                        margin-right: 0;
+                    }
+                    &.tnp-submit{
+                        max-width: 100%;
+                        margin-top: 15px;
+                    }
+                }
+            }
         }
     }
 }
