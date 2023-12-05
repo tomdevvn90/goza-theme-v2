@@ -173,12 +173,16 @@ body .wp-block-tnp-minimal{
             background: #f6f6f6;
             height: 60px;
             line-height: 60px;
+            outline: none;
             &.tnp-submit{
                 background-color: var(--link-color);
                 color: #fff;
                 font-weight: 700;
                 max-width: max-content;
                 padding: 10px 36px;
+            }
+            &:focus{
+                border-color: var(--link-color);
             }
         }
 
