@@ -20,7 +20,7 @@
 			}
 		}
 		.give-card__body {
-			padding: 24px 32px;
+			padding: 24px;
 			.give-goal-progress {
 				margin-bottom: 24px;
 				.raised {
@@ -34,6 +34,7 @@
 				margin-bottom: 12px;
 			}
 			.give-card__text {
+				font-size: 16px;
 				margin: 0 0 24px;
 			}
 			.give-card__button {
@@ -263,8 +264,9 @@
 	
 		}
 		.wg-wrap {
+			font-size: 16px;
 			background: #FFFFFF;
-			padding: 32px 40px;
+			padding: 30px;
 			border-radius: 2px;
 			&:not(:last-child) {
 				margin-bottom: 48px;

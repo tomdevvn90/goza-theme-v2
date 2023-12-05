@@ -729,14 +729,6 @@
                 margin-left: -50px;
                 height: 100%;
 
-                @include media-breakpoint-down(lg) {
-                    margin: 48px 0;
-                }
-
-                @include media-breakpoint-down(md) {
-                    margin: 32px 0;
-                }
-
                 @media screen and (max-width: 600px) {
                     width: 100%;
                     margin-left: 0;

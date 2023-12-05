@@ -888,14 +888,13 @@ $main-color: #d41b65;
 					}
 				}
 				&-title {
-					font-size: 42px;
+					font-size: 36px;
 				}
 
 			}
 			@media(max-width: $break-sm - 0.02) {
 				&-title {
-					font-size: 36px;
-					margin-bottom: 12px;
+					font-size: 32px;
 				}
 				&-description {
 					margin-top: 16px;

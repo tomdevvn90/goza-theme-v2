@@ -8015,18 +8015,6 @@ body .editor-styles-wrapper :where(.wp-block-columns.is-layout-flex) {
   height: 100%;
 }
 
-@media (max-width: 1199.98px) {
-  .be-events-listing-block.is-style-ev-special .item-event--meta {
-    margin: 48px 0;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .be-events-listing-block.is-style-ev-special .item-event--meta {
-    margin: 32px 0;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .be-events-listing-block.is-style-ev-special .item-event--meta {
     width: 100%;
@@ -17003,6 +16991,7 @@ div[id*=give-form].give-display-reveal .give-btn {
 .be-box-icon-btn-inner:hover .be-box-icon-btn--icon::before {
   opacity: 1;
   visibility: inherit;
+  transform: scale(1);
 }
 
 .be-box-icon-btn-inner:hover .be-box-icon-btn--icon img {
@@ -17039,15 +17028,16 @@ div[id*=give-form].give-display-reveal .give-btn {
   position: absolute;
   left: 0;
   top: 0;
+  transform: scale(0.6);
   z-index: -1;
   opacity: 0;
   visibility: hidden;
   border-radius: 50%;
-  transition: visibility 0s 0.3s, opacity 0.3s linear;
+  transition: transform 0.3s, opacity 0.3s linear;
 }
 
 .be-box-icon-btn--icon img {
-  transition: visibility 0s 0.3s, opacity 0.3s linear;
+  transition: opacity 0.3s linear;
 }
 
 .be-box-icon-btn--icon img.\--icon-hv {

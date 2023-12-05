@@ -405,6 +405,12 @@
                             font-size: 22px;
                             line-height: 30px;
                             color: rgb(51, 51, 51);
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: block;
+                            display: -webkit-box;
                             margin-bottom: 10px;
                             transition: all 0.3s ease 0s;
                             &:hover{
@@ -413,6 +419,7 @@
                         }
 
                         .venue-empty{
+                            line-height: 1.25;
                             color: var(--link-color, #d41b65);
                             font-weight: 400;
                             font-size: 16px;
@@ -555,6 +562,54 @@
 
             }
         }
+
+        @media(max-width: 1199px){
+            .list-tab-event{
+                .bt-list-event{
+                    .item-event{
+                        &--featured-image-wrap{
+                            .event-thumbnail{
+                                width: 180px;
+                                height: 180px;
+                            }
+                        }
+                        &--event-date{
+                            min-width: 154px;
+                            margin-left: 20px;
+                            .event-month-day{
+                                span{
+                                    font-size: 34px;
+                                }
+                            }
+                            .event-time{
+                                font-size: 15px;
+                            }
+                        }
+                        &--content{
+                            padding-right: 165px;
+                        }
+                        &--content-entry{
+                            margin-left: 20px;
+                            .title-link{
+                                font-size: 20px;
+                            }
+                            .venue-empty{
+                                font-size: 15px;
+                            }
+                            
+                        }
+                        &--excerpt{
+                            margin-top: 10px;
+                            font-size: 15px;
+                        }
+                        .readmore-link{
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+
         @media(max-width: 991px){
             .list-tab-event{
                 .nav-tabs{
@@ -584,9 +639,9 @@
                             }
                         }
                         &--content{
-                            padding-top: 20px;
+                            padding-top: 24px;
                             padding-right: 0;
-                            padding-bottom: 20px;
+                            padding-bottom: 24px;
                         }
                         &--content-entry{
                             padding-right: 20px;
