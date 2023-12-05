@@ -22223,11 +22223,12 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input::placeholder {
 .main-footer.footer-default .main-footer-widget form {
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-footer.footer-default .main-footer-widget form input.tnp-email {
   height: 60px;
-  margin-bottom: 10px;
   border-radius: 2px !important;
   text-align: center;
   width: 100%;
@@ -22236,13 +22237,16 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input::placeholder {
   display: inline-block;
   border: 1px solid #ddd;
   background-color: #f4f4f4;
-  color: #444;
+  color: var(--body-color, #444);
   font-size: 14px;
+  width: 100%;
   max-width: 100%;
   outline: none;
+  margin: 0 0 10px 0;
 }
 
 .main-footer.footer-default .main-footer-widget form input.tnp-submit {
+  width: 100%;
   height: 60px;
   border-radius: 2px;
   font-weight: 500;
@@ -23993,6 +23997,8 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input::placeholder {
 .main-footer.footer-charity-new .main-footer-widget form {
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-footer.footer-charity-new .main-footer-widget form input.tnp-email {
@@ -26295,13 +26301,14 @@ ul.be-list-ul li {
 
 .be-team-carousel-inner .item-team--avatar img {
   width: 100%;
-  height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: top center;
   object-position: top center;
   margin-left: auto;
   margin-right: auto;
+  min-height: 300px;
+  height: auto;
 }
 
 @media (max-width: 1199.98px) {
@@ -40354,6 +40361,10 @@ div[id*=give-form].give-display-reveal .give-btn {
 .wp-block-columns.goza-ss-vd-about > .wp-block-column .video-popup-actions-block .block-inner__heading {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.be-team-carousel-ab-page .be-team-carousel-inner .item-team--avatar img {
+  height: 320px;
 }
 
 .wp-block-column.gz-col-info-contact-page .be-infomation-section {
