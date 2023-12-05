@@ -21533,6 +21533,11 @@ body .wp-block-tnp-minimal > p {
   display: none;
 }
 
+body .wp-block-tnp-minimal .tnp-subscription-minimal form {
+  display: flex;
+  align-items: center;
+}
+
 body .wp-block-tnp-minimal .tnp-subscription-minimal input {
   width: 100%;
   max-width: 100%;
@@ -21550,7 +21555,9 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input.tnp-submit {
   background-color: var(--link-color);
   color: #fff;
   font-weight: 700;
-  margin-top: 15px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 10px 36px;
 }
 
 body .wp-block-tnp-minimal .tnp-subscription-minimal input::-moz-placeholder {
@@ -21568,6 +21575,21 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input::placeholder {
   font-weight: var(--body-font-weight);
   font-family: var(--body-family);
   color: var(--body-color);
+}
+
+@media screen and (max-width: 767px) {
+  body .wp-block-tnp-minimal .tnp-subscription-minimal form {
+    flex-direction: column;
+  }
+
+  body .wp-block-tnp-minimal .tnp-subscription-minimal form input.tnp-email {
+    margin-right: 0;
+  }
+
+  body .wp-block-tnp-minimal .tnp-subscription-minimal form input.tnp-submit {
+    max-width: 100%;
+    margin-top: 15px;
+  }
 }
 
 .goza-preloader {
