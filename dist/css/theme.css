@@ -22223,11 +22223,12 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input::placeholder {
 .main-footer.footer-default .main-footer-widget form {
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-footer.footer-default .main-footer-widget form input.tnp-email {
   height: 60px;
-  margin-bottom: 10px;
   border-radius: 2px !important;
   text-align: center;
   width: 100%;
@@ -22236,13 +22237,16 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input::placeholder {
   display: inline-block;
   border: 1px solid #ddd;
   background-color: #f4f4f4;
-  color: #444;
+  color: var(--body-color, #444);
   font-size: 14px;
+  width: 100%;
   max-width: 100%;
   outline: none;
+  margin: 0 0 10px 0;
 }
 
 .main-footer.footer-default .main-footer-widget form input.tnp-submit {
+  width: 100%;
   height: 60px;
   border-radius: 2px;
   font-weight: 500;
