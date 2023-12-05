@@ -43,7 +43,7 @@
         align-items: stretch;
         font-size: 14px;
         min-height: 200px;
-        width: 350px;
+        width: 360px;
         max-width: 100%;
         transition: .3s;
         padding: 20px 30px 20px 20px;
@@ -139,7 +139,6 @@
                     line-height: 24px;
                     font-weight: 600;
                     display: block;
-                    text-decoration: underline;
                     color: var(--heading-color, #333);
                     -webkit-transition: 0.3s ease;
                     transition: 0.3s ease;
@@ -148,16 +147,17 @@
                     }
                 }
                 img{
-                    max-width: 50px;
+                    max-width: 56px;
                     width: 100%;
                     float: left;
                     margin-right: 10px;
                     margin-left: 0;
+                    border-radius: 2px;
                 }
                 .quantity{
                     display: block;
                     margin-top: 6px;
-                    padding-left: 60px;
+                    padding-left: 66px;
                     font-weight: 500;
                     color: var(--link-color, #d41b65);
                 }
