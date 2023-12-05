@@ -33,14 +33,3 @@
 body .editor-styles-wrapper :where(.wp-block-columns.is-layout-flex){
     gap: 2em;
 }
-
-.is-root-container{
-    .wp-block-paragraph, .wp-block-heading.rich-text{
-        a{
-            font-size: inherit;
-            line-height: inherit;
-            font-family: inherit;
-            font-weight: inherit;
-        }
-    }
-}

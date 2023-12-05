@@ -3071,6 +3071,14 @@
   box-sizing: border-box;
 }
 
+.is-root-container .wp-block-paragraph a,
+.is-root-container .wp-block-heading.rich-text a {
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 .is-root-container h1,
 .is-root-container h2,
 .is-root-container h3,
@@ -3219,14 +3227,6 @@
 
 body .editor-styles-wrapper :where(.wp-block-columns.is-layout-flex) {
   gap: 2em;
-}
-
-.is-root-container .wp-block-paragraph a,
-.is-root-container .wp-block-heading.rich-text a {
-  font-size: inherit;
-  line-height: inherit;
-  font-family: inherit;
-  font-weight: inherit;
 }
 
 .editor-styles-wrapper .block-editor-block-list__layout .be-progressbar-block.circle .be-progressbar-block-warp.__editor svg {
