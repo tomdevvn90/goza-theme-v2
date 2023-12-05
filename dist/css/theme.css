@@ -44534,7 +44534,7 @@ div[id*=give-form].give-display-reveal .give-btn {
 }
 
 .menu-mini-cart__container .widget_shopping_cart_content .cart_list li a:not(.remove) {
-  padding-right: 20px;
+  padding-right: 25px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;

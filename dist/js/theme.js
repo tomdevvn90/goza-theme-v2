@@ -1436,20 +1436,16 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
   "use strict";
 
-  var miniCartPopup = function miniCartPopup() {
-    if ($('body').hasClass('woocommerce-cart')) {
-      return;
-    }
-    var cart_icon = $('.goza-header-cart-icon');
-    var menu_mini_cart = $('#menu-mini-cart');
-    var menu_mini_cart_main = menu_mini_cart.find('.menu-mini-cart__main');
-    var menu_mini_cart_close = menu_mini_cart.find('.menu-cart__close-button');
+  var beMiniCartPopup = function beMiniCartPopup() {
+    var cart_icon = $('.goza-header-cart-icon'),
+      menu_mini_cart = $('#menu-mini-cart'),
+      menu_mini_cart_main = menu_mini_cart.find('.menu-mini-cart__main'),
+      menu_mini_cart_close = menu_mini_cart.find('.menu-cart__close-button');
     cart_icon.on('click', function (e) {
       e.preventDefault();
       menu_mini_cart.addClass('active');
     });
     menu_mini_cart.on('click', function (e) {
-      // e.preventDefault();
       if (!menu_mini_cart_main.is(e.target) && menu_mini_cart_main.has(e.target).length === 0) {
         $(this).removeClass('active');
       }
@@ -1461,7 +1457,7 @@ __webpack_require__.r(__webpack_exports__);
   };
   $(document).ready(function () {});
   $(window).on("load", function () {
-    miniCartPopup();
+    beMiniCartPopup();
   });
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
