@@ -409,24 +409,43 @@
                     .wc-block-grid__products{
                         margin-bottom: 0;
                     }
+                    .wc-block-grid__product{
+                        text-align: left;
+                    }
                     .wc-block-grid__product-link{
+                        .wc-block-grid__product-image{
+                            float: left;
+                            max-width: 100px;
+                            margin-right: 8px;
+                            margin-bottom: 0;
+                            @media screen and (max-width: 480px) {
+                                max-width: 80px;
+                            }
+                        }
                         img{
                             width: 100%;
+                            border-radius: 2px;
+                        }
+                        &:hover{
+                            .wc-block-grid__product-title{
+                                color: var(--link-color);
+                            }
                         }
                     }
                     &__product-onsale{
-                        min-height: 2.25em;
+                        min-height: 2.2em;
                         min-width: 3em;
-                        line-height: 2.25em;
+                        line-height: 2.2em;
                         background: var(--link-color, #d41b65);
                         border-radius: 3px;
                         color: #fff;
-                        font-size: 12px;
+                        font-size: 11px;
                         font-weight: 600;
-                        top: 10px;
-                        left: 10px;
+                        text-transform: capitalize;
+                        top: 6px;
+                        left: 6px;
                         right: auto;
-                        padding: 0 10px;
+                        padding: 0 8px;
                         margin: 0;
                         border: 0;
                         z-index: 3;
@@ -435,11 +454,13 @@
                         font-weight: 600;
                         font-size: 14px;
                         color: #222;
+                        margin-bottom: 8px;
                     }
                     &__product-price{
                         font-size: 14px;
                         font-weight: 600;
                         color: var(--link-color);
+                        margin-bottom: 8px;
                         del{
                             opacity: 0.5;
                         }
@@ -452,7 +473,7 @@
                             color: #FFFFFF;
                             padding: 12px 16px;
                             font-weight: 600;
-                            font-size: 14px;
+                            font-size: 13px;
                             line-height: 1;
                             border-radius: 3px;
                             transition: all 0.3s;
@@ -484,6 +505,7 @@
                     margin-bottom: 0;
                     li{
                         font-size: 14px;
+                        line-height: 24px;
                         margin-bottom: 4px;
                         &:last-child{
                             margin-bottom: 0;
@@ -498,9 +520,21 @@
                         margin-bottom: 0;
                         li{
                             font-size: 14px;
+                            line-height: 24px;
                             margin-bottom: 4px;
                             &:last-child{
                                 margin-bottom: 0;
+                            }
+                            a{
+                                color: #222;
+                                font-weight: 500;
+                                &:hover{
+                                    color: var(--link-color);
+                                }
+                            }
+                            .wc-block-product-categories-list{
+                                padding-top: 4px;
+                                padding-left: 12px;
                             }
                         }
                     }
@@ -548,7 +582,7 @@
 
             .goza-sidebar{
                 padding-top: 40px;
-                max-width: 450px;
+                max-width: 540px;
                 margin-left: auto;
                 margin-right: auto;
                 .wg-wrap{
