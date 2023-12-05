@@ -18317,7 +18317,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   transition: 0.5s cubic-bezier(0.91, -0.05, 0.53, 0.91);
-  z-index: 9999;
+  z-index: -1;
   position: fixed;
   left: 0;
   top: 0;
@@ -21549,6 +21549,7 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input {
   background: #f6f6f6;
   height: 60px;
   line-height: 60px;
+  outline: none;
 }
 
 body .wp-block-tnp-minimal .tnp-subscription-minimal input.tnp-submit {
@@ -21558,6 +21559,10 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input.tnp-submit {
   max-width: -moz-max-content;
   max-width: max-content;
   padding: 10px 36px;
+}
+
+body .wp-block-tnp-minimal .tnp-subscription-minimal input:focus {
+  border-color: var(--link-color);
 }
 
 body .wp-block-tnp-minimal .tnp-subscription-minimal input::-moz-placeholder {

@@ -6,7 +6,7 @@
     opacity: 0;
     -webkit-transition: 0.5s cubic-bezier(0.91, -0.05, 0.53, 0.91);
     transition: 0.5s cubic-bezier(0.91, -0.05, 0.53, 0.91);
-    z-index: 9999;
+    z-index: -1;
     position: fixed;
     left: 0;
     top: 0;
