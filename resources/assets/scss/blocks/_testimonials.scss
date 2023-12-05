@@ -47,7 +47,7 @@
             &-desc {
                 margin: 0;
                 font-style: italic;
-                color: #666;
+                color: var(--body-color, #666);
                 font-size: 17px;
                 line-height: 26px;
                 @media screen and (max-width: 767px) {
@@ -65,11 +65,11 @@
             }
 
             &-name{
-                color: var(--heading-color);
+                color: var(--link-color, #000);
             }
 
             &-position{
-                color: #333;
+                color: var(--heading-color, #333);
                 margin-right: 5px;
             }
 
@@ -420,7 +420,6 @@
                     text-overflow: ellipsis;
                     display: -webkit-box;
                     line-height: 31px;
-                    color: #333;
                     font-family: var(--body-family);
                 }
 
@@ -431,10 +430,10 @@
                 &-name {
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 32px;
-                    line-height: 38px;
-                    color: #0a0a0a;
-                    font-family: var(--heading-family);
+                    font-size: var(--h3-font-size);
+                    line-height: var(--h3-line-height);
+                    color: var(--link-color, #333);
+
                     @media screen and (max-width: 480px) {
                         font-size: 25px;
                         line-height: 120%;
@@ -446,7 +445,7 @@
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 22px;
-                    color: #b7b7b7;
+                    color: var(--body-color, #333);
                     text-transform: initial;
                     margin-top: 10px;
                 }
