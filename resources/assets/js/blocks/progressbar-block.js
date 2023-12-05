@@ -5,6 +5,7 @@
       const $progressbar = $('.be-progressbar-block');
       if ($progressbar.length === 0) return;
       let ProgressBar = require('progressbar.js');
+
       $progressbar.each(function () {
           const $idProgressbar = $(this).find('.be-progressbar-block-warp').attr('id'),
                 $shape         = $(this).data('shape'),

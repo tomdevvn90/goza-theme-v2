@@ -3,6 +3,9 @@
 // create id attribute for specific styling
 $id = 'be-testimonials-' . $block['id'];
 
+$link_op    = __get_field('goza_link_color_op', 'option') ? : '';
+$link_color = !empty($link_op) ? $link_op['link_color'] : '#d41b65';
+
 // ACF field variables
 $testimonials     = __get_field('list_items') ? : '';
 $carousel_setting = __get_field('slider_setting') ? : '';
@@ -11,11 +14,6 @@ $color_position   = __get_field('color_position_tm_bl') ? : '';
 $color_desc       = __get_field('color_desc_tm_bl') ? : '';
 $bg_item          = __get_field('bg_item_tm_bl') ? : '';
 $slider_color     = __get_field('sliders_color_tm_bl') ? : '';
-
-$link_op = __get_field('goza_link_color_op', 'option') ? : '';
-if(!empty($link_op) && isset($link_op)){
-    $link_color = $link_op['link_color'];
-}
 
 $styles = [ ];
 

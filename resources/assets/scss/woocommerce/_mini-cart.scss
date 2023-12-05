@@ -8,6 +8,7 @@
         }
     }
 }
+
 .menu-mini-cart__container{
     background-color: transparent;
     transform: scale(0);
@@ -105,7 +106,6 @@
                 display: block;
                 padding: 0;
                 margin-bottom: 12px;
-
                 .remove{
                     position: absolute;
                     left: auto;
@@ -134,7 +134,7 @@
                     }
                 }
                 a:not(.remove){
-                    padding-right: 20px;
+                    padding-right: 25px;
                     font-size: 14px;
                     line-height: 24px;
                     font-weight: 600;
@@ -146,6 +146,7 @@
                         color: var(--link-color);
                     }
                 }
+
                 img{
                     max-width: 56px;
                     width: 100%;

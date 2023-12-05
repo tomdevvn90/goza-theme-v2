@@ -1,5 +1,37 @@
+.woocommerce-account{
+    .entry-content {
+        > .woocommerce{
+            padding: 0;
+            background: #FFFFFF;
+            margin: 100px 0;
+
+            @include media-breakpoint-down(md) {
+                margin: 60px 0;
+            }
+
+            @include media-breakpoint-down(sm) { 
+                margin: 48px 0;
+            }
+        }
+    }
+
+    &.logged-in{
+        .entry-content {
+            > .woocommerce{
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 2px;
+                display: flex;
+                @include media-breakpoint-down(sm) { 
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+
 .woocommerce-page{
     .woocommerce{
+
         h2{
             font-weight: 700;
             font-size: 40px;
@@ -27,10 +59,17 @@
         .woocommerce-form-login{
             background: #f8f7f5;
             font-size: 16px;
+            margin: 30px 0 0 0;
+            background: transparent;
+            padding: 0 !important;
+            width: 100%;
+            border:none;
+
             .woocommerce-form-login__rememberme{
                 display: block;
                 margin-top: 6px;
             }
+
             p{
                 &:last-child{
                     margin-bottom: 0;
@@ -41,31 +80,81 @@
             }
         }
         .woocommerce-MyAccount-navigation{
-            background: #f8f7f5;
-            padding: 24px 20px;
-            border-radius: 3px;
-            margin-bottom: 24px;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            @include media-breakpoint-down(sm) { 
+                padding: 0 !important;
+            }
+
             ul{
                 list-style: none;
-                padding-left: 0;
-                margin-bottom: 0;
+                margin: 0;
+                padding: 0;
+                @include media-breakpoint-down(sm) { 
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
                 li{
                     line-height: 36px;
                     font-size: 16px;
+                    @include media-breakpoint-down(sm) { 
+                        width: calc(100% / 3);
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+
+                    @media (max-width: 575.98px){
+                        width: 50%;
+                    }
+
                     a{
-                        font-weight: 500;
-                        text-decoration: none;
+                        display: block;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        color: var(--heading-color, #111);
+                        background: #FFFFFF;
+                        padding: 16px 17px;
                         transition: all 0.3s ease 0s;
+                        text-decoration: none;
+
+                        @media (max-width: 575.98px){
+                            font-size: 13px;
+                            padding: 8px 12px;
+                        }
+                    }
+
+                    &.is-active, &:hover{
+                        a{
+                            background-color: var(--link-color);
+                            color: #fff;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        @include media-breakpoint-up(md) {
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+
+                        a {
+                            @include media-breakpoint-down(sm) { 
+                                border-right: 1px solid rgba(0, 0, 0, 0.1);
+                            }
+                        }
                     }
                 }
 
             }
         }
+
         .woocommerce-MyAccount-content{
-            background: #f8f7f5;
-            padding: 30px 20px 20px;
-            border-radius: 3px;
+            padding: 32px 40px;
             font-size: 16px;
+
+            a{
+                -webkit-box-shadow: 0px 1px 0px var(--link-color, #d41b65);
+                box-shadow: 0px 1px 0px var(--link-color, #d41b65);
+            }
+
             .woocommerce-message{
                 background: #f8f7f7;
                 border-top-color: var(--link-color);
@@ -73,29 +162,42 @@
             .woocommerce-customer-details{
                 margin-bottom: 1em;
             }
-            h2{
+
+            h3, h2{
                 font-weight: 600;
                 font-size: 28px;
                 line-height: 38px;
                 letter-spacing: 0px;
                 color: var(--heading-color,#333);
-                margin-bottom: 16px;
-            }
-            h3{
-                font-weight: 600;
-                font-size: 28px;
-                line-height: 38px;
-                letter-spacing: 0px;
-                color: var(--heading-color,#333);
+
+                @include media-breakpoint-down(md) {
+                    font-size: 24px !important;
+                    line-height: 115%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 20px !important;
+                }
+
+                @media (max-width: 575.98px){
+                    font-size: 18px !important;
+                }
             }
             .button{
                 padding: 12px 24px;
+
+                @include media-breakpoint-down(md) {
+                    margin-top: 10px;
+                    float: left;
+                }
             }
+
             table{
                 &.shop_table{
                     margin-bottom: 16px;
                     background: #FFFFFF;
                 }
+
                 &.order_details{
                     border-collapse: collapse;
                     border: none;
@@ -157,6 +259,20 @@
                     margin-left: -15px;
                     margin-right: -15px;
                 }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 24px;
+                    line-height: 115%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 20px;
+                }
+
+                @media (max-width: 575.98px){
+                    font-size: 18px;
+                }
+
 
             }
             .woocommerce-Address{

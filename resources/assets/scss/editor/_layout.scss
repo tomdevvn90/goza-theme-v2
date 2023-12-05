@@ -40,6 +40,15 @@
 
 .is-root-container {
 
+    .wp-block-paragraph, .wp-block-heading.rich-text{
+        a{
+            font-size: inherit;
+            line-height: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+        }
+    }
+
     h1,
     h2,
     h3,

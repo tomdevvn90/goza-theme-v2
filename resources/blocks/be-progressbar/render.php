@@ -19,9 +19,15 @@ $duration = __get_field('duration_pb_bl') ? : 1200;
 $pgID     = uniqid();
 ?>
 
-<div id="<?= $id; ?>" class="be-progressbar-block <?= $shape; ?>" data-shape="<?= $shape ?>" data-value="<?= $value ?>" 
-    data-height="<?= $height ?>" data-stroke-color="<?= $strokeCl ?>" data-trail-color="<?= $trailCl ?>" data-duration= <?= $duration ?>
-    style="--size:<?= $size ?>">
+<div id="<?= $id; ?>" class="be-progressbar-block <?= $shape; ?>" 
+    data-shape        ="<?= $shape ?>" 
+    data-value        ="<?= $value ?>" 
+    data-height       ="<?= $height ?>" 
+    data-stroke-color ="<?= $strokeCl ?>" 
+    data-trail-color  ="<?= $trailCl ?>"
+    data-duration     = <?= $duration ?>
+    style="--size:<?= $size ?>"
+>
 
     <div id="be-progressbar-<?= $block['id'] ?>-<?= $pgID ?>" class="be-progressbar-block-warp"> </div>
     <div class="be-progressbar-block-warp __editor"> 
