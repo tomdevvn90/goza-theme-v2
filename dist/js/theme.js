@@ -1545,7 +1545,7 @@ $(document).ready(function () {
     delay: 100
   });
 });
-$(document).on("load", function () {
+$(window).on("load", function () {
   aos__WEBPACK_IMPORTED_MODULE_6___default.a.refresh();
 });
 

@@ -26,9 +26,11 @@ $(document).ready(function () {
     })
 });
 
-$(document).on("load", function () { 
+
+$(window).on("load", function () {
     AOS.refresh();
-})
+});
+
 
 import './blocks/progressbar-block';
 import './blocks/team-carousel';
