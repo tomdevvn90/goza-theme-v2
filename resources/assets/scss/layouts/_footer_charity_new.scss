@@ -28,7 +28,9 @@
             form {
                 overflow: hidden;
                 position: relative; 
-
+                display: flex;
+                flex-wrap: wrap;
+                
                 input.tnp-email {
                     height: 60px;
                     margin-bottom: 10px;

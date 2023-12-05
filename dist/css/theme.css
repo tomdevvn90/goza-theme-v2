@@ -23997,6 +23997,8 @@ body .wp-block-tnp-minimal .tnp-subscription-minimal input::placeholder {
 .main-footer.footer-charity-new .main-footer-widget form {
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-footer.footer-charity-new .main-footer-widget form input.tnp-email {
