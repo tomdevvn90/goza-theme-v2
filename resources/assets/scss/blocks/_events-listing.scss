@@ -60,7 +60,8 @@
         }
 
         svg {
-            width: 16px;
+            min-width: 16px;
+            max-width: 16px;
             height: auto;
             margin-right: 5px;
         }
@@ -535,14 +536,17 @@
 
     &.is-style-ev-outline {
         .item-event {
-            padding: 35px 35px 15px 35px;
+            padding: 20px 35px;
             box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
             border-radius: 4px;
             margin-bottom: 55px;
 
-            @media screen and (max-width: 600px) {
-                padding: 30px 15px;
-                margin-bottom: 30px;
+            @media screen and (max-width: 1199px) {
+                padding: 20px 30px;
+            }
+
+            @media screen and (max-width: 767px) {
+                padding: 20px 15px;
             }
 
             &-inner {
@@ -550,21 +554,33 @@
                 background: #fff;
                 display: flex;
 
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 767px) {
                     flex-wrap: wrap;
                 }
             }
 
             &--excerpt{
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                display: -webkit-box;
+                font-size: 16px;
                 margin-top: 16px;
+                margin-bottom: 16px;
+                p{
+                    margin-bottom: 0;
+                }
             }
 
             &--thumbnail {
+                position: relative;
                 width: 200px;
                 height: auto;
                 min-width: 200px;
 
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 767px) {
                     width: 100%;
                     margin-bottom: 20px;
                 }
@@ -572,7 +588,7 @@
                 img {
                     height: 210px;
                     border-radius: 4px;
-                    margin-bottom: -35px;
+                    margin-top: -40px;
 
                     @include media-breakpoint-down(md) {
                         margin-bottom: 0;
@@ -581,13 +597,8 @@
             }
 
             &--name {
-                @include media-breakpoint-down(lg) {
-                    font-size: 20px;
-                    line-height: 115%;
-                }
-
                 @include media-breakpoint-down(md) {
-                    font-size: 18px;
+                    font-size: 20px;
                 }
             }
 
@@ -596,7 +607,7 @@
                 text-align: left;
                 width: 100%;
 
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 767px) {
                     padding: 0;
                 }
             }
@@ -625,7 +636,7 @@
                     display: inline-block;
                     color: var(--link-color);
                     font-family: var(--heading-family);
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(lg) {
                         font-size: 15px;
                     }
 
@@ -661,12 +672,12 @@
 
             &--cta {
                 text-align: right;
-
+                line-height: 1;
                 >a {
                     padding: 0;
                     font-size: 14px;
                     color: #646464;
-                    line-height: 26px;
+                    line-height: 30px;
                     background-color: transparent;
                     height: auto;
 
