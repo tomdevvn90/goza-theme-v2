@@ -299,6 +299,16 @@ add_action('wp', function () {
 
 });
 
+// remove woocommerce breadcrumb
+add_action('template_redirect', 'goza_remove_shop_breadcrumbs_func' );
+function goza_remove_shop_breadcrumbs_func(){
+ 
+    if ( is_shop() || is_product() ){
+        remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+	}
+ 
+}
+
 // Single product
 add_action('woocommerce_before_main_content', 'goza_woocommerce_before_main_content_single_product_func');
 function goza_woocommerce_before_main_content_single_product_func()
